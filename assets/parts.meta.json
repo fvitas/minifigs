@@ -1,0 +1,141 @@
+{
+  "hair/DSC07490-720x720.png": {
+    "name": "Ginger Swept Hair",
+    "offsetY": 0.1
+  },
+  "hair/P1170204.png": {
+    "name": "Brown Short Hair",
+    "offsetY": 0.05
+  },
+  "hair/P1170219.png": {
+    "name": "Black Bob",
+    "offsetY": 0.18
+  },
+  "hair/P1170339.png": {
+    "name": "Red Bob",
+    "offsetY": 0.18
+  },
+  "hair/P1170566.png": {
+    "name": "Straw Hat",
+    "scale": 1.75,
+    "offsetY": -0.178
+  },
+  "hair/P1170611.png": {
+    "name": "Top Hat",
+    "scale": 1.1,
+    "offsetY": -0.155
+  },
+  "hair/P1170944.png": {
+    "name": "Pirate Hat",
+    "scale": 1.5,
+    "offsetY": -0.075
+  },
+  "head/AG-1-1.png": {
+    "name": "Eyepatch"
+  },
+  "head/DSC03892-720x720.png": {
+    "name": "Stern"
+  },
+  "head/DSC03893.png": {
+    "name": "Big Grin"
+  },
+  "head/DSC03918.png": {
+    "name": "Stubble Scowl"
+  },
+  "head/P1160181.png": {
+    "name": "Glasses and Beard"
+  },
+  "head/P1160199.png": {
+    "name": "Gritted Teeth",
+    "order": 3
+  },
+  "head/P1160257-720x720.png": {
+    "name": "Headband",
+    "order": 2
+  },
+  "head/P1160295.png": {
+    "name": "Smirk",
+    "order": 1
+  },
+  "head/tête.png": {
+    "name": "Classic Smile",
+    "exclude": true
+  },
+  "body/Blouse-w-Bow-Front-1.png": {
+    "name": "Red Blouse with Bow"
+  },
+  "body/P1160494.png": {
+    "name": "Blue Zip Jacket"
+  },
+  "body/P1160506.png": {
+    "name": "Doctor Scrubs"
+  },
+  "body/P1160527.png": {
+    "name": "Red Jacket"
+  },
+  "body/P1160543.jpg": {
+    "name": "Police Vest"
+  },
+  "body/P1160557.png": {
+    "name": "Ugly Sweater"
+  },
+  "body/P1160561.png": {
+    "name": "Reindeer Sweater"
+  },
+  "body/P1160563.png": {
+    "name": "Tie-Dye Peace"
+  },
+  "body/P1160603.png": {
+    "name": "Black Suit"
+  },
+  "body/P1160623.png": {
+    "name": "Yellow Shirt"
+  },
+  "body/Riding-Jacket-Front.png": {
+    "name": "Riding Jacket"
+  },
+  "body/lego-accessoires-minifig-torse-medaillon-dollar-dore-blanc.png": {
+    "name": "Dollar Chain"
+  },
+  "body/lego-accessoires-minifig-torse-veste-ouverte-sur-t-shirt-avec-alien-noir.png": {
+    "name": "Alien Tee"
+  },
+  "body/lego-accessoires-minifig-torse-veste-sur-pull-dark-purple.png": {
+    "name": "Purple Jacket"
+  },
+  "body/milieu.png": {
+    "name": "Blue Uniform",
+    "exclude": true
+  },
+  "body/sorry-youre-broken.png": {
+    "name": "Sorry You're Broken"
+  },
+  "pants/P1160355.png": {
+    "name": "Green"
+  },
+  "pants/P1160356.png": {
+    "name": "White"
+  },
+  "pants/P1160358.png": {
+    "name": "Dark Purple"
+  },
+  "pants/P1160385.png": {
+    "name": "Red Racing"
+  },
+  "pants/P1160391.png": {
+    "name": "Sky Blue Print"
+  },
+  "pants/P1160392.png": {
+    "name": "Pink Print"
+  },
+  "pants/P1160416.png": {
+    "name": "Navy"
+  },
+  "pants/Tan-Camo-Pants-Front.png": {
+    "name": "Tan Camo"
+  },
+  "pants/bas.png": {
+    "name": "Blue",
+    "exclude": true
+  }
+}

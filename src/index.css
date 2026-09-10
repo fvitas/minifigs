@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Bricolage Grotesque', sans-serif;
+  --font-sans: 'DM Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+  --color-lego: #e3000b;
+  --color-navy: #171c3a;
+  --color-ink: #2b2f45;
+  --color-muted: #7b7f93;
+  --color-line: #dcdde3;
+  --color-fog: #f2f2f4;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  button:not(:disabled) {
+    cursor: pointer;
+  }
+  body {
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+}

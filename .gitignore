@@ -1,0 +1,21 @@
+# deps / build
+node_modules/
+dist/
+.vercel/
+*.tsbuildinfo
+
+# local-only documentation and design exploration
+docs/
+mockups/
+*.md
+!README.md
+!.claude/skills/**/*.md
+
+# tooling noise
+.playwright-mcp/
+.DS_Store
+*.log
+.env*
+
+# IDE
+.idea/

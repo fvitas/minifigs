@@ -1,0 +1,16 @@
+import { Credit } from './Credit'
+import { cx } from './cx'
+
+export function Footer({ block }: { block: boolean }) {
+  return (
+    <footer
+      className={cx(
+        'flex justify-between px-10 py-3 text-xs transition-colors duration-500',
+        block ? 'text-(--on-slot)/75' : 'text-muted',
+      )}
+    >
+      <Credit />
+      <span>← → swap · ↑ ↓ change part · Space snaps</span>
+    </footer>
+  )
+}
