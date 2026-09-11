@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hair fit · notes</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --navy: #171c3a;
+        --muted: #7b7f93;
+        --line: #dcdde3;
+        --base: #f2f2f4;
+        --red: #e3000b;
+        --green: #12a150;
+        --amber: #d98b00;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+      }
+      body {
+        font-family: 'DM Sans', sans-serif;
+        color: var(--navy);
+        background: var(--base);
+        display: grid;
+        grid-template-rows: auto minmax(0, 1fr) auto auto auto;
+        height: 100dvh;
+        overflow: hidden;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 18px;
+        background: #fff;
+        border-bottom: 1px solid var(--line);
+      }
+      header h1 {
+        font-size: 15px;
+        margin: 0 8px 0 0;
+      }
+      .btn {
+        font:
+          500 12px/1 'DM Mono',
+          monospace;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        border: 1px solid var(--line);
+        background: #fff;
+        color: var(--muted);
+        border-radius: 999px;
+        padding: 9px 14px;
+        cursor: pointer;
+      }
+      .btn kbd {
+        font: inherit;
+        opacity: 0.6;
+        margin-left: 6px;
+      }
+      .btn:hover {
+        border-color: var(--navy);
+        color: var(--navy);
+      }
+      .btn.is-on {
+        background: var(--navy);
+        border-color: var(--navy);
+        color: #fff;
+      }
+      .stats,
+      .saved {
+        font:
+          12px/1.4 'DM Mono',
+          monospace;
+        color: var(--muted);
+      }
+      .saved {
+        margin-left: auto;
+        text-align: right;
+      }
+      .stage {
+        display: grid;
+        place-items: center;
+        min-height: 0;
+        padding: 10px;
+        overflow: hidden;
+      }
+      .figure {
+        position: relative;
+        transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.2, 1.1);
+      }
+      .layer {
+        position: absolute;
+        left: 0;
+        display: block;
+      }
+      .layer.ghost {
+        opacity: 0.35;
+      }
+      .title {
+        text-align: center;
+        padding: 2px 18px 0;
+      }
+      .title h2 {
+        margin: 0;
+        font-size: 19px;
+      }
+      .title p {
+        margin: 3px 0 0;
+        font:
+          12px/1.4 'DM Mono',
+          monospace;
+        color: var(--muted);
+      }
+      .note-row {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        padding: 10px 18px 0;
+      }
+      .note-row input {
+        flex: 1;
+        font: 15px/1.2 'DM Sans', sans-serif;
+        color: var(--navy);
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 12px 14px;
+      }
+      .note-row input:focus {
+        outline: 2px solid var(--navy);
+        outline-offset: -1px;
+      }
+      .strip {
+        display: flex;
+        gap: 6px;
+        overflow-x: auto;
+        padding: 10px 18px 14px;
+        scrollbar-width: thin;
+      }
+      .strip img {
+        width: 46px;
+        height: 46px;
+        border-radius: 8px;
+        background: #fff;
+        border: 2px solid var(--line);
+        object-fit: contain;
+        cursor: pointer;
+        flex: 0 0 auto;
+        opacity: 0.55;
+      }
+      .strip img.noted {
+        border-color: var(--amber);
+        opacity: 1;
+      }
+      .strip img.fine {
+        border-color: var(--green);
+        opacity: 1;
+      }
+      .strip img.is-current {
+        outline: 2px solid var(--navy);
+        outline-offset: 1px;
+        opacity: 1;
+      }
+      .hint {
+        font:
+          11px/1.4 'DM Mono',
+          monospace;
+        color: var(--muted);
+        text-align: center;
+        padding: 8px 18px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hair fit</h1>
+      <div class="stats" id="stats"></div>
+      <button class="btn" id="zoom">Zoom head</button>
+      <button class="btn" id="ghost">Fade piece</button>
+      <button class="btn" id="explode">Take apart</button>
+      <div class="saved" id="saved"></div>
+    </header>
+    <section class="stage" id="stage"><div class="figure" id="figure"></div></section>
+    <div class="title">
+      <h2 id="title"></h2>
+      <p id="sub"></p>
+    </div>
+    <div class="note-row">
+      <button class="btn" id="prev">Prev <kbd>⇧⇥</kbd></button>
+      <input id="note" placeholder="What is wrong with this one? (empty = fits fine)" autocomplete="off" />
+      <button class="btn" id="next">Save &amp; next <kbd>⏎</kbd></button>
+    </div>
+    <p class="hint">
+      ⏎ save and go to the next piece · ⇧⏎ save and stay · ↑ ↓ or ⇧⇥ move without losing the note ·
+      click a thumbnail to jump · head, torso and legs never change
+    </p>
+    <div class="strip" id="strip"></div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

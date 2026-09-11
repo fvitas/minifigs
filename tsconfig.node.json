@@ -21,5 +21,6 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["vite.config.ts", "scripts", "mockups/vite.config.ts"]
+  "include": ["vite.config.ts", "scripts", "mockups/vite.config.ts"],
+  "exclude": ["scripts/parts/review", "scripts/parts/fit", "scripts/parts/erase"]
 }

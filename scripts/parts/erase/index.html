@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Retouch · erase artifacts</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --navy: #171c3a;
+        --muted: #7b7f93;
+        --line: #dcdde3;
+        --base: #f2f2f4;
+        --amber: #d98b00;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+      }
+      body {
+        font-family: 'DM Sans', sans-serif;
+        color: var(--navy);
+        background: var(--base);
+        display: grid;
+        grid-template-rows: auto minmax(0, 1fr) auto auto;
+        height: 100dvh;
+        overflow: hidden;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 18px;
+        background: #fff;
+        border-bottom: 1px solid var(--line);
+        flex-wrap: wrap;
+      }
+      header h1 {
+        font-size: 15px;
+        margin: 0 4px 0 0;
+      }
+      .btn,
+      select {
+        font:
+          500 12px/1 'DM Mono',
+          monospace;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        border: 1px solid var(--line);
+        background: #fff;
+        color: var(--muted);
+        border-radius: 999px;
+        padding: 9px 14px;
+        cursor: pointer;
+      }
+      .btn kbd {
+        font: inherit;
+        opacity: 0.6;
+        margin-left: 6px;
+      }
+      .btn:hover,
+      select:hover {
+        border-color: var(--navy);
+        color: var(--navy);
+      }
+      .btn.is-on {
+        background: var(--navy);
+        border-color: var(--navy);
+        color: #fff;
+      }
+      .group {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 4px 12px 4px 14px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: #fff;
+      }
+      .group label,
+      .stats,
+      .saved {
+        font:
+          12px/1.4 'DM Mono',
+          monospace;
+        color: var(--muted);
+      }
+      .group input[type='range'] {
+        width: 108px;
+        accent-color: var(--navy);
+      }
+      .group output {
+        font:
+          500 12px/1 'DM Mono',
+          monospace;
+        min-width: 42px;
+        text-align: right;
+      }
+      .saved {
+        margin-left: auto;
+        text-align: right;
+      }
+      .stage {
+        position: relative;
+        min-height: 0;
+        overflow: auto;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background: #fff;
+      }
+      .stage.bg-magenta {
+        background: #ff00ff;
+      }
+      .stage.bg-checker {
+        background-color: #fff;
+        background-image:
+          linear-gradient(45deg, #d6d7de 25%, transparent 25%),
+          linear-gradient(-45deg, #d6d7de 25%, transparent 25%),
+          linear-gradient(45deg, transparent 75%, #d6d7de 75%),
+          linear-gradient(-45deg, transparent 75%, #d6d7de 75%);
+        background-size: 16px 16px;
+        background-position:
+          0 0,
+          0 8px,
+          8px -8px,
+          -8px 0;
+      }
+      .stage.is-panning {
+        cursor: grabbing;
+      }
+      .figure {
+        position: relative;
+        flex: 0 0 auto;
+      }
+      .layer {
+        position: absolute;
+        left: 0;
+        display: block;
+      }
+      canvas.layer {
+        image-rendering: pixelated;
+        cursor: none;
+        touch-action: none;
+      }
+      .brush {
+        position: fixed;
+        border: 1px solid #fff;
+        outline: 1px solid rgba(23, 28, 58, 0.9);
+        border-radius: 50%;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        display: none;
+        z-index: 10;
+      }
+      .title {
+        text-align: center;
+        padding: 10px 18px 0;
+      }
+      .title h2 {
+        margin: 0;
+        font-size: 19px;
+      }
+      .title p {
+        margin: 3px 0 0;
+        font:
+          12px/1.4 'DM Mono',
+          monospace;
+        color: var(--muted);
+      }
+      .strip {
+        display: flex;
+        gap: 6px;
+        overflow-x: auto;
+        padding: 10px 18px 14px;
+        scrollbar-width: thin;
+      }
+      .strip img {
+        width: 46px;
+        height: 46px;
+        border-radius: 8px;
+        background: #fff;
+        border: 2px solid var(--line);
+        object-fit: contain;
+        cursor: pointer;
+        flex: 0 0 auto;
+        opacity: 0.55;
+      }
+      .strip img.edited {
+        border-color: var(--amber);
+        opacity: 1;
+      }
+      .strip img.is-current {
+        outline: 2px solid var(--navy);
+        outline-offset: 1px;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Retouch</h1>
+      <select id="slot"></select>
+      <button class="btn" id="prev">Prev <kbd>←</kbd></button>
+      <button class="btn" id="next">Next <kbd>→</kbd></button>
+      <div class="group">
+        <label for="brush">Brush</label>
+        <input type="range" id="brush" min="1" max="60" step="1" />
+        <output id="brushValue"></output>
+      </div>
+      <div class="group">
+        <label for="zoom">Zoom</label>
+        <input type="range" id="zoom" min="0.4" max="8" step="0.1" />
+        <output id="zoomValue"></output>
+      </div>
+      <button class="btn" id="background">On figure</button>
+      <button class="btn" id="undo">Undo <kbd>⌘Z</kbd></button>
+      <button class="btn" id="clear">Clear piece</button>
+      <div class="saved" id="saved"></div>
+    </header>
+    <section class="stage" id="stage">
+      <div class="figure" id="figure"></div>
+    </section>
+    <div class="title">
+      <h2 id="title"></h2>
+      <p id="sub"></p>
+    </div>
+    <div class="strip" id="strip"></div>
+    <div class="brush" id="ring"></div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

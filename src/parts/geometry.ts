@@ -33,13 +33,13 @@ export const GEOMETRY: Record<Slot, SlotGeometry> = {
     stackOffset: 214,
     explodeGap: 150,
   },
-  head: { canvasHeight: 320, targetWidth: UNIT * 0.6, stackOffset: 306, explodeGap: 150 },
+  head: { canvasHeight: 320, targetWidth: UNIT * 0.54, stackOffset: 306, explodeGap: 150 },
   hair: {
-    canvasHeight: 480,
-    targetWidth: UNIT * 0.72,
-    bottomInset: 120,
-    stackOffset: 20,
-    explodeGap: 300,
+    canvasHeight: 600,
+    targetWidth: UNIT * 0.648,
+    bottomInset: 230,
+    stackOffset: -100,
+    explodeGap: 400,
   },
 }
 

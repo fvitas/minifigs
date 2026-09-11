@@ -19,3 +19,6 @@ mockups/
 
 # IDE
 .idea/
+
+# Generated picker data
+scripts/parts/picker/candidates.js

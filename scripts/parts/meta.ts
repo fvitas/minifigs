@@ -7,6 +7,16 @@ export type PartMeta = {
   offsetY?: number
   exclude?: boolean
   order?: number
+  // Shop photos often show front and back side by side; keep only the front half.
+  crop?: 'left' | 'right'
+  // Photo of a hat or hair worn by a display figure, which has to come off. 'red' is La Petite
+  // Brique's plain red figure, keyed out by colour; 'white' is extraextrabricks' plain white one,
+  // segmented away from the piece it wears.
+  keyOut?: 'red' | 'white'
+  // Openings no threshold can find, as rounded [x, y, width, height] rectangles in fractions of the
+  // photo (after `crop`): the face inside the Batman cowl's mouth is in shadow, so it reads as dark
+  // as the plastic framing it.
+  cut?: [number, number, number, number][]
 }
 
 export type MetaFile = Record<string, PartMeta>

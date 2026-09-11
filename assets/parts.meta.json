@@ -1,37 +1,39 @@
 {
   "hair/DSC07490-720x720.png": {
     "name": "Ginger Swept Hair",
-    "offsetY": 0.1
+    "offsetY": 0.072
   },
   "hair/P1170204.png": {
     "name": "Brown Short Hair",
-    "offsetY": 0.05
+    "offsetY": 0.036,
+    "offsetX": -0.01
   },
   "hair/P1170219.png": {
     "name": "Black Bob",
-    "offsetY": 0.18
+    "offsetY": 0.1296
   },
   "hair/P1170339.png": {
     "name": "Red Bob",
-    "offsetY": 0.18
+    "offsetY": 0.1296
   },
   "hair/P1170566.png": {
     "name": "Straw Hat",
-    "scale": 1.75,
-    "offsetY": -0.178
+    "scale": 1.6325,
+    "offsetY": -0.0538
   },
   "hair/P1170611.png": {
     "name": "Top Hat",
     "scale": 1.1,
-    "offsetY": -0.155
+    "offsetY": -0.0733
   },
   "hair/P1170944.png": {
     "name": "Pirate Hat",
     "scale": 1.5,
-    "offsetY": -0.075
+    "offsetY": -0.054
   },
   "head/AG-1-1.png": {
-    "name": "Eyepatch"
+    "name": "Eyepatch",
+    "exclude": true
   },
   "head/DSC03892-720x720.png": {
     "name": "Stern"
@@ -55,7 +57,8 @@
   },
   "head/P1160295.png": {
     "name": "Smirk",
-    "order": 1
+    "order": 1,
+    "exclude": true
   },
   "head/tête.png": {
     "name": "Classic Smile",
@@ -137,5 +140,4049 @@
   "pants/bas.png": {
     "name": "Blue",
     "exclude": true
+  },
+  "head/cab-female-dual-sided-minifigure-head-smile-frown-3626pb3868.jpg": {
+    "crop": "left",
+    "name": "Female Smile & Frown"
+  },
+  "head/cab-dual-sided-minifigure-head-with-smile-3626pb3013.jpg": {
+    "crop": "left",
+    "name": "Smile"
+  },
+  "head/cab-minifigure-head-3626pb0984-with-gap-tooth-smile.jpg": {
+    "crop": "left",
+    "name": "Gap Tooth Smile"
+  },
+  "head/cab-minifigure-head-3626pb0798-with-bushy-eyebrows.jpg": {
+    "crop": "left",
+    "name": "Bushy Eyebrows"
+  },
+  "head/cab-female-minifigure-head-3626pb0673-with-lopsided-smile.jpg": {
+    "crop": "left",
+    "name": "Female Lopsided Smile"
+  },
+  "head/cab-minifigure-head-3626pb0469-with-orange-sunglasses.jpg": {
+    "crop": "left",
+    "name": "Orange Sunglasses"
+  },
+  "head/cab-winking-smile-face-head-3626pb2716.jpg": {
+    "crop": "left",
+    "name": "Winking Smile"
+  },
+  "head/cab-minifigure-head-with-sunglasses-3626pb0918.jpg": {
+    "crop": "left",
+    "name": "Sunglasses"
+  },
+  "head/cab-female-minifigure-head-3626pb0998-with-dark-pink-glasses.jpg": {
+    "crop": "left",
+    "name": "Female Dark Pink Glasses"
+  },
+  "head/cab-female-head-3626pb2664-with-raised-eyebrows.jpg": {
+    "crop": "left",
+    "name": "Female Raised Eyebrows"
+  },
+  "head/cab-minifigure-head-3626pb2741-with-goatee-and-stubble.jpg": {
+    "crop": "left",
+    "name": "Goatee and Stubble"
+  },
+  "head/cab-minifigure-head-with-curled-moustache-and-sideburns.jpg": {
+    "crop": "left",
+    "name": "Curled Moustache and Sideburns"
+  },
+  "body/cab-plaid-jacket-torso-with-sand-green-shirt-973pb4033c01.jpg": {
+    "crop": "left",
+    "name": "Plaid Jacket with Sand Green Shirt",
+    "exclude": true
+  },
+  "body/cab-hoodie-torso-with-yellow-fabuland-logo-pattern-973pb6135c01.jpg": {
+    "crop": "left",
+    "name": "Hoodie with Yellow Fabuland Logo",
+    "exclude": true
+  },
+  "body/cab-bird-graphic-sweater-torso-pattern-973pb6207c01.jpg": {
+    "crop": "left",
+    "name": "Bird Graphic Sweater",
+    "exclude": true
+  },
+  "body/cab-crew-neck-shirt-torso-with-name-tag-pattern-973pb6204c01.jpg": {
+    "crop": "left",
+    "name": "Crew Neck Shirt with Name Tag",
+    "exclude": true
+  },
+  "body/cab-zip-up-jacket-torso-pattern-973pb5816c01.jpg": {
+    "crop": "left",
+    "name": "Zip-Up Jacket"
+  },
+  "body/cab-overalls-torso-with-checked-shirt-pattern-973pb4243c01.jpg": {
+    "crop": "left",
+    "name": "Overalls with Checked Shirt",
+    "exclude": true
+  },
+  "body/cab-apron-torso-with-cup-and-name-tag-pattern-973pb3256c01.jpg": {
+    "crop": "left",
+    "name": "Apron with Cup and Name Tag",
+    "exclude": true
+  },
+  "body/cab-lego-tuxedo-torso-black-suit-with-bow-tie-973pb3698c01.jpg": {
+    "crop": "left",
+    "name": "Tuxedo Black Suit with Bow Tie",
+    "exclude": true
+  },
+  "body/cab-lego-overalls-torso-with-pocket-973pb5887c01.jpg": {
+    "crop": "left",
+    "name": "Overalls with Pocket",
+    "exclude": true
+  },
+  "body/cab-lego-minifigure-torso-open-vest-973pb6229c01.jpg": {
+    "crop": "left",
+    "name": "Open Vest",
+    "exclude": true
+  },
+  "pants/cab-hips-and-blue-legs.jpg": {
+    "crop": "left",
+    "name": "Plain Blue"
+  },
+  "pants/cab-lego-minifigure-legs-with-hips-970c06.jpg": {
+    "crop": "left",
+    "name": "Plain Green"
+  },
+  "pants/cab-minifigure-legs-with-black-pocket-outlines-pattern-970c00pb1784.jpg": {
+    "crop": "left",
+    "name": "Black Pocket Outlines"
+  },
+  "pants/cab-lego-minifigure-legs-with-boots-970c00pb0537.jpg": {
+    "crop": "left",
+    "name": "Light Blue Boots",
+    "exclude": true
+  },
+  "pants/cab-lego-minifigure-legs-with-tattered-jeans-pattern-970c00pb1180.jpg": {
+    "crop": "left",
+    "name": "Tattered Jeans",
+    "exclude": true
+  },
+  "pants/cab-lego-minifigure-legs-with-knee-pad-pattern-970c00pb1098.jpg": {
+    "crop": "left",
+    "name": "Knee Pad"
+  },
+  "pants/cab-lego-minifigure-legs-with-white-boots-pattern-970c00pb1093.jpg": {
+    "crop": "left",
+    "name": "White Boots",
+    "exclude": true
+  },
+  "pants/cab-reddish-brown-boots-legs-970c00pb1023.jpg": {
+    "crop": "left",
+    "name": "Reddish Brown Boots",
+    "exclude": true
+  },
+  "pants/cab-lego-minifigure-legs-with-black-boots-pattern-970c00pb0441.jpg": {
+    "crop": "left",
+    "name": "Black Boots",
+    "exclude": true
+  },
+  "head/cab-dumbledore-minifigure-head-with-glasses-3626pb0003.jpg": {
+    "crop": "left",
+    "name": "Dumbledore with Glasses"
+  },
+  "head/cab-hector-barbossa-bearded-head-3626pb0558.jpg": {
+    "crop": "left",
+    "name": "Hector Barbossa Bearded"
+  },
+  "head/cab-dual-sided-minifigure-head-with-lime-eye-3626pb3431.jpg": {
+    "crop": "left",
+    "name": "Lime Eye"
+  },
+  "head/cab-harry-potter-dual-sided-head-with-glasses-3626pb2168.jpg": {
+    "crop": "left",
+    "name": "Harry Potter with Glasses"
+  },
+  "head/cab-female-minifigure-head-with-ski-goggles-3626pb2139.jpg": {
+    "crop": "left",
+    "name": "Female Ski Goggles"
+  },
+  "head/cab-lego-female-dual-sided-masked-minifigure-head-3626pb4106.jpg": {
+    "crop": "left",
+    "name": "Female Masked"
+  },
+  "head/cab-minifigure-head-dual-sided-frown-scowl-3626pb3997.jpg": {
+    "crop": "left",
+    "name": "Frown & Scowl"
+  },
+  "head/cab-female-minifigure-head-with-raised-eyebrow-and-frown-3626pb3989.jpg": {
+    "crop": "left",
+    "name": "Female Raised Eyebrow and Frown"
+  },
+  "head/cab-dual-sided-minifigure-head-with-beard-and-moustache-3626pb3918.jpg": {
+    "crop": "left",
+    "name": "Beard and Moustache"
+  },
+  "head/cab-minifigure-head-with-dark-brown-moustache-3626pb3846.jpg": {
+    "crop": "left",
+    "name": "Dark Brown Moustache"
+  },
+  "head/cab-smiling-minifigure-head-3626pb3751.jpg": {
+    "crop": "left",
+    "name": "Smiling"
+  },
+  "head/cab-minifigure-head-with-curly-moustache-sideburns-3626pb3600.jpg": {
+    "crop": "left",
+    "name": "Curly Moustache & Sideburns"
+  },
+  "head/cab-dual-sided-female-minifigure-head-with-glasses-3626pb3521.jpg": {
+    "crop": "left",
+    "name": "Female Glasses"
+  },
+  "head/cab-dual-sided-female-minifigure-head-with-tiara-3626pb3501.jpg": {
+    "crop": "left",
+    "name": "Female Tiara"
+  },
+  "head/cab-minifigure-head-with-nervous-sweating-expression-3626pb2973.jpg": {
+    "crop": "left",
+    "name": "Nervous Sweating Expression"
+  },
+  "head/cab-minifigure-head-3626pb0534-with-raised-eyebrow.jpg": {
+    "crop": "left",
+    "name": "Raised Eyebrow"
+  },
+  "head/cab-female-minifigure-head-with-smile-and-beauty-mark.jpg": {
+    "crop": "left",
+    "name": "Female Smile and Beauty Mark"
+  },
+  "head/cab-dual-sided-child-minifigure-head-with-mechanical-goggles.jpg": {
+    "crop": "left",
+    "name": "Child with Mechanical Goggles"
+  },
+  "head/cab-minifigure-head-with-glasses-beard-3626px14.jpg": {
+    "crop": "left",
+    "name": "Glasses & Beard"
+  },
+  "head/cab-minifigure-head-with-glasses-mustache-3626pb3890.jpg": {
+    "crop": "left",
+    "name": "Glasses & Mustache"
+  },
+  "head/cab-lopsided-slime-head-3626pb3667.jpg": {
+    "crop": "left",
+    "name": "Lopsided Slime"
+  },
+  "head/cab-dual-sided-minifigure-head-with-glasses-3626pb3660.jpg": {
+    "crop": "left",
+    "name": "Glasses"
+  },
+  "head/cab-glasses-dual-sided-minifigure-head-3626pb3515.jpg": {
+    "crop": "left",
+    "name": "Round Glasses Grin"
+  },
+  "head/cab-minifigure-head-with-scar-and-stubble-3626pb3315.jpg": {
+    "crop": "left",
+    "name": "Scar and Stubble"
+  },
+  "head/cab-dual-sided-minifigure-head-3626pb3176.jpg": {
+    "crop": "left",
+    "name": "Wicked Grin"
+  },
+  "head/cab-lego-male-minifigure-head-3626pb3152.jpg": {
+    "crop": "left",
+    "name": "Tan Smile"
+  },
+  "head/cab-female-head-with-glasses-3626pb3082.jpg": {
+    "crop": "left",
+    "name": "Red Frames"
+  },
+  "head/cab-sunglasses-minifigure-head-3626pb2540.jpg": {
+    "crop": "left",
+    "name": "Orange Shades"
+  },
+  "head/cab-lego-minifigure-head-thin-grin-3626pb0121.jpg": {
+    "crop": "left",
+    "name": "Thin Grin"
+  },
+  "head/cab-lego-female-minifigure-head-3626pb2634.jpg": {
+    "crop": "left",
+    "name": "Bright Smile"
+  },
+  "head/cab-lego-minifigure-head-mask-dual-face-3626pb3403.jpg": {
+    "crop": "left",
+    "name": "Mask Dual"
+  },
+  "head/cab-dual-sided-minifigure-head-with-stubble-3626pb0398.jpg": {
+    "crop": "left",
+    "name": "Stubble"
+  },
+  "head/cab-minifigure-head-dual-sided-wink-angry-3626pb3496.jpg": {
+    "crop": "left",
+    "name": "Wink & Angry"
+  },
+  "head/cab-dual-sided-head-with-glasses-happy-worried.jpg": {
+    "crop": "left",
+    "name": "Glasses (Happy / Worried)"
+  },
+  "head/cab-minifigure-female-head-with-confident-grin.jpg": {
+    "crop": "left",
+    "name": "Female Confident Grin"
+  },
+  "head/cab-lego-minifigure-head-open-mouth-smile-3626pb2537.jpg": {
+    "crop": "left",
+    "name": "Open Mouth Smile"
+  },
+  "head/cab-lego-head-dual-sided-tech-visor-angry-grin.jpg": {
+    "crop": "left",
+    "name": "Tech Visor & Angry Grin"
+  },
+  "head/cab-minifigure-head-heart-eyes-smile-dual-sided.jpg": {
+    "crop": "left",
+    "name": "Heart Eyes / Smile"
+  },
+  "head/cab-minifigure-head-yellow-dual-sided-with-pink-eyeshadow-and-expressions.jpg": {
+    "crop": "left",
+    "name": "Yellow, with Pink Eyeshadow and Expressions"
+  },
+  "head/cab-female-dual-sided-head-sad-smile-medium-tan-3626pb3240.jpg": {
+    "crop": "left",
+    "name": "Female Sad / Smile Medium Tan"
+  },
+  "head/cab-yellow-dual-sided-head-with-smile-and-singing-expression.jpg": {
+    "crop": "left",
+    "name": "Yellow with Smile and Singing Expression"
+  },
+  "head/cab-scowl-and-angry-fur-head-3626pb3394.jpg": {
+    "crop": "left",
+    "name": "Scowl and Angry Fur"
+  },
+  "head/cab-dual-sided-head-wide-smile-and-singing-face.jpg": {
+    "crop": "left",
+    "name": "Wide Smile and Singing"
+  },
+  "head/cab-minifigure-head-dual-sided-with-mask-and-angry-face-pattern.jpg": {
+    "crop": "left",
+    "name": "Mask and Angry"
+  },
+  "head/cab-dual-sided-minifigure-head-angry-grinning-faces-3626pb3529.jpg": {
+    "crop": "left",
+    "name": "Angry & Grinning"
+  },
+  "head/cab-minifigure-head-with-glasses-smirk-3626pb3371.jpg": {
+    "crop": "left",
+    "name": "Glasses & Smirk"
+  },
+  "head/cab-minifigure-head-winking-face-with-mustache.jpg": {
+    "crop": "left",
+    "name": "Winking with Mustache"
+  },
+  "head/cab-child-minifigure-head-with-freckles-and-smile-3626pb0471.jpg": {
+    "crop": "left",
+    "name": "Child with Freckles and Smile"
+  },
+  "head/cab-head-with-hearing-aid-open-mouth-smile-3626pb3081.jpg": {
+    "crop": "left",
+    "name": "Hearing Aid & Open Mouth Smile"
+  },
+  "head/cab-minifigure-head-with-orange-eyebrows-moustache.jpg": {
+    "crop": "left",
+    "name": "Orange Eyebrows & Moustache"
+  },
+  "head/cab-angry-eyebrows-and-scowl-minifigure-head-3626pb1973.jpg": {
+    "crop": "left",
+    "name": "Angry Eyebrows and Scowl"
+  },
+  "head/cab-dual-sided-minifigure-head-circuitry-print-3626pb3388.jpg": {
+    "crop": "left",
+    "name": "Circuitry"
+  },
+  "head/cab-minifigure-head-child-brown-eyebrows-and-freckles-open-smile-white-pupils-pattern-blocked-open.jpg": {
+    "crop": "left",
+    "name": "Child Brown Eyebrows and Freckles, Open Smile, White Pupils - Blocked Open"
+  },
+  "head/cab-female-dual-sided-smiling-minifigure-head-3626pb2964.jpg": {
+    "crop": "left",
+    "name": "Female Smiling"
+  },
+  "head/cab-dual-sided-minifigure-head-with-eyepatch-3626pb2401.jpg": {
+    "crop": "left",
+    "name": "Eyepatch"
+  },
+  "head/cab-lego-minifigure-head-smirk-print-3626pb1746.jpg": {
+    "crop": "left",
+    "name": "Smirk"
+  },
+  "head/cab-lego-minifigure-head-glasses-freckles-3626pb1567.jpg": {
+    "crop": "left",
+    "name": "Glasses Freckles"
+  },
+  "head/cab-dual-sided-head-with-round-glasses-3626pb2413.jpg": {
+    "crop": "left",
+    "name": "Round Glasses"
+  },
+  "head/cab-scar-and-soul-patch-dual-sided-head-3626pb1504.jpg": {
+    "crop": "left",
+    "name": "Scar and Soul Patch"
+  },
+  "head/cab-lego-minifigure-head-glasses-print-3626pb1398.jpg": {
+    "crop": "left",
+    "name": "Thin Glasses"
+  },
+  "head/cab-lego-3626pb0001-minifigure-skull-head-hollow-stud.jpg": {
+    "crop": "left",
+    "name": "Skull – Hollow Stud"
+  },
+  "head/cab-stubble-and-right-eyebrow-scar-minifigure-head-3626pb1330.jpg": {
+    "crop": "left",
+    "name": "Stubble and Right Eyebrow Scar"
+  },
+  "head/cab-minifigure-head-with-goatee-and-soot-3626pb1466.jpg": {
+    "crop": "left",
+    "name": "Goatee and Soot"
+  },
+  "head/cab-sideburns-and-open-mouth-smile-minifigure-head-3626pb1074.jpg": {
+    "crop": "left",
+    "name": "Sideburns and Open-Mouth Smile"
+  },
+  "body/cab-torso-wrapped-robe-with-gold-dragon-head-and-tail-silver-clasps-pattern-blue-arms-black-hands.jpg": {
+    "name": "Wrapped Robe with Gold Dragon and Tail, Silver Clasps"
+  },
+  "body/cab-torso-t-shirt-with-white-minifigure-head-skull-pattern-light-bluish-gray-arms-with-black-short-sl.jpg": {
+    "name": "T-Shirt with White Skull"
+  },
+  "body/cab-female-hooded-camouflage-torso-973pb5193c01.jpg": {
+    "name": "Female Hooded Camouflage",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-torso-chef-jacket-with-pig-emblem.jpg": {
+    "name": "Chef Jacket with Pig Emblem",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-torso-tracksuit-with-medium-lavender-zipper-and-white-mountain-logo-on-back-pattern-dark-purple-a.jpg": {
+    "name": "Tracksuit with Medium Lavender Zipper and White Mountain Logo on Back / Dark Purple A",
+    "crop": "left"
+  },
+  "body/cab-lego-female-tank-top-torso-973pb6256c01.jpg": {
+    "name": "Female Tank Top",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-dark-blue-tactical-vest-torso-with-dinosaur-emblem-973pb3119c01.jpg": {
+    "name": "Dark Blue Tactical Vest with Dinosaur Emblem",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-apron-torso-973pb1088c01.jpg": {
+    "name": "Apron",
+    "crop": "left"
+  },
+  "body/cab-dark-green-hoodie-minifigure-torso-973pb3780c01.jpg": {
+    "name": "Dark Green Hoodie",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-pilot-torso-973pb1433c01-with-tie-and-wings-badge.jpg": {
+    "name": "Pilot with Tie and Wings Badge",
+    "crop": "left"
+  },
+  "body/cab-female-bright-pink-shirt-torso-973pb3165c01.jpg": {
+    "name": "Female Bright Pink Shirt",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-female-peasant-shirt-torso-973pb4838c01.jpg": {
+    "name": "Female Peasant Shirt",
+    "crop": "left"
+  },
+  "body/cab-female-bodysuit-torso-973pb3474c01.jpg": {
+    "name": "Female Bodysuit",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-torso-plaid-flannel-shirt-open-with-pockets-and-dark-blue-squares-over-sand-blue-sweater-pattern-dark-red-arms-light-nougat-hands.jpg": {
+    "name": "Plaid Flannel Shirt Open with Pockets and Dark Blue Squares over Sand Blue Sweater",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-medieval-female-torso-red-dress-with-belt-and-pouch.jpg": {
+    "name": "Medieval Female – Red Dress with Belt and Pouch",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-minifigure-torso-973pb6319c01-with-elegant-dress-print.jpg": {
+    "name": "Elegant Dress",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-tattered-vest-torso-973pb5154c01.jpg": {
+    "name": "Tattered Vest",
+    "crop": "left"
+  },
+  "body/cab-torso-with-blue-jacket-and-id-badge-pattern.jpg": {
+    "name": "Blue Jacket and ID Badge",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-torso-with-green-jacket-and-pendant-pattern.jpg": {
+    "name": "Green Jacket and Pendant",
+    "crop": "left"
+  },
+  "body/cab-torso-female-cardigan-with-striped-sun-shirt-973pb6105c01.jpg": {
+    "name": "Female Cardigan with Striped Sun Shirt",
+    "crop": "left"
+  },
+  "body/cab-dark-red-jacket-minifigure-torso-with-straps-973pb4707c01.jpg": {
+    "name": "Dark Red Jacket with Straps",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-mountain-logo-t-shirt-torso-paint-splatter.jpg": {
+    "name": "Mountain Logo T-Shirt (Paint Splatter)",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-torso-orange-apron-with-green-leaf-over-dark-tan-and-white-plaid-shirt-pattern-tan-arms-yellow-hands.jpg": {
+    "name": "Orange Apron with Green Leaf over Dark Tan and White Plaid Shirt",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-lego-torso-white-jacket-with-reddish-brown-waistcoat-pattern-973pb5225c01.jpg": {
+    "name": "White Jacket with Reddish Brown Waistcoat",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-lego-muscle-torso-blue-tank-top-with-lightning-and-belt-pattern.jpg": {
+    "name": "Muscle Blue Tank Top with Lightning and Belt",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-torso-tuxedo-with-gold-tie-and-vest-silver-speckles-pattern-white-arms-with-silver-speckles-patt.jpg": {
+    "name": "Tuxedo with Gold Tie and Vest, Silver Speckles",
+    "crop": "left"
+  },
+  "body/cab-torso-construction-with-reflective-stripe-and-buckles-front-pouch-and-red-pen-blue-shirt-pattern.jpg": {
+    "name": "Construction with Reflective Stripe and Buckles, Front Pouch and Red Pen, Blue Shirt",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-pinstripe-suit-torso-with-m-pin.jpg": {
+    "name": "Pinstripe Suit with 'M' Pin",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-dark-blue-jacket-torso-with-green-hoodie-white-shirt-973pb5803c01.jpg": {
+    "name": "Dark Blue Jacket with Green Hoodie & White Shirt",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-torso-jacket-with-pockets-white-stripes-and-silver-belt-buckle-and-wildlife-rescue-logo-with-paw-p.jpg": {
+    "name": "Jacket with Pockets, White Stripes and Silver Belt Buckle and Wildlife Rescue Logo with Paw P",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-torso-wildlife-rescue-with-blue-vest-pockets-and-rescue-on-back-pattern-tan-arms-yellow-hand.jpg": {
+    "name": "Wildlife Rescue with Blue Vest, Pockets and 'RESCUE' on Back",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-dark-red-torso-female-laced-corset-with-white-blouse-pattern-white-arms-yellow-hands.jpg": {
+    "name": "Dark Red Female Laced Corset with White Blouse - White Arms - Yellow Hands",
+    "crop": "left"
+  },
+  "body/cab-green-torso-coveralls-with-pockets-red-undershirt-with-circles-silver-diaz-id-badge-black-splotch-pattern-green-arms-dark-bluish-gray-hands.jpg": {
+    "name": "Green Coveralls with Pockets, Red Undershirt with Circles, Silver 'DIAZ' ID Badge, Black Splotch - Green Arms - Dark Bluish Gray Hands",
+    "crop": "left"
+  },
+  "body/cab-dark-blue-love-is-love-statement-shirt-torso-973pb4445c01.jpg": {
+    "name": "Dark Blue “Love Is Love” Statement Shirt",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-torso-safari-shirt-with-red-scarf-belt-and-water-bottle-pattern-tan-arms-yellow-hands.jpg": {
+    "name": "Safari Shirt with Red Scarf, Belt and Water Bottle",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-white-torso-sports-shirt-with-number-39-orange-basketball-orange-and-red-diamonds-and-back-print-pattern-yellow-arms-yellow-hands.jpg": {
+    "name": "White Sports Shirt with Number 39, Orange Basketball, Orange and Red Diamonds and Back - Yellow Arms - Yellow Hands",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-white-torso-baseball-jersey-with-vertical-red-stripes-buttons-and-clutchers-logo-pattern-white-arms-yellow-hands.jpg": {
+    "name": "White Baseball Jersey with Vertical Red Stripes, Buttons and 'Clutchers' Logo - White Arms - Yellow Hands",
+    "crop": "left"
+  },
+  "body/cab-black-jacket-torso-with-fang-necklace-yin-yang-belt-973pb4153c01.jpg": {
+    "name": "Black Jacket with Fang Necklace & Yin Yang Belt",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-topcoat-torso-with-waistcoat-pattern-973pb0872c01.jpg": {
+    "name": "Topcoat with Waistcoat",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-suit-minifigure-torso-973pb4422c01.jpg": {
+    "name": "Suit",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-female-prisoner-uniform-torso-striped.jpg": {
+    "name": "Female Prisoner Uniform (Striped)",
+    "crop": "left"
+  },
+  "body/cab-pixelated-torso-with-dark-orange-and-brown-stripes-silver-belt-buckle.jpg": {
+    "name": "Pixelated with Dark Orange and Brown Stripes Silver Belt Buckle",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-lime-torso-hoodie-with-white-drawstrings-silver-adjusters-and-kangaroo-pockets-pattern-yellow-arms-yellow-hands.jpg": {
+    "name": "Lime Hoodie with White Drawstrings, Silver Adjusters and Kangaroo Pockets - Yellow Arms - Yellow Hands",
+    "crop": "left"
+  },
+  "body/cab-city-worker-jacket-torso-blue-with-orange-stripes.jpg": {
+    "name": "City Worker Jacket (Blue with Orange Stripes)",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-lime-torso-in-white-shirt.jpg": {
+    "name": "lime in white shirt",
+    "crop": "left"
+  },
+  "body/cab-ornate-blue-vest-torso-with-bow-tie.jpg": {
+    "name": "Ornate Blue Vest with Bow Tie",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-female-leather-jacket-torso-973pb2828c01.jpg": {
+    "name": "Female Leather Jacket",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-denim-jacket-torso-973pb5355c01.jpg": {
+    "name": "Denim Jacket",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-lime-torso-shirt-with-gold-pendant-and-orange-bead-necklace-pattern-lime-arms-yellow-hands.jpg": {
+    "name": "Lime Shirt with Gold Pendant and Orange Bead Necklace",
+    "crop": "left"
+  },
+  "body/cab-green-torso-pixelated-nougat-neck-bright-green-dark-green-and-yellow-shirt-pattern-light-bluish-gray-arm-left-green-arm-right-nougat-hands.jpg": {
+    "name": "Green Pixelated Nougat Neck, Bright Green, Dark Green and Yellow Shirt - Light Bluish Gray Arm Left - Green Arm Right - Nougat Hands",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-construction-worker-vest-torso-orange.jpg": {
+    "name": "Construction Worker Vest (Orange)",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-black-leather-jacket-torso-973pb4444c01.jpg": {
+    "name": "Black Leather Jacket",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-red-torso-suit-jacket-with-two-buttons-necklace-and-badge-pattern-red-arms-yellow-hands.jpg": {
+    "name": "Red Suit Jacket with Two Buttons, Necklace and Badge - Red Arms - Yellow Hands",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-female-suit-jacket-minifigure-torso-973pb3853c01.jpg": {
+    "name": "Female Suit Jacket",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-lego-red-hoodie-with-name-tag-torso.jpg": {
+    "name": "Red Hoodie with Name Tag",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-female-jacket-and-tied-shirt-torso-973pb4771c01.jpg": {
+    "name": "Female Jacket and Tied Shirt",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-white-torso-vest-with-open-shirt-medallion-and-hairy-chest-pattern-dark-purple-arms-yellow-hands.jpg": {
+    "name": "White Vest with Open Shirt, Medallion and Hairy Chest - Dark Purple Arms - Yellow Hands",
+    "crop": "left"
+  },
+  "body/cab-torso-hoodie-with-medium-blue-and-white-diagonal-stripes-pattern-bright-pink-arms-yellow-hands-bright-pink-arms-yellow-hands.jpg": {
+    "name": "Hoodie with Medium Blue and White Diagonal Stripes",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-lego-tuxedo-torso-973pb5311c02-vest-bow-tie.jpg": {
+    "name": "Tuxedo Vest Bow Tie",
+    "crop": "left"
+  },
+  "body/cab-light-bluish-gray-torso-henley-shirt-with-light-nougat-neck-and-creases-pattern-light-bluish-gray-arms-light-nougat-hands.jpg": {
+    "name": "Light Bluish Gray Henley Shirt with Light Nougat Neck and Creases - Light Bluish Gray Arms - Light Nougat Hands",
+    "crop": "left"
+  },
+  "body/cab-torso-viking-vest-with-chain-mail-and-belts-pattern-yellow-arms-yellow-hands.jpg": {
+    "name": "Viking Vest with Chain Mail and Belts",
+    "crop": "left"
+  },
+  "body/cab-female-tank-top-torso-with-shoulder-bag-scarf.jpg": {
+    "name": "Female Tank Top with Shoulder Bag & Scarf",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-torso-dark-red-coat-with-fur-axe-necklace.jpg": {
+    "name": "Dark Red Coat with Fur & Axe Necklace",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-torso-black-apron-with-gold-pentagon-and-paw-print-over-shirt-with-white-collar-pattern.jpg": {
+    "name": "Black Apron with Gold Pentagon and Paw over Shirt with White Collar",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-red-torso-suit-jacket-two-buttons-necklace-press-pass-and-back-print-pattern-red-arms-yellow-hands.jpg": {
+    "name": "Red Suit Jacket, Two Buttons, Necklace, Press Pass and Back - Red Arms - Yellow Hands",
+    "crop": "left"
+  },
+  "body/cab-diving-suit-torso-973pb4194c01-printed-minifigure-part.jpg": {
+    "name": "Diving Suit – Printed Part",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-torso-with-gray-jacket-and-black-shirt-pattern.jpg": {
+    "name": "Gray Jacket and Black Shirt",
+    "crop": "left"
+  },
+  "body/cab-lego-minifigure-torso-overalls-973pb3472c01.jpg": {
+    "name": "Overalls",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-torso-with-pink-striped-top-and-flower-necklace.jpg": {
+    "name": "Pink Striped Top and Flower Necklace",
+    "crop": "left",
+    "exclude": true
+  },
+  "body/cab-white-torso-sand-green-apron-dark-green-splotches-pen-and-pad-in-pocket-pattern-white-arms-yellow-hands.jpg": {
+    "name": "White Sand Green Apron, Dark Green Splotches, Pen and Pad in Pocket - White Arms - Yellow Hands",
+    "crop": "left"
+  },
+  "pants/cab-hips-legs-with-black-pockets-and-white-flaps-pattern.jpg": {
+    "name": "Black Pockets and White Flaps",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-hips-legs-side-panels-buckles-970c00pb1564.jpg": {
+    "name": "Side Panels & Buckles",
+    "crop": "left"
+  },
+  "pants/cab-hips-and-legs-with-white-fur-pattern.jpg": {
+    "name": "White Fur",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-hips-legs-with-green-scales-gold-knee-pads-970c00pb1100.jpg": {
+    "name": "Green Scales & Gold Knee Pads",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-hips-and-legs-with-black-boots-pattern.jpg": {
+    "name": "Gray with Black Boots",
+    "crop": "left"
+  },
+  "pants/cab-lego-minifigure-legs-with-orange-boots-pattern-970c00pb1202.jpg": {
+    "name": "Orange Boots",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-hips-and-legs-with-gold-medium-azure-and-white-circuitry-and-boot-tips-pattern.jpg": {
+    "name": "Gold, Medium Azure, and White Circuitry and Boot Tips",
+    "crop": "left"
+  },
+  "pants/cab-hips-and-legs-with-tiny-silver-triangles-light-bluish-gray-knee-wrappings-black-zori-sandals-patt.jpg": {
+    "name": "Tiny Silver Triangles, Light Bluish Gray Knee Wrappings, Black Zori Sandals Patt",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-hips-and-legs-with-earbud-dark-turquoise-wire-pattern.jpg": {
+    "name": "Earbud & Dark Turquoise Wire",
+    "crop": "left"
+  },
+  "pants/cab-white-legs-with-elegant-gold-pattern.jpg": {
+    "name": "White with Elegant Gold",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-white-legs-sand-blue-hems-gold-trim-coral-wraps-970c00pb1649.jpg": {
+    "name": "White Sand Blue Hems Gold Trim Coral Wraps",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-red-minifigure-legs-with-diagonal-stripes.jpg": {
+    "name": "Red with Diagonal Stripes",
+    "crop": "left"
+  },
+  "pants/cab-legs-with-chain-key-silver-toes-purple-wraps.jpg": {
+    "name": "Chain, Key, Silver Toes & Purple Wraps",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-red-minifigure-legs-with-blue-belt-970c05pb29.jpg": {
+    "name": "Red with Blue Belt",
+    "crop": "left"
+  },
+  "pants/cab-lego-minifigure-legs-with-green-boots-pattern-970c00pb1596.jpg": {
+    "name": "Green Boots",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-lego-minifigure-legs-970c00pb1888-cracked-lava-pattern.jpg": {
+    "name": "Cracked Lava",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-white-legs-with-gold-and-black-boots.jpg": {
+    "name": "White with Gold and Black Boots",
+    "crop": "left"
+  },
+  "pants/cab-hips-and-medium-legs-plain.jpg": {
+    "name": "Medium Plain",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-scuba-suit-legs-with-straps-and-knee-pads.jpg": {
+    "name": "Scuba Suit with Straps and Knee Pads",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-dark-blue-hips-and-legs-with-reddish-brown-belt-and-hip-holster-on-right-side-pattern.jpg": {
+    "name": "Dark Blue with Reddish Brown Belt and Hip Holster on Right Side",
+    "crop": "left"
+  },
+  "pants/cab-hips-and-legs-with-stormtrooper-bandages-970c00pb1668.jpg": {
+    "name": "Stormtrooper Bandages",
+    "crop": "left"
+  },
+  "pants/cab-legs-with-tool-belt-and-boot-print.jpg": {
+    "name": "Tool Belt and Boot",
+    "crop": "left"
+  },
+  "pants/cab-hips-and-legs-with-reddish-brown-belt-with-silver-buckle-and-circles-tan-tunic-with-fur-hem-and-ce.jpg": {
+    "name": "Reddish Brown Belt with Silver Buckle and Circles, Tan Tunic with Fur Hem and Ce",
+    "crop": "left"
+  },
+  "pants/cab-minifigure-legs-with-lime-belt-and-torn-knees-970c00pb1465.jpg": {
+    "name": "Lime Belt and Torn Knees",
+    "crop": "left"
+  },
+  "pants/cab-hips-and-legs-with-dark-brown-belt-silver-buckle-and-pockets-with-black-stitching-pattern.jpg": {
+    "name": "Dark Brown Belt, Silver Buckle and Pockets with Black Stitching",
+    "crop": "left"
+  },
+  "pants/cab-hips-and-legs-with-red-wraps-and-gold-belt-pattern.jpg": {
+    "name": "Red Wraps and Gold Belt",
+    "crop": "left"
+  },
+  "pants/cab-legs-with-yellow-boots-970c00pb0575.jpg": {
+    "name": "Yellow Boots",
+    "crop": "left"
+  },
+  "pants/cab-olive-green-legs-with-dark-brown-boots-970c00pb1573.jpg": {
+    "name": "Olive Green with Dark Brown Boots",
+    "crop": "left"
+  },
+  "pants/cab-hips-and-white-legs.jpg": {
+    "name": "Light Gray",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-orange-legs-with-printed-belt-and-fur-970c04pb13.jpg": {
+    "name": "Orange with Printed Belt and Fur",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-tan-legs-with-orange-apron-pattern.jpg": {
+    "name": "tan with orange apron",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-bright-light-blue-hips-and-legs-with-ripped-denim-pants-pockets-black-belt-pattern.jpg": {
+    "name": "Bright Light Blue with Ripped Denim Pants, Pockets, Black Belt",
+    "crop": "left"
+  },
+  "pants/cab-minifigure-legs-with-tied-shirt-oil-stain-print-970c00pb1731.jpg": {
+    "name": "Tied Shirt & Oil Stain",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-lego-minifigure-legs-with-black-boots-pattern-970c00pb1158.jpg": {
+    "name": "Red with Black Boots",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-black-tunic-print-legs-970c00pb1663.jpg": {
+    "name": "Black Tunic",
+    "crop": "left"
+  },
+  "pants/cab-legs-with-green-belt-and-wrapping-print.jpg": {
+    "name": "Green Belt and Wrapping",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-hips-and-legs-with-gold-and-black-belt-star-and-panel-pattern.jpg": {
+    "name": "Gold and Black Belt, Star and Panel",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-printed-minifigure-legs-with-belt-and-strap-design.jpg": {
+    "name": "Printed with Belt and Strap Design",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-minifigure-legs-with-dark-brown-rivets-and-silver-toes.jpg": {
+    "name": "Dark Brown Rivets and Silver Toes",
+    "crop": "left"
+  },
+  "pants/cab-minifigure-legs-with-sandals-and-pocket-pattern-970c00pb1682.jpg": {
+    "name": "Sandals and Pocket",
+    "crop": "left"
+  },
+  "pants/cab-hips-and-legs-with-ripped-jeans-print.jpg": {
+    "name": "Ripped Jeans",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-mummy-minifigure-legs-970c00pb1480-printed-wrap-design.jpg": {
+    "name": "Mummy – Printed Wrap Design",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-hips-and-legs-with-lavender-fur-pattern.jpg": {
+    "name": "Lavender Fur",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-legs-with-blue-electricity-pattern-970c00pb1875.jpg": {
+    "name": "Blue Electricity",
+    "crop": "left",
+    "exclude": true
+  },
+  "pants/cab-black-wolf-tribe-legs-970c00pb1704.jpg": {
+    "name": "Black Wolf Tribe",
+    "crop": "left"
+  },
+  "hair/lpb-10427-black-minifig-headgear-turban-with-hole.webp": {
+    "name": "Black Turban",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-10571-white-minifig-headgear-hair-female-mid-length-with-part-over-front-of-right-shoulder.webp": {
+    "name": "White Mid-Length Hair",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-10575-tan-minifig-hair-tousled-and-layered.webp": {
+    "name": "Tan Tousled Hair",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-10698-dark-orange-minifig-headgear-hair-mid-length-tousled-with-center-part.webp": {
+    "name": "Dark Orange Tousled Hair",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-10720-dark-blue-police-hat.webp": {
+    "name": "Police Hat",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-11068-black-minifig-headgear-helmet-with-blue-trident.webp": {
+    "name": "Trident Helmet",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-11071-black-minifig-hair-spiked.webp": {
+    "name": "Black Spiked Hair",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-11500-dark-tan-minifig-headgear-hair-short-bob-cut.webp": {
+    "name": "Dark Tan Bob",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-11502-bright-light-yellow-minifig-headgear-hair-female-ponytail.webp": {
+    "name": "Blonde Ponytail",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-12471-black-minifig-headgear-hair-mohawk.webp": {
+    "name": "Mohawk",
+    "keyOut": "red"
+  },
+  "hair/lpb-12550-dark-orange-minifig-hair-female-mid-length-with-part-over-right-shoulder.webp": {
+    "name": "Dark Orange Wavy Hair",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-14016-black-minifigure-headgear-helmet-motorcycle-open-face-with-visor.webp": {
+    "name": "Motorcycle Helmet",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-15383-medium-nougat-minifig-hair-swept-left-tousled.webp": {
+    "name": "Nougat Swept Hair",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-4852-black-minifig-headgear-helmet-army.webp": {
+    "name": "Army Helmet",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-5300-black-minifig-headgear-hair-short-bob-cut.webp": {
+    "name": "Black Short Bob",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-5549-black-minifig-headgear-keffiyeh.webp": {
+    "name": "Keffiyeh",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-6457-dark-tan-minifig-headgear-hair-short-tousled.webp": {
+    "name": "Dark Tan Short Hair",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-6458-black-minifig-headgear-hair-short-tousled.webp": {
+    "name": "Black Short Hair",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-6460-black-minifig-headgear-hair-short-tousled-with-side-part.webp": {
+    "name": "Black Side Part",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-6480-black-minifig-headgear-cavalry-cap-kepi.webp": {
+    "name": "Black Kepi",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-6924-black-helmet-and-trans-black-visor.webp": {
+    "name": "Visor Helmet",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-7120-headgear-hood-dark-blue.webp": {
+    "name": "Dark Blue Hood",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-7523-dark-orange-minifig-headgear-hair-female-long-smooth-with-side-part.webp": {
+    "name": "Dark Orange Long Hair",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-8367-dark-tan-minifig-headgear-cavalry-cap-kepi.webp": {
+    "name": "Dark Tan Kepi",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-8368-dark-brown-minifig-hair-combed-front-to-rear.webp": {
+    "name": "Dark Brown Combed Hair",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-8485-brown-minifig-headgear-cavalry-cap-kepi.webp": {
+    "name": "Brown Kepi",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-9516-black-headgear-mini-cap.webp": {
+    "name": "Mini Cap",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-9659-black-minifig-headgear-hair-mid-length-tousled-with-center-part.webp": {
+    "name": "Black Mid-Length Hair",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/lpb-9849-dark-blue-police-hat-with-gold-badge.webp": {
+    "name": "Police Hat with Badge",
+    "keyOut": "red",
+    "exclude": true
+  },
+  "hair/eeb-2113-lego-friends-minifigure-hair-black-long-straight.jpg": {
+    "name": "Friends Hair Black Long Straight",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1759-lego-friends-minifigure-hair-dark-brown-long-curly.jpg": {
+    "name": "Friends Hair Dark Brown Long Curly",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2266-lego-minifigure-hair-black-mohawk.jpg": {
+    "name": "Black Mohawk",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-444-lego-minifigure-hair-blonde-tousled-side-part.jpg": {
+    "name": "Blonde Tousled Side Part",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-440-lego-minifigure-hair-female-grandma-gray-bun.jpg": {
+    "name": "Female / Grandma Gray Bun",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3435-lego-minifigure-hair-female-black-curly.jpg": {
+    "name": "Female Black Curly",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2383-lego-minifigure-hair-female-black-long-and-wavy.jpg": {
+    "name": "Female Black Long And Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2118-lego-minifigure-hair-female-black-ponytail.jpg": {
+    "name": "Female Black Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3086-lego-minifigure-hair-female-black-two-pigtails.jpg": {
+    "name": "Female Black Two Pigtails",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-409-lego-minifigure-hair-female-blonde-ponytail.jpg": {
+    "name": "Female Blonde Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2636-lego-ninjago-mask-red.jpg": {
+    "name": "Ninjago Mask Red",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2634-lego-asian-conical-hat-red.jpg": {
+    "name": "Asian Conical Hat Red",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1781-lego-baseball-cap-dark-blue.jpg": {
+    "name": "Baseball Cap Dark Blue",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3120-lego-batman-mask-black.jpg": {
+    "name": "Batman Mask Black",
+    "keyOut": "white",
+    "scale": 1.12,
+    "offsetY": -0.025,
+    "cut": [
+      [
+        0.3497,
+        0.69,
+        0.3123,
+        0.165
+      ]
+    ]
+  },
+  "hair/eeb-4000-lego-castle-knights-helmet-flat-silver.jpg": {
+    "name": "Castle / Knight'S Helmet Flat Silver",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3988-lego-conical-asian-samurai-hat-dark-brown.jpg": {
+    "name": "Conical Asian / Samurai Hat Dark Brown",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "body/eeb-3402-lego-minifigure-torso-female-orange-sweater-green-shirt.jpg": {
+    "name": "Female Orange Sweater Green Shirt"
+  },
+  "body/eeb-3633-lego-minifigure-torso-beige-sweater-vest-collared-shirt.jpg": {
+    "name": "Beige Sweater Vest Collared Shirt"
+  },
+  "body/eeb-621-lego-minifigure-torso-black-ninja-robe-kimono-with-dragon.jpg": {
+    "name": "Black Ninja Robe / Kimono With Dragon"
+  },
+  "pants/eeb-2712-lego-minifigure-legs-black-pants-with-belt-and-chains.jpg": {
+    "name": "Black Pants With Belt And Chains"
+  },
+  "pants/eeb-3727-lego-minifigure-legs-black-long-skirt.jpg": {
+    "name": "Black Long Skirt",
+    "exclude": true
+  },
+  "pants/eeb-3810-lego-minifigure-legs-black-pants-orange-boots.jpg": {
+    "name": "Black Pants Orange Boots"
+  },
+  "hair/eeb-3078-lego-minifigure-hair-female-dark-brown-long-wavy.jpg": {
+    "name": "Female Dark Brown Long Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2916-lego-minifigure-hair-female-white-long-wavy.jpg": {
+    "name": "Female White Long Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1751-lego-friends-minifigure-hair-black-long-wavy.jpg": {
+    "name": "Friends Hair Black Long Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2114-lego-friends-minifigure-hair-black-long-wavy.jpg": {
+    "name": "Friends Hair Black Long Wavy 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1765-lego-friends-minifigure-hair-blonde-long-straight.jpg": {
+    "name": "Friends Hair Blonde Long Straight",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2115-lego-friends-minifigure-hair-blonde-long-wavy.jpg": {
+    "name": "Friends Hair Blonde Long Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2116-lego-friends-minifigure-hair-dark-brown-long-straight.jpg": {
+    "name": "Friends Hair Dark Brown Long Straight",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-753-lego-friends-minifigure-hair-dark-red-long-ponytail.jpg": {
+    "name": "Friends Hair Dark Red Long Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1932-lego-friends-minifigure-hair-red-long-ponytail.jpg": {
+    "name": "Friends Hair Red Long Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2184-lego-friends-minifigure-hair-reddish-brown-long-wavy.jpg": {
+    "name": "Friends Hair Reddish Brown Long Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3440-lego-minifig-hair-male-dark-brown-curly.jpg": {
+    "name": "Male Dark Brown Curly",
+    "keyOut": "white",
+    "offsetY": -0.015
+  },
+  "hair/eeb-1727-lego-minifigure-hair-black-mid-length.jpg": {
+    "name": "Black Mid Length",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3981-lego-minifigure-hair-black-narrow-swept-back-with-ponytail.jpg": {
+    "name": "Black Narrow Swept Back With Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2119-lego-minifigure-hair-black-tousled-long-bangs.jpg": {
+    "name": "Black Tousled Long Bangs",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1732-lego-minifigure-hair-black-tousled-side-part.jpg": {
+    "name": "Black Tousled Side Part",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3675-lego-minifigure-hair-blonde-mid-length.jpg": {
+    "name": "Blonde Mid Length",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4040-lego-minifigure-hair-blonde-shirt-tousled.jpg": {
+    "name": "Blonde Shirt Tousled",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3072-lego-minifigure-hair-blonde-tousled-layered.jpg": {
+    "name": "Blonde Tousled Layered",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2124-lego-minifigure-hair-blonde-tousled-side-part.jpg": {
+    "name": "Blonde Tousled Side Part 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2123-lego-minifigure-hair-bright-light-yellow-blonde-mid-length.jpg": {
+    "name": "Bright Light Yellow / Blonde Mid Length",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3676-lego-minifigure-hair-brown-mid-length.jpg": {
+    "name": "Brown Mid Length",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3778-lego-minifigure-hair-brown-tousled-layered.jpg": {
+    "name": "Brown Tousled Layered",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3363-lego-minifigure-hair-brown-tousled-side-part.jpg": {
+    "name": "Brown Tousled Side Part",
+    "keyOut": "white",
+    "scale": 0.96,
+    "offsetY": -0.028
+  },
+  "hair/eeb-3441-lego-minifigure-hair-dark-brown-mid-length.jpg": {
+    "name": "Dark Brown Mid Length",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-418-lego-minifigure-hair-female-grandma-gray-wavy.jpg": {
+    "name": "Female / Grandma Gray Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1761-lego-minifigure-hair-female-grandma-white-wavy.jpg": {
+    "name": "Female / Grandma White Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1730-lego-minifigure-hair-female-black.jpg": {
+    "name": "Female Black",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-431-lego-minifigure-hair-female-black-bangs-bob-cut.jpg": {
+    "name": "Female Black Bangs Bob Cut",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-439-lego-minifigure-hair-female-black-bun.jpg": {
+    "name": "Female Black Bun",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3433-lego-minifigure-hair-female-black-coiled-with-ponytail.jpg": {
+    "name": "Female Black Coiled With Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3672-lego-minifigure-hair-female-black-curly.jpg": {
+    "name": "Female Black Curly 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-397-lego-minifigure-hair-female-black-curly-bun.jpg": {
+    "name": "Female Black Curly Bun",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3987-lego-minifigure-hair-female-black-dark-red-beanie-hat.jpg": {
+    "name": "Female Black Dark Red Beanie Hat",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2803-lego-minifigure-hair-female-black-headscarf-gypsy-pirate.jpg": {
+    "name": "Female Black Headscarf Gypsy / Pirate",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3683-lego-minifigure-hair-female-black-layered.jpg": {
+    "name": "Female Black Layered",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1737-lego-minifigure-hair-female-black-long.jpg": {
+    "name": "Female Black Long",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4120-lego-minifigure-hair-female-black-long-with-bangs.jpg": {
+    "name": "Female Black Long With Bangs",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2804-lego-minifigure-hair-female-black-long-with-headband.jpg": {
+    "name": "Female Black Long With Headband",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3975-lego-minifigure-hair-female-black-long-ponytail.jpg": {
+    "name": "Female Black Long Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3958-lego-minifigure-hair-female-black-long-straight.jpg": {
+    "name": "Female Black Long Straight",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3088-lego-minifigure-hair-female-black-long-wavy.jpg": {
+    "name": "Female Black Long Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3085-lego-minifigure-hair-female-black-mid-length-hairband.jpg": {
+    "name": "Female Black Mid Length Hairband",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2265-lego-minifigure-hair-female-black-ponytail.jpg": {
+    "name": "Female Black Ponytail 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3084-lego-minifigure-hair-female-black-ponytail.jpg": {
+    "name": "Female Black Ponytail 3",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3552-lego-minifigure-hair-female-black-ponytail.jpg": {
+    "name": "Female Black Ponytail 4",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3434-lego-minifigure-hair-female-black-short-with-side-part.jpg": {
+    "name": "Female Black Short With Side Part",
+    "keyOut": "white",
+    "scale": 0.96,
+    "offsetY": -0.038
+  },
+  "hair/eeb-2382-lego-minifigure-hair-female-black-swept-back-into-bun.jpg": {
+    "name": "Female Black Swept Back Into Bun",
+    "keyOut": "white",
+    "scale": 0.96,
+    "offsetY": -0.008
+  },
+  "hair/eeb-1733-lego-minifigure-hair-female-black-swept-sideways.jpg": {
+    "name": "Female Black Swept Sideways",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2268-lego-minifigure-hair-female-blonde-blue-band.jpg": {
+    "name": "Female Blonde Blue Band",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2269-lego-minifigure-hair-female-blonde-bun.jpg": {
+    "name": "Female Blonde Bun",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3780-lego-minifigure-hair-female-blonde-french-braid-ponytail.jpg": {
+    "name": "Female Blonde French Braid Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2120-lego-minifigure-hair-female-blonde-long-and-wavy.jpg": {
+    "name": "Female Blonde Long And Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3579-lego-minifigure-hair-female-blonde-long-and-wavy.jpg": {
+    "name": "Female Blonde Long And Wavy 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4102-lego-minifigure-hair-female-blonde-medium-length.jpg": {
+    "name": "Female Blonde Medium Length",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2121-lego-minifigure-hair-female-blonde-ponytail.jpg": {
+    "name": "Female Blonde Ponytail 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3578-lego-minifigure-hair-female-blonde-ponytail.jpg": {
+    "name": "Female Blonde Ponytail 3",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3367-lego-minifigure-hair-female-blonde-ponytail-dark-red-ball-cap.jpg": {
+    "name": "Female Blonde Ponytail Dark Red Ball Cap",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3952-lego-minifigure-hair-female-blonde-ponytail-white-ball-cap.jpg": {
+    "name": "Female Blonde Ponytail White Ball Cap",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-416-lego-minifigure-hair-female-blonde-short-with-side-part.jpg": {
+    "name": "Female Blonde Short With Side Part",
+    "keyOut": "white",
+    "scale": 1.0125,
+    "offsetX": 0.0025,
+    "offsetY": -0.0328
+  },
+  "hair/eeb-2794-lego-minifigure-hair-female-blonde-swept-sideways.jpg": {
+    "name": "Female Blonde Swept Sideways",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3956-lego-minifigure-hair-female-blonde-wavy.jpg": {
+    "name": "Female Blonde Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4305-lego-minifigure-hair-female-blonde-wavy-shoulder-length.jpg": {
+    "name": "Female Blonde Wavy Shoulder Length",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3302-lego-minifigure-hair-female-blue-ponytail.jpg": {
+    "name": "Female Blue Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3962-lego-minifigure-hair-female-brown-french-braid-ponytail.jpg": {
+    "name": "Female Brown French Braid Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2129-lego-minifigure-hair-female-brown-ponytail.jpg": {
+    "name": "Female Brown Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-389-lego-minifigure-hair-female-brown-ponytail-ball-cap.jpg": {
+    "name": "Female Brown Ponytail Ball Cap",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2819-lego-minifigure-hair-female-brown-red-beanie-hat.jpg": {
+    "name": "Female Brown Red Beanie Hat",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-420-lego-minifigure-hair-female-brown-swept-back-into-bun.jpg": {
+    "name": "Female Brown Swept Back Into Bun",
+    "keyOut": "white",
+    "offsetY": -0.015
+  },
+  "hair/eeb-1739-lego-minifigure-hair-female-dark-blonde.jpg": {
+    "name": "Female Dark Blonde",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1746-lego-minifigure-hair-female-dark-blonde-braided.jpg": {
+    "name": "Female Dark Blonde Braided",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3674-lego-minifigure-hair-female-dark-blonde-bun.jpg": {
+    "name": "Female Dark Blonde Bun",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3562-lego-minifigure-hair-female-dark-blonde-french-braid-ponytail.jpg": {
+    "name": "Female Dark Blonde French Braid Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3081-lego-minifigure-hair-female-dark-brown-bangs-bob-cut.jpg": {
+    "name": "Female Dark Brown Bangs Bob Cut",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3082-lego-minifigure-hair-female-dark-brown-braided.jpg": {
+    "name": "Female Dark Brown Braided",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3979-lego-minifigure-hair-female-dark-brown-braided-with-knot-bun.jpg": {
+    "name": "Female Dark Brown Braided With Knot Bun",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2270-lego-minifigure-hair-female-dark-brown-bun.jpg": {
+    "name": "Female Dark Brown Bun",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3079-lego-minifigure-hair-female-dark-brown-curly-two-buns.jpg": {
+    "name": "Female Dark Brown Curly Two Buns",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1744-lego-minifigure-hair-female-dark-brown-french-braid-ponytail.jpg": {
+    "name": "Female Dark Brown French Braid Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2795-lego-minifigure-hair-female-dark-brown-long.jpg": {
+    "name": "Female Dark Brown Long",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3300-lego-minifigure-hair-female-dark-brown-long-and-wavy.jpg": {
+    "name": "Female Dark Brown Long And Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2125-lego-minifigure-hair-female-dark-brown-ponytail.jpg": {
+    "name": "Female Dark Brown Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3681-lego-minifigure-hair-female-dark-brown-ponytail.jpg": {
+    "name": "Female Dark Brown Ponytail 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2613-lego-minifigure-hair-female-dark-brown-swept-sideways.jpg": {
+    "name": "Female Dark Brown Swept Sideways",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3438-lego-minifigure-hair-female-dark-brown-two-pigtails.jpg": {
+    "name": "Female Dark Brown Two Pigtails",
+    "keyOut": "white",
+    "scale": 1.056,
+    "offsetX": -0.015,
+    "offsetY": -0.008
+  },
+  "hair/eeb-3301-lego-minifigure-hair-female-dark-orange-ginger-bun.jpg": {
+    "name": "Female Dark Orange / Ginger Bun",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2176-lego-minifigure-hair-female-dark-pink-afro.jpg": {
+    "name": "Female Dark Pink Afro",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2797-lego-minifigure-hair-female-dark-pink-layered.jpg": {
+    "name": "Female Dark Pink Layered",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2126-lego-minifigure-hair-female-ginger-long.jpg": {
+    "name": "Female Ginger Long",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2127-lego-minifigure-hair-female-ginger-long-and-wavy.jpg": {
+    "name": "Female Ginger Long And Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3531-lego-minifigure-hair-female-ginger-long-straight.jpg": {
+    "name": "Female Ginger Long Straight",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-411-lego-minifigure-hair-female-ginger-ponytail.jpg": {
+    "name": "Female Ginger Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1768-lego-minifigure-hair-female-ginger-ponytail.jpg": {
+    "name": "Female Ginger Ponytail 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2105-lego-minifigure-hair-female-ginger-ponytail-ball-cap.jpg": {
+    "name": "Female Ginger Ponytail Ball Cap",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-414-lego-minifigure-hair-female-ginger-swept-sideways.jpg": {
+    "name": "Female Ginger Swept Sideways",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2796-lego-minifigure-hair-female-ginger-two-pigtails.jpg": {
+    "name": "Female Ginger Two Pigtails",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3772-lego-minifigure-hair-female-ginger-wavy.jpg": {
+    "name": "Female Ginger Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2798-lego-minifigure-hair-female-gray-french-braid-ponytail.jpg": {
+    "name": "Female Gray French Braid Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3950-lego-minifigure-hair-female-gray-long-wavy.jpg": {
+    "name": "Female Gray Long Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-417-lego-minifigure-hair-female-gray-short-with-side-part.jpg": {
+    "name": "Female Gray Short With Side Part",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3060-lego-minifigure-hair-female-green-long-and-wavy.jpg": {
+    "name": "Female Green Long And Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1946-lego-minifigure-hair-female-lavender-yellow-beanie-hat.jpg": {
+    "name": "Female Lavender Yellow Beanie Hat",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3966-lego-minifigure-hair-female-light-brown-medium-nougat-long.jpg": {
+    "name": "Female Light Brown / Medium Nougat Long",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1741-lego-minifigure-hair-female-light-brown-braided.jpg": {
+    "name": "Female Light Brown Braided",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2386-lego-minifigure-hair-female-light-brown-mid-length.jpg": {
+    "name": "Female Light Brown Mid Length",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1743-lego-minifigure-hair-female-light-brown-ponytail.jpg": {
+    "name": "Female Light Brown Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3092-lego-minifigure-hair-female-light-brown-ponytail.jpg": {
+    "name": "Female Light Brown Ponytail 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-415-lego-minifigure-hair-female-light-brown-swept-sideways.jpg": {
+    "name": "Female Light Brown Swept Sideways",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2789-lego-minifigure-hair-female-lime-ponytail.jpg": {
+    "name": "Female Lime Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2800-lego-minifigure-hair-female-magenta-long-wavy.jpg": {
+    "name": "Female Magenta Long Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3061-lego-minifigure-hair-female-orange-bangs-bob-cut.jpg": {
+    "name": "Female Orange Bangs Bob Cut",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3062-lego-minifigure-hair-female-orange-ponytail.jpg": {
+    "name": "Female Orange Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-394-lego-minifigure-hair-female-pink-beehive-style.jpg": {
+    "name": "Female Pink Beehive Style",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3059-lego-minifigure-hair-female-pink-long-wavy.jpg": {
+    "name": "Female Pink Long Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3063-lego-minifigure-hair-female-purple-beehive-style.jpg": {
+    "name": "Female Purple Beehive Style",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2128-lego-minifigure-hair-female-red-long-and-wavy.jpg": {
+    "name": "Female Red Long And Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3839-lego-minifigure-hair-female-reddish-brown-bun.jpg": {
+    "name": "Female Reddish Brown Bun",
+    "keyOut": "white"
+  },
+  "hair/eeb-1931-lego-minifigure-hair-female-reddish-brown-long.jpg": {
+    "name": "Female Reddish Brown Long",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3501-lego-minifigure-hair-female-reddish-brown-long-and-wavy.jpg": {
+    "name": "Female Reddish Brown Long And Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3083-lego-minifigure-hair-female-reddish-brown-long-with-bangs.jpg": {
+    "name": "Female Reddish Brown Long With Bangs",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2616-lego-minifigure-hair-female-reddish-brown-long-wavy.jpg": {
+    "name": "Female Reddish Brown Long Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4119-lego-minifigure-hair-female-reddish-brown-long-wavy.jpg": {
+    "name": "Female Reddish Brown Long Wavy 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-406-lego-minifigure-hair-female-reddish-brown-ponytail.jpg": {
+    "name": "Female Reddish Brown Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1740-lego-minifigure-hair-female-reddish-brown-wavy.jpg": {
+    "name": "Female Reddish Brown Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2917-lego-minifigure-hair-female-white-bangs-bob-cut.jpg": {
+    "name": "Female White Bangs Bob Cut",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1745-lego-minifigure-hair-female-white-braided.jpg": {
+    "name": "Female White Braided",
+    "keyOut": "white"
+  },
+  "hair/eeb-2808-lego-minifigure-hair-female-white-french-braid-ponytail.jpg": {
+    "name": "Female White French Braid Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3580-lego-minifigure-hair-female-white-long-and-wavy.jpg": {
+    "name": "Female White Long And Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2037-lego-minifigure-hair-female-yellow-long.jpg": {
+    "name": "Female Yellow Long",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2080-lego-minifigure-hair-ginger-mid-length.jpg": {
+    "name": "Ginger Mid Length",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2807-lego-minifigure-hair-ginger-tousled-layered.jpg": {
+    "name": "Ginger Tousled Layered",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-443-lego-minifigure-hair-ginger-tousled-side-part.jpg": {
+    "name": "Ginger Tousled Side Part",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2799-lego-minifigure-hair-gray-long-waist-length.jpg": {
+    "name": "Gray Long Waist Length",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2791-lego-minifigure-hair-gray-tousled.jpg": {
+    "name": "Gray Tousled",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-385-lego-minifigure-hair-lavender-with-white-goggles.jpg": {
+    "name": "Lavender With White Goggles",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-441-lego-minifigure-hair-light-brown-tousled-layered.jpg": {
+    "name": "Light Brown Tousled Layered",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3560-lego-minifigure-hair-male-grandpa-gray-short.jpg": {
+    "name": "Male / Grandpa Gray Short",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3960-lego-minifigure-hair-male-black-bowl-cut.jpg": {
+    "name": "Male Black Bowl Cut",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1760-lego-minifigure-hair-male-black-curly.jpg": {
+    "name": "Male Black Curly",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3303-lego-minifigure-hair-male-black-curly-straight-sides.jpg": {
+    "name": "Male Black Curly Straight Sides",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-438-lego-minifigure-hair-male-black-messy.jpg": {
+    "name": "Male Black Messy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3771-lego-minifigure-hair-male-black-parted-in-center.jpg": {
+    "name": "Male Black Parted In Center",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1738-lego-minifigure-hair-male-black-short.jpg": {
+    "name": "Male Black Short",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1766-lego-minifigure-hair-male-black-short.jpg": {
+    "name": "Male Black Short 2",
+    "keyOut": "white",
+    "scale": 0.96,
+    "offsetY": -0.008
+  },
+  "hair/eeb-3436-lego-minifigure-hair-male-black-short.jpg": {
+    "name": "Male Black Short 3",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3964-lego-minifigure-hair-male-black-short-ponytail.jpg": {
+    "name": "Male Black Short Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-424-lego-minifigure-hair-male-black-short-curly.jpg": {
+    "name": "Male Black Short Curly",
+    "keyOut": "white",
+    "scale": 0.96,
+    "offsetY": -0.008
+  },
+  "hair/eeb-1753-lego-minifigure-hair-male-black-spiked.jpg": {
+    "name": "Male Black Spiked",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2267-lego-minifigure-hair-male-black-swept-back.jpg": {
+    "name": "Male Black Swept Back",
+    "keyOut": "white",
+    "scale": 0.93,
+    "offsetY": -0.014
+  },
+  "hair/eeb-2806-lego-minifigure-hair-male-black-swept-back.jpg": {
+    "name": "Male Black Swept Back 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3545-lego-minifigure-hair-male-black-tousled.jpg": {
+    "name": "Male Black Tousled",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1758-lego-minifigure-hair-male-black-wavy.jpg": {
+    "name": "Male Black Wavy",
+    "keyOut": "white"
+  },
+  "hair/eeb-3561-lego-minifigure-hair-male-blonde-bright-light-yellow-short.jpg": {
+    "name": "Male Blonde / Bright Light Yellow Short",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3684-lego-minifigure-hair-male-blonde-messy.jpg": {
+    "name": "Male Blonde Messy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-381-lego-minifigure-hair-male-blonde-short.jpg": {
+    "name": "Male Blonde Short",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3525-lego-minifigure-hair-male-blonde-short.jpg": {
+    "name": "Male Blonde Short 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3442-lego-minifigure-hair-male-blonde-spiked.jpg": {
+    "name": "Male Blonde Spiked",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3971-lego-minifigure-hair-male-blonde-swept-back.jpg": {
+    "name": "Male Blonde Swept Back",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1731-lego-minifigure-hair-male-blonde-wavy.jpg": {
+    "name": "Male Blonde Wavy",
+    "keyOut": "white"
+  },
+  "hair/eeb-3524-lego-minifigure-hair-male-blonde-wavy.jpg": {
+    "name": "Male Blonde Wavy 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3679-lego-minifigure-hair-male-blonde-wavy.jpg": {
+    "name": "Male Blonde Wavy 3",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2801-lego-minifigure-hair-male-brown-with-black-glasses.jpg": {
+    "name": "Male Brown With Black Glasses",
+    "keyOut": "white",
+    "offsetY": -0.0583
+  },
+  "hair/eeb-3304-lego-minifigure-hair-male-brown-curly.jpg": {
+    "name": "Male Brown Curly",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-421-lego-minifigure-hair-male-brown-long-mullet.jpg": {
+    "name": "Male Brown Long Mullet",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3968-lego-minifigure-hair-male-brown-parted-in-center.jpg": {
+    "name": "Male Brown Parted In Center",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2614-lego-minifigure-hair-male-brown-swept-back.jpg": {
+    "name": "Male Brown Swept Back",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3546-lego-minifigure-hair-male-brown-tousled.jpg": {
+    "name": "Male Brown Tousled",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3970-lego-minifigure-hair-male-brown-wavy.jpg": {
+    "name": "Male Brown Wavy",
+    "keyOut": "white"
+  },
+  "hair/eeb-428-lego-minifigure-hair-male-dark-blonde-short.jpg": {
+    "name": "Male Dark Blonde Short",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3070-lego-minifigure-hair-male-dark-blonde-short-ponytail.jpg": {
+    "name": "Male Dark Blonde Short Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3673-lego-minifigure-hair-male-dark-brown-curly.jpg": {
+    "name": "Male Dark Brown Curly 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-435-lego-minifigure-hair-male-dark-brown-forelock.jpg": {
+    "name": "Male Dark Brown Forelock",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3954-lego-minifigure-hair-male-dark-brown-parted-on-right.jpg": {
+    "name": "Male Dark Brown Parted On Right",
+    "keyOut": "white"
+  },
+  "hair/eeb-429-lego-minifigure-hair-male-dark-brown-short.jpg": {
+    "name": "Male Dark Brown Short",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1729-lego-minifigure-hair-male-dark-brown-short.jpg": {
+    "name": "Male Dark Brown Short 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4041-lego-minifigure-hair-male-dark-brown-short-curly.jpg": {
+    "name": "Male Dark Brown Short Curly",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3779-lego-minifigure-hair-male-dark-brown-spiked.jpg": {
+    "name": "Male Dark Brown Spiked",
+    "keyOut": "white",
+    "offsetY": -0.0233
+  },
+  "hair/eeb-3077-lego-minifigure-hair-male-dark-brown-spiky-headband.jpg": {
+    "name": "Male Dark Brown Spiky Headband",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1763-lego-minifigure-hair-male-dark-brown-wavy.jpg": {
+    "name": "Male Dark Brown Wavy",
+    "keyOut": "white",
+    "offsetX": -0.0092
+  },
+  "hair/eeb-3978-lego-minifigure-hair-male-dark-gray-short.jpg": {
+    "name": "Male Dark Gray Short",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4042-lego-minifigure-hair-male-dark-gray-wavy.jpg": {
+    "name": "Male Dark Gray Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1736-lego-minifigure-hair-male-dark-red-spiked.jpg": {
+    "name": "Male Dark Red Spiked",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3099-lego-minifigure-hair-male-ginger-short.jpg": {
+    "name": "Male Ginger Short",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3098-lego-minifigure-hair-male-ginger-short-ponytail.jpg": {
+    "name": "Male Ginger Short Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3364-lego-minifigure-hair-male-gray-parted-in-center.jpg": {
+    "name": "Male Gray Parted In Center",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1747-lego-minifigure-hair-male-gray-short.jpg": {
+    "name": "Male Gray Short",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3074-lego-minifigure-hair-male-gray-short.jpg": {
+    "name": "Male Gray Short 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3680-lego-minifigure-hair-male-gray-short-curly.jpg": {
+    "name": "Male Gray Short Curly",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1752-lego-minifigure-hair-male-gray-swept-back.jpg": {
+    "name": "Male Gray Swept Back",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1762-lego-minifigure-hair-male-gray-swept-back.jpg": {
+    "name": "Male Gray Swept Back 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3073-lego-minifigure-hair-male-gray-tousled.jpg": {
+    "name": "Male Gray Tousled",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-379-lego-minifigure-hair-male-green-bushy.jpg": {
+    "name": "Male Green Bushy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4303-lego-minifigure-hair-male-light-blonde-slicked-back.jpg": {
+    "name": "Male Light Blonde Slicked Back",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3577-lego-minifigure-hair-male-light-brown-curly.jpg": {
+    "name": "Male Light Brown Curly",
+    "keyOut": "white",
+    "scale": 0.93,
+    "offsetY": -0.014
+  },
+  "hair/eeb-1750-lego-minifigure-hair-male-light-brown-forelock.jpg": {
+    "name": "Male Light Brown Forelock",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3503-lego-minifigure-hair-male-light-brown-short.jpg": {
+    "name": "Male Light Brown Short",
+    "keyOut": "white"
+  },
+  "hair/eeb-3097-lego-minifigure-hair-male-light-brown-spiked.jpg": {
+    "name": "Male Light Brown Spiked",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1764-lego-minifigure-hair-male-light-brown-wavy.jpg": {
+    "name": "Male Light Brown Wavy",
+    "keyOut": "white",
+    "offsetX": -0.0092
+  },
+  "hair/eeb-3677-lego-minifigure-hair-male-light-brown-wavy.jpg": {
+    "name": "Male Light Brown Wavy 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3068-lego-minifigure-hair-male-red-spiked.jpg": {
+    "name": "Male Red Spiked",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-430-lego-minifigure-hair-male-reddish-brown-short.jpg": {
+    "name": "Male Reddish Brown Short",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1755-lego-minifigure-hair-male-reddish-brown-short.jpg": {
+    "name": "Male Reddish Brown Short 2",
+    "keyOut": "white"
+  },
+  "hair/eeb-2081-lego-minifigure-hair-male-reddish-brown-spiked.jpg": {
+    "name": "Male Reddish Brown Spiked",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3091-lego-minifigure-hair-male-reddish-brown-tousled.jpg": {
+    "name": "Male Reddish Brown Tousled",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1756-lego-minifigure-hair-male-reddish-brown-wavy.jpg": {
+    "name": "Male Reddish Brown Wavy",
+    "keyOut": "white"
+  },
+  "hair/eeb-3678-lego-minifigure-hair-male-reddish-brown-wavy.jpg": {
+    "name": "Male Reddish Brown Wavy 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3089-lego-minifigure-hair-male-short-dark-brown.jpg": {
+    "name": "Male Short Dark Brown",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1748-lego-minifigure-hair-male-short-gray.jpg": {
+    "name": "Male Short Gray",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-423-lego-minifigure-hair-male-short-light-brown.jpg": {
+    "name": "Male Short Light Brown",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2381-lego-minifigure-hair-male-silver-flat-top.jpg": {
+    "name": "Male Silver Flat Top",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1749-lego-minifigure-hair-male-white-swept-back.jpg": {
+    "name": "Male White Swept Back",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3982-lego-minifigure-hair-male-white-wavy.jpg": {
+    "name": "Male White Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3069-lego-minifigure-hair-male-yellow-wavy.jpg": {
+    "name": "Male Yellow Wavy",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-442-lego-minifigure-hair-male-yellowish-green-spiked-up.jpg": {
+    "name": "Male Yellowish Green Spiked Up",
+    "keyOut": "white",
+    "offsetY": -0.1055,
+    "scale": 1.1794,
+    "offsetX": 0.004
+  },
+  "hair/eeb-3075-lego-minifigure-hair-white-tousled-side-part.jpg": {
+    "name": "White Tousled Side Part",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3064-lego-minifigure-hair-yellow-medium-length-bangs.jpg": {
+    "name": "Yellow Medium Length Bangs",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2790-lego-minifigure-hair-yellow-tousled-side-part.jpg": {
+    "name": "Yellow Tousled Side Part",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-436-lego-minifigure-hair-yellowish-green-spikes-on-side.jpg": {
+    "name": "Yellowish Green Spikes On Side",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4190-lego-minifigure-hair-black-curly-side-bun-female.jpg": {
+    "name": "Black Curly Side Bun (Female)",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4189-lego-minifigure-hair-black-short-with-parting-male.jpg": {
+    "name": "Black Short With Parting (Male)",
+    "keyOut": "white"
+  },
+  "hair/eeb-4307-lego-minifigure-hair-female-dark-brown-long-ponytail.jpg": {
+    "name": "Female Dark Brown Long Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4176-lego-minifigure-hair-green-with-black-cap-backwards.jpg": {
+    "name": "Green With Black Cap (Backwards)",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4175-lego-minifigure-hair-mohawk-dark-blond.jpg": {
+    "name": "Mohawk Dark Blond",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2612-lego-minifigure-hair-beard-and-mustache-male-dark-brown.jpg": {
+    "name": "Beard And Mustache Male Dark Brown",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2816-lego-witch-hat-with-hair-dark-orange.jpg": {
+    "name": "Witch Hat With Hair Dark Orange",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4275-lego-minifigure-hair-female-dark-orange-long-ponytail.jpg": {
+    "name": "Female Dark Orange Long Ponytail",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4276-lego-minifigure-hair-orange-mohawk.jpg": {
+    "name": "Orange Mohawk",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2812-lego-asian-conical-hat-beige-tan.jpg": {
+    "name": "Asian Conical Hat Beige / Tan",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4124-lego-asian-conical-hat-dark-beige.jpg": {
+    "name": "Asian Conical Hat Dark Beige",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3990-lego-asian-conical-hat-dark-bluish-gray.jpg": {
+    "name": "Asian Conical Hat Dark Bluish Gray",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-833-lego-asian-conical-hat-gold.jpg": {
+    "name": "Asian Conical Hat Gold",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3127-lego-asian-conical-hat-light-bluish-gray.jpg": {
+    "name": "Asian Conical Hat Light Bluish Gray",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-832-lego-asian-conical-hat-orange.jpg": {
+    "name": "Asian Conical Hat Orange",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1467-lego-astronaut-helmet-white.jpg": {
+    "name": "Astronaut Helmet White",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1408-lego-astronaut-helmet-white-with-gold-visor.jpg": {
+    "name": "Astronaut Helmet White With Gold Visor",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3721-lego-aviator-bomber-hat-with-goggles-reddish-brown.jpg": {
+    "name": "Aviator / Bomber Hat With Goggles Reddish Brown",
+    "keyOut": "white",
+    "scale": 1.3,
+    "offsetY": 0.0477
+  },
+  "hair/eeb-1469-lego-aviator-bomber-hat-with-goggles-white.jpg": {
+    "name": "Aviator / Bomber Hat With Goggles White",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-811-lego-baseball-cap-blue.jpg": {
+    "name": "Baseball Cap Blue",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2631-lego-baseball-cap-blue.jpg": {
+    "name": "Baseball Cap Blue 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3444-lego-baseball-cap-dark-green.jpg": {
+    "name": "Baseball Cap Dark Green",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-813-lego-baseball-cap-dark-red.jpg": {
+    "name": "Baseball Cap Dark Red",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2811-lego-baseball-cap-light-bluish-gray.jpg": {
+    "name": "Baseball Cap Light Bluish Gray",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-815-lego-baseball-cap-red.jpg": {
+    "name": "Baseball Cap Red",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3105-lego-baseball-cap-reddish-brown.jpg": {
+    "name": "Baseball Cap Reddish Brown",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3784-lego-baseball-cap-white.jpg": {
+    "name": "Baseball Cap White",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2628-lego-beret-flat-cap-black.jpg": {
+    "name": "Beret / Flat Cap Black",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3128-lego-cap-insect-lime.jpg": {
+    "name": "Cap Insect Lime",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4066-lego-castle-knight-helmet-black.jpg": {
+    "name": "Castle / Knight Helmet Black",
+    "keyOut": "white",
+    "offsetY": -0.035
+  },
+  "hair/eeb-2625-lego-castle-knight-helmet-flat-silver.jpg": {
+    "name": "Castle / Knight Helmet Flat Silver",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2825-lego-castle-knight-helmet-light-bluish-gray.jpg": {
+    "name": "Castle / Knight Helmet Light Bluish Gray",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3998-lego-castle-knights-helmet-black.jpg": {
+    "name": "Castle / Knight'S Helmet Black",
+    "keyOut": "white",
+    "scale": 1.12,
+    "offsetX": 0.018
+  },
+  "hair/eeb-2824-lego-castle-knights-helmet-sand-green.jpg": {
+    "name": "Castle / Knight'S Helmet Sand Green",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3999-lego-castle-knight-helmet-flat-silver.jpg": {
+    "name": "Castle/ Knight Helmet Flat Silver 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3996-lego-cavalry-cap-kepi-dark-bluish-gray.jpg": {
+    "name": "Cavalry Cap / Kepi Dark Bluish Gray",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2630-lego-cavalry-cap-kepi-sand-green.jpg": {
+    "name": "Cavalry Cap / Kepi Sand Green",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-830-lego-cloth-wrap-bandana-red.jpg": {
+    "name": "Cloth Wrap / Bandana Red",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2821-lego-conical-asian-samurai-hat-black.jpg": {
+    "name": "Conical Asian / Samurai Hat Black",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-834-lego-conical-asian-samurai-hat-medium-nougat.jpg": {
+    "name": "Conical Asian / Samurai Hat Medium Nougat",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-835-lego-conical-asian-samurai-hat-pearl-gold.jpg": {
+    "name": "Conical Asian / Samurai Hat Pearl Gold",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4065-lego-conical-asian-samurai-hat-tan.jpg": {
+    "name": "Conical Asian / Samurai Hat Tan",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3106-lego-construction-helmet-black.jpg": {
+    "name": "Construction Helmet Black",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3107-lego-construction-helmet-dark-blue.jpg": {
+    "name": "Construction Helmet Dark Blue",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-854-lego-construction-helmet-red.jpg": {
+    "name": "Construction Helmet Red",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-855-lego-construction-helmet-white.jpg": {
+    "name": "Construction Helmet White",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1789-lego-construction-helmet-yellow.jpg": {
+    "name": "Construction Helmet Yellow",
+    "keyOut": "white",
+    "scale": 1.24
+  },
+  "hair/eeb-856-lego-construction-helmet-with-ear-protector-red.jpg": {
+    "name": "Construction Helmet With Ear Protector Red",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1783-lego-cooks-chefs-hat-white.jpg": {
+    "name": "Cook'S / Chef'S Hat White",
+    "keyOut": "white"
+  },
+  "hair/eeb-1769-lego-cooks-dinner-hat-white.jpg": {
+    "name": "Cook'S / Dinner Hat White",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1774-lego-fedora-hat-very-wide-brim-black.jpg": {
+    "name": "Fedora Hat Very Wide Brim Black",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1793-lego-fedora-hat-wide-brim-beige.jpg": {
+    "name": "Fedora Hat Wide Brim Beige",
+    "keyOut": "white",
+    "scale": 1.22
+  },
+  "hair/eeb-1788-lego-fedora-hat-wide-brim-dark-brown.jpg": {
+    "name": "Fedora Hat Wide Brim Dark Brown",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1775-lego-fedora-hat-wide-brim-dark-purple.jpg": {
+    "name": "Fedora Hat Wide Brim Dark Purple",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3783-lego-fedora-hat-wide-brim-gray.jpg": {
+    "name": "Fedora Hat Wide Brim Gray",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-825-lego-fire-helmet-metallic-gold.jpg": {
+    "name": "Fire Helmet Metallic Gold",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-826-lego-fire-helmet-metallic-silver.jpg": {
+    "name": "Fire Helmet Metallic Silver",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-827-lego-fire-helmet-white.jpg": {
+    "name": "Fire Helmet White",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3118-lego-fisherman-rain-hat-bright-light-orange.jpg": {
+    "name": "Fisherman / Rain Hat Bright Light Orange",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3997-lego-hat-beret-flat-cap-dark-green.jpg": {
+    "name": "Hat / Beret / Flat Cap Dark Green",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4306-lego-hat-beret-flat-cap-light-bluish-gray.jpg": {
+    "name": "Hat / Beret / Flat Cap Light Bluish Gray",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4304-lego-hat-beret-flat-cap-lime.jpg": {
+    "name": "Hat / Beret / Flat Cap Lime",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3995-lego-hat-beret-flat-cap-medium-blue.jpg": {
+    "name": "Hat / Beret / Flat Cap Medium Blue",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3993-lego-hat-beret-flat-cap-reddish-brown.jpg": {
+    "name": "Hat / Beret / Flat Cap Reddish Brown",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4185-lego-hat-rain-fishermans-style-dark-green.jpg": {
+    "name": "Hat Rain / Fisherman’S Style Dark Green",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2308-lego-head-bandage-white.jpg": {
+    "name": "Bandage White",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-849-lego-headgear-with-ears-black.jpg": {
+    "name": "Headgear With Ears Black",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2813-lego-helmet-with-visor-white.jpg": {
+    "name": "Helmet With Visor White",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1790-lego-hood-black.jpg": {
+    "name": "Hood Black",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3119-lego-hood-orange.jpg": {
+    "name": "Hood Orange",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1782-lego-hood-reddish-brown.jpg": {
+    "name": "Hood Reddish Brown",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1772-lego-hood-white.jpg": {
+    "name": "Hood White",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4043-lego-minifigure-baseball-cap-blue-dark-azure.jpg": {
+    "name": "Baseball Cap Blue (Dark Azure)",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3722-lego-minifigure-baseball-cap-coral.jpg": {
+    "name": "Baseball Cap Coral",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3994-lego-mining-helmet-with-head-lamp-black.jpg": {
+    "name": "Mining Helmet With Head Lamp Black",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-859-lego-mining-helmet-with-head-lamp-white.jpg": {
+    "name": "Mining Helmet With Head Lamp White",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2638-lego-motocross-helmet-with-goggles-bright-green.jpg": {
+    "name": "Motocross Helmet With Goggles Bright Green",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2637-lego-motocross-helmet-with-goggles-dark-blue.jpg": {
+    "name": "Motocross Helmet With Goggles Dark Blue",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-860-lego-motorcycle-helmet-black.jpg": {
+    "name": "Motorcycle Helmet Black",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-861-lego-motorcycle-helmet-red.jpg": {
+    "name": "Motorcycle Helmet Red",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1777-lego-motorcycle-helmet-white.jpg": {
+    "name": "Motorcycle Helmet White",
+    "keyOut": "white"
+  },
+  "hair/eeb-3108-lego-ninja-mask-blue.jpg": {
+    "name": "Ninja Mask Blue",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-878-lego-ninjago-kendo-helmet-black.jpg": {
+    "name": "Ninjago Kendo Helmet Black",
+    "keyOut": "white",
+    "scale": 1.1664,
+    "offsetY": 0.057,
+    "exclude": true
+  },
+  "hair/eeb-3110-lego-ninjago-mask-black-and-white.jpg": {
+    "name": "Ninjago Mask Black And White",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3112-lego-ninjago-mask-dark-blue.jpg": {
+    "name": "Ninjago Mask Dark Blue",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3111-lego-ninjago-mask-silver-and-white.jpg": {
+    "name": "Ninjago Mask Silver And White",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4186-lego-ninjago-mask-ninja-jay-blue-with-yellow-headband.jpg": {
+    "name": "Ninjago Mask Ninja Jay Blue With Yellow Headband",
+    "keyOut": "white",
+    "scale": 1.1,
+    "offsetY": 0.035,
+    "exclude": true
+  },
+  "hair/eeb-4188-lego-ninjago-mask-ninja-kai-red-and-white.jpg": {
+    "name": "Ninjago Mask Ninja Kai Red And White",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4187-lego-ninjago-mask-ninja-lloyd-green.jpg": {
+    "name": "Ninjago Mask Ninja Lloyd Green",
+    "keyOut": "white",
+    "offsetY": 0.025,
+    "exclude": true
+  },
+  "hair/eeb-3113-lego-ninjago-wrap-blue-with-black-bandana.jpg": {
+    "name": "Ninjago Wrap Blue With Black Bandana",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1770-lego-pirate-hat-black.jpg": {
+    "name": "Pirate Hat Black",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1778-lego-pirate-hat-black.jpg": {
+    "name": "Pirate Hat Black 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1771-lego-pirate-hat-black-with-skull.jpg": {
+    "name": "Pirate Hat Black With Skull",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3114-lego-pirate-hat-reddish-brown.jpg": {
+    "name": "Pirate Hat Reddish Brown",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-838-lego-pirate-hat-with-skull-and-feather-black.jpg": {
+    "name": "Pirate Hat With Skull And Feather Black",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1785-lego-police-hat-blue.jpg": {
+    "name": "Police Hat Blue",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3443-lego-police-hat-dark-blue.jpg": {
+    "name": "Police Hat Dark Blue",
+    "keyOut": "white",
+    "offsetY": -0.03
+  },
+  "hair/eeb-4125-lego-police-hat-dark-blue.jpg": {
+    "name": "Police Hat Dark Blue 2",
+    "keyOut": "white",
+    "offsetY": -0.025
+  },
+  "hair/eeb-3124-lego-police-hat-medium-blue.jpg": {
+    "name": "Police Hat Medium Blue",
+    "keyOut": "white",
+    "scale": 1.1532,
+    "offsetY": 0.0004
+  },
+  "hair/eeb-810-lego-red-baseball-cap-and-white-hood.jpg": {
+    "name": "Red Baseball Cap And White Hood",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-857-lego-red-construction-helmet-with-brown-female-hair.jpg": {
+    "name": "Red Construction Helmet With Brown Female Hair",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3104-lego-red-construction-helmet-with-brown-male-hair.jpg": {
+    "name": "Red Construction Helmet With Brown Male Hair",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2547-lego-round-helmet-trans-clear.jpg": {
+    "name": "Round Helmet Trans Clear",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-839-lego-sailor-hat-sand-blue.jpg": {
+    "name": "Sailor Hat Sand Blue",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-869-lego-sports-bike-helmet-with-vent-holes-gray.jpg": {
+    "name": "Sports / Bike Helmet With Vent Holes Gray",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-1787-lego-sports-helmet-with-vent-holes-magenta.jpg": {
+    "name": "Sports Helmet With Vent Holes Magenta",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3985-lego-surgical-medical-cap-white.jpg": {
+    "name": "Surgical / Medical Cap White",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2817-lego-swimming-cap-black.jpg": {
+    "name": "Swimming Cap Black",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-818-lego-thief-robber-knit-cap-black.jpg": {
+    "name": "Thief / Robber Knit Cap Black",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-820-lego-thief-robber-knit-cap-dark-bluish-gray.jpg": {
+    "name": "Thief / Robber Knit Cap Dark Bluish Gray",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2065-lego-thief-robber-knit-cap-dark-red.jpg": {
+    "name": "Thief / Robber Knit Cap Dark Red",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4123-lego-thief-robber-knit-cap-red.jpg": {
+    "name": "Thief / Robber Knit Cap Red",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-840-lego-top-hat-black.jpg": {
+    "name": "Top Hat Black",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-841-lego-top-hat-black.jpg": {
+    "name": "Top Hat Black 2",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-842-lego-top-hat-dark-purple.jpg": {
+    "name": "Top Hat Dark Purple",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2815-lego-top-hat-lavender.jpg": {
+    "name": "Top Hat Lavender",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-843-lego-top-hat-magenta.jpg": {
+    "name": "Top Hat Magenta",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3122-lego-underwater-helmet-red.jpg": {
+    "name": "Underwater Helmet Red",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3671-lego-viking-helmet-pearl-dark-gray-with-horns.jpg": {
+    "name": "Viking Helmet Pearl Dark Gray With Horns",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-858-lego-white-construction-helmet-with-brown-female-hair.jpg": {
+    "name": "White Construction Helmet With Brown Female Hair",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-821-lego-winter-cap-ski-beanie-dark-azure.jpg": {
+    "name": "Winter Cap / Ski Beanie Dark Azure",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2218-lego-winter-cap-ski-beanie-dark-bluish-gray.jpg": {
+    "name": "Winter Cap / Ski Beanie Dark Bluish Gray",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3446-lego-winter-cap-ski-beanie-lavender.jpg": {
+    "name": "Winter Cap / Ski Beanie Lavender",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-2633-lego-winter-ear-flaps-hat-blue.jpg": {
+    "name": "Winter Ear Flaps Hat Blue",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-881-lego-winter-ear-flaps-hat-red.jpg": {
+    "name": "Winter Ear Flaps Hat Red",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3992-lego-winter-ear-flaps-hat-ushanka-black.jpg": {
+    "name": "Winter Ear Flaps Hat / Ushanka Black",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-875-lego-winter-hood-with-fur-dark-azure.jpg": {
+    "name": "Winter Hood With Fur Dark Azure",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-846-lego-wizard-witch-hat-black.jpg": {
+    "name": "Wizard / Witch Hat Black",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3116-lego-wizard-witch-hat-dark-brown.jpg": {
+    "name": "Wizard / Witch Hat Dark Brown",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3117-lego-wizard-witch-hat-dark-green.jpg": {
+    "name": "Wizard / Witch Hat Dark Green",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-3115-lego-wizard-witch-hat-dark-tan.jpg": {
+    "name": "Wizard / Witch Hat Dark Tan",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "hair/eeb-4274-lego-fedora-hat-with-wide-brim-dark-brown.jpg": {
+    "name": "Fedora Hat With Wide Brim Dark Brown",
+    "keyOut": "white",
+    "exclude": true
+  },
+  "body/eeb-3026-lego-minifigure-torso-artist-painter-smock-with-paint-spots.jpg": {
+    "name": "Artist / Painter Smock With Paint Spots",
+    "exclude": true
+  },
+  "body/eeb-652-lego-minifigure-torso-astronaut-blue-spacesuit.jpg": {
+    "name": "Astronaut / Blue Spacesuit",
+    "exclude": true
+  },
+  "body/eeb-654-lego-minifigure-torso-astronaut-orange-spacesuit.jpg": {
+    "name": "Astronaut / Orange Spacesuit",
+    "exclude": true
+  },
+  "body/eeb-3400-lego-minifigure-torso-bare-chest-tattoo-on-back.jpg": {
+    "name": "Bare Chest Tattoo On Back"
+  },
+  "body/eeb-1675-lego-minifigure-torso-beige-tan-knit-sweater.jpg": {
+    "name": "Beige / Tan Knit Sweater"
+  },
+  "body/eeb-3017-lego-minifigure-torso-beige-sweater-vest-bow-tie-shirt.jpg": {
+    "name": "Beige Sweater Vest Bow Tie Shirt"
+  },
+  "body/eeb-3906-lego-minifigure-torso-beige-worn-out-vest-with-strings.jpg": {
+    "name": "Beige Worn Out Vest With Strings"
+  },
+  "body/eeb-2518-lego-minifigure-torso-black-and-lime-jacket-sweatshirt.jpg": {
+    "name": "Black And Lime Jacket / Sweatshirt"
+  },
+  "body/eeb-3273-lego-minifigure-torso-black-fire-jacket-with-harness.jpg": {
+    "name": "Black Fire Jacket With Harness",
+    "exclude": true
+  },
+  "body/eeb-2529-lego-minifigure-torso-black-jacket-claw-necklace-gloves.jpg": {
+    "name": "Black Jacket Claw Necklace Gloves"
+  },
+  "body/eeb-4132-lego-minifigure-torso-black-kimono-ninja-robe-tiger-head-on-back.jpg": {
+    "name": "Black Kimono / Ninja Robe Tiger Head On Back"
+  },
+  "body/eeb-2998-lego-minifigure-torso-black-leather-jacket.jpg": {
+    "name": "Black Leather Jacket 2"
+  },
+  "body/eeb-3711-lego-minifigure-torso-black-suit-jacket-white-shirt-with-collar.jpg": {
+    "name": "Black Suit Jacket White Shirt With Collar"
+  },
+  "body/eeb-2396-lego-minifigure-torso-blouse-and-olive-vest.jpg": {
+    "name": "Blouse And Olive Vest",
+    "exclude": true
+  },
+  "body/eeb-3269-lego-minifigure-torso-blue-and-orange-sports-jacket.jpg": {
+    "name": "Blue And Orange Sports Jacket"
+  },
+  "body/eeb-615-lego-minifigure-torso-blue-armor-nexo-knights.jpg": {
+    "name": "Blue Armor Nexo Knights"
+  },
+  "body/eeb-3837-lego-minifigure-torso-blue-blouse-in-christmas-style.jpg": {
+    "name": "Blue Blouse In Christmas Style"
+  },
+  "body/eeb-3706-lego-minifigure-torso-blue-female-knotted-shirt.jpg": {
+    "name": "Blue Female Knotted Shirt"
+  },
+  "body/eeb-4033-lego-minifigure-torso-blue-flannel-vest-white-t-shirt-with-print.jpg": {
+    "name": "Blue Flannel Vest White T Shirt With Print"
+  },
+  "body/eeb-586-lego-minifigure-torso-blue-hooded-sweatshirt.jpg": {
+    "name": "Blue Hooded Sweatshirt",
+    "exclude": true
+  },
+  "body/eeb-2696-lego-minifigure-torso-blue-jacket-animal-rescuer.jpg": {
+    "name": "Blue Jacket / Animal Rescuer",
+    "exclude": true
+  },
+  "body/eeb-1667-lego-minifigure-torso-blue-jacket-with-pockets.jpg": {
+    "name": "Blue Jacket With Pockets"
+  },
+  "body/eeb-569-lego-minifigure-torso-blue-jacket-zipper-pockets-belt.jpg": {
+    "name": "Blue Jacket Zipper Pockets Belt",
+    "exclude": true
+  },
+  "body/eeb-3827-lego-minifigure-torso-blue-shirt-with-brown-sleeves.jpg": {
+    "name": "Blue Shirt With Brown Sleeves",
+    "exclude": true
+  },
+  "body/eeb-4032-lego-minifigure-torso-blue-shirt-with-skull-and-bones.jpg": {
+    "name": "Blue Shirt With Skull And Bones"
+  },
+  "body/eeb-678-lego-minifigure-torso-blue-striped-shirt-red-bow-tie.jpg": {
+    "name": "Blue Striped Shirt Red Bow Tie"
+  },
+  "body/eeb-3928-lego-minifigure-torso-blue-sweater-with-red-heart.jpg": {
+    "name": "Blue Sweater With Red Heart"
+  },
+  "body/eeb-3391-lego-minifigure-torso-blue-tank-top-with-print.jpg": {
+    "name": "Blue Tank Top With Print"
+  },
+  "body/eeb-4111-lego-minifigure-torso-blue-top-with-cup-and-straw-graphic.jpg": {
+    "name": "Blue Top With Cup And Straw Graphic"
+  },
+  "body/eeb-3701-lego-minifigure-torso-blue-winter-jacket-gray-gloves.jpg": {
+    "name": "Blue Winter Jacket Gray Gloves"
+  },
+  "body/eeb-4129-lego-minifigure-torso-bright-light-blue-shirt-with-classic-space-logo.jpg": {
+    "name": "Bright Light Blue Shirt With Classic Space Logo"
+  },
+  "body/eeb-3832-lego-minifigure-torso-bright-orange-shirt-with-print.jpg": {
+    "name": "Bright Orange Shirt With Print"
+  },
+  "body/eeb-552-lego-minifigure-torso-brown-armor.jpg": {
+    "name": "Brown Armor",
+    "exclude": true
+  },
+  "body/eeb-2523-lego-minifigure-torso-brown-vest-with-pockets.jpg": {
+    "name": "Brown Vest With Pockets"
+  },
+  "body/eeb-3696-lego-minifigure-torso-cardigan-sweater-with-hood-collar-shirt.jpg": {
+    "name": "Cardigan Sweater With Hood Collar Shirt"
+  },
+  "body/eeb-3270-lego-minifigure-torso-castaway-shaman-indian-bare-chest.jpg": {
+    "name": "Castaway / Shaman / Indian Bare Chest",
+    "exclude": true
+  },
+  "body/eeb-3020-lego-minifigure-torso-coast-guard-jacket-with-harness.jpg": {
+    "name": "Coast Guard / Jacket With Harness"
+  },
+  "body/eeb-3713-lego-minifigure-torso-colorful-blouse-with-belt.jpg": {
+    "name": "Colorful Blouse With Belt"
+  },
+  "body/eeb-3702-lego-minifigure-torso-colorful-hoodie-jacket-red-gloves.jpg": {
+    "name": "Colorful Hoodie / Jacket Red Gloves"
+  },
+  "body/eeb-3699-lego-minifigure-torso-colorful-jacket-with-zipper.jpg": {
+    "name": "Colorful Jacket With Zipper"
+  },
+  "body/eeb-3005-lego-minifigure-torso-cook-chef-white-jacket-with-buttons.jpg": {
+    "name": "Cook / Chef White Jacket With Buttons"
+  },
+  "body/eeb-4110-lego-minifigure-torso-coral-checked-shirt.jpg": {
+    "name": "Coral Checked Shirt"
+  },
+  "body/eeb-675-lego-minifigure-torso-dark-beige-vest-with-pockets.jpg": {
+    "name": "Dark Beige Vest With Pockets"
+  },
+  "body/eeb-1671-lego-minifigure-torso-dark-blue-checked-shirt.jpg": {
+    "name": "Dark Blue Checked Shirt"
+  },
+  "body/eeb-3712-lego-minifigure-torso-dark-blue-jacket-vest-shirt-and-tie.jpg": {
+    "name": "Dark Blue Jacket Vest Shirt And Tie"
+  },
+  "body/eeb-3907-lego-minifigure-torso-dark-blue-shirt-with-patterns.jpg": {
+    "name": "Dark Blue Shirt With Patterns"
+  },
+  "body/eeb-3337-lego-minifigure-torso-dark-blue-sport-sweatshirt.jpg": {
+    "name": "Dark Blue Sport Sweatshirt"
+  },
+  "body/eeb-3638-lego-minifigure-torso-dark-blue-suit-jacket-pocket-watch.jpg": {
+    "name": "Dark Blue Suit Jacket Pocket Watch"
+  },
+  "body/eeb-3710-lego-minifigure-torso-dark-brown-jacket-with-shark-on-back.jpg": {
+    "name": "Dark Brown Jacket With Shark On Back",
+    "exclude": true
+  },
+  "body/eeb-2520-lego-minifigure-torso-dark-green-hoodie.jpg": {
+    "name": "Dark Green Hoodie 2"
+  },
+  "body/eeb-3931-lego-minifigure-torso-dark-green-jacket-beige-sweater.jpg": {
+    "name": "Dark Green Jacket Beige Sweater"
+  },
+  "body/eeb-2693-lego-minifigure-torso-dark-orange-vest-ammunition-belt.jpg": {
+    "name": "Dark Orange Vest Ammunition Belt",
+    "exclude": true
+  },
+  "body/eeb-3588-lego-minifigure-torso-dark-tan-sweater.jpg": {
+    "name": "Dark Tan Sweater"
+  },
+  "body/eeb-4108-lego-minifigure-torso-dark-turquoise-zip-up-jacket.jpg": {
+    "name": "Dark Turquoise Zip Up Jacket"
+  },
+  "body/eeb-3818-lego-minifigure-torso-decorated-robe-scarf-bag-on-the-back.jpg": {
+    "name": "Decorated Robe Scarf Bag On The Back"
+  },
+  "body/eeb-3403-lego-minifigure-torso-denim-jacket-red-shirt.jpg": {
+    "name": "Denim Jacket Red Shirt"
+  },
+  "body/eeb-3006-lego-minifigure-torso-dentist-dental-white-coat.jpg": {
+    "name": "Dentist / Dental White Coat"
+  },
+  "body/eeb-3340-lego-minifigure-torso-doctor-medical-apron-coat.jpg": {
+    "name": "Doctor Medical Apron / Coat"
+  },
+  "body/eeb-4130-lego-minifigure-torso-doctor-medical-apron-coat.jpg": {
+    "name": "Doctor Medical Apron / Coat 2",
+    "exclude": true
+  },
+  "body/eeb-3566-lego-minifigure-torso-female-tank-top-scarf-shoulder-bag.jpg": {
+    "name": "Female Tank Top Scarf Shoulder Bag"
+  },
+  "body/eeb-3406-lego-minifigure-torso-female-blue-blouse-with-glitter.jpg": {
+    "name": "Female Blue Blouse With Glitter"
+  },
+  "body/eeb-3393-lego-minifigure-torso-female-blue-open-sweater.jpg": {
+    "name": "Female Blue Open Sweater"
+  },
+  "body/eeb-3398-lego-minifigure-torso-female-denim-vest-gloves.jpg": {
+    "name": "Female Denim Vest Gloves"
+  },
+  "body/eeb-4107-lego-minifigure-torso-female-denim-vest-white-t-shirt-with-record-print.jpg": {
+    "name": "Female Denim Vest White T Shirt With Record Print"
+  },
+  "body/eeb-3390-lego-minifigure-torso-female-pink-sweater.jpg": {
+    "name": "Female Pink Sweater",
+    "exclude": true
+  },
+  "body/eeb-3399-lego-minifigure-torso-female-short-jacket-shirt.jpg": {
+    "name": "Female Short Jacket Shirt"
+  },
+  "body/eeb-3009-lego-minifigure-torso-firefighter-fireman-orange-jacket.jpg": {
+    "name": "Firefighter / Fireman Orange Jacket",
+    "exclude": true
+  },
+  "body/eeb-3695-lego-minifigure-torso-gamers-shirt-green.jpg": {
+    "name": "Gamer'S Shirt Green"
+  },
+  "body/eeb-1943-lego-minifigure-torso-gray-cardigan-sweater-shirt-tie.jpg": {
+    "name": "Gray Cardigan Sweater Shirt Tie"
+  },
+  "body/eeb-3339-lego-minifigure-torso-gray-henley-shirt-longsleeve.jpg": {
+    "name": "Gray Henley Shirt / Longsleeve"
+  },
+  "body/eeb-2191-lego-minifigure-torso-gray-striped-sweater.jpg": {
+    "name": "Gray Striped Sweater"
+  },
+  "body/eeb-616-lego-minifigure-torso-green-armor-nexo-knights.jpg": {
+    "name": "Green Armor Nexo Knights",
+    "exclude": true
+  },
+  "body/eeb-4035-lego-minifigure-torso-green-jacket-white-shirt-necklace.jpg": {
+    "name": "Green Jacket White Shirt Necklace"
+  },
+  "body/eeb-3341-lego-minifigure-torso-green-sweater-with-zigzag-lines.jpg": {
+    "name": "Green Sweater With Zigzag Lines"
+  },
+  "body/eeb-3715-lego-minifigure-torso-green-top-with-dolphin.jpg": {
+    "name": "Green Top With Dolphin",
+    "exclude": true
+  },
+  "body/eeb-3767-lego-minifigure-torso-grey-sweatshirt-with-print.jpg": {
+    "name": "Grey Sweatshirt With Print"
+  },
+  "body/eeb-585-lego-minifigure-torso-hawaiian-shirt-with-flowers.jpg": {
+    "name": "Hawaiian Shirt With Flowers",
+    "exclude": true
+  },
+  "body/eeb-606-lego-minifigure-torso-jacket-astronaut-jumpsuit.jpg": {
+    "name": "Jacket / Astronaut Jumpsuit",
+    "exclude": true
+  },
+  "body/eeb-3828-lego-minifigure-torso-jacket-with-fur-gloves-striped-blouse.jpg": {
+    "name": "Jacket With Fur Gloves Striped Blouse"
+  },
+  "body/eeb-600-lego-minifigure-torso-jacket-with-hood-and-belt.jpg": {
+    "name": "Jacket With Hood And Belt",
+    "exclude": true
+  },
+  "body/eeb-3694-lego-minifigure-torso-jacket-with-zipper-brown-and-pink.jpg": {
+    "name": "Jacket With Zipper Brown And Pink"
+  },
+  "body/eeb-3698-lego-minifigure-torso-leather-jacket-bare-chest.jpg": {
+    "name": "Leather Jacket Bare Chest"
+  },
+  "body/eeb-629-lego-minifigure-torso-lifeguard-white-polo-shirt-whistle.jpg": {
+    "name": "Lifeguard / White Polo Shirt Whistle",
+    "exclude": true
+  },
+  "body/eeb-3010-lego-minifigure-torso-lime-safety-vest-blue-jacket.jpg": {
+    "name": "Lime Safety Vest Blue Jacket"
+  },
+  "body/eeb-2394-lego-minifigure-torso-lime-shirt-with-collar-and-tie.jpg": {
+    "name": "Lime Shirt With Collar And Tie"
+  },
+  "body/eeb-3755-lego-minifigure-torso-mechanic-blue-shirt-and-overalls.jpg": {
+    "name": "Mechanic / Blue Shirt And Overalls"
+  },
+  "body/eeb-3013-lego-minifigure-torso-mechanic-coveralls-gloves.jpg": {
+    "name": "Mechanic / Coveralls Gloves"
+  },
+  "body/eeb-3704-lego-minifigure-torso-medical-rescuer-paramedic-jacket.jpg": {
+    "name": "Medical Rescuer / Paramedic Jacket"
+  },
+  "body/eeb-667-lego-minifigure-torso-miner-orange-jacket-with-zipper.jpg": {
+    "name": "Miner / Orange Jacket With Zipper",
+    "exclude": true
+  },
+  "body/eeb-2701-lego-minifigure-torso-orange-jacket-gold-necklace.jpg": {
+    "name": "Orange Jacket Gold Necklace"
+  },
+  "body/eeb-665-lego-minifigure-torso-orange-ripped-shirt.jpg": {
+    "name": "Orange Ripped Shirt"
+  },
+  "body/eeb-4109-lego-minifigure-torso-orange-shirt-with-bees-print.jpg": {
+    "name": "Orange Shirt With Bees Print"
+  },
+  "body/eeb-3700-lego-minifigure-torso-orange-winter-jacket-black-gloves.jpg": {
+    "name": "Orange Winter Jacket Black Gloves"
+  },
+  "body/eeb-3929-lego-minifigure-torso-painter-paint-stained-jacket.jpg": {
+    "name": "Painter Paint Stained Jacket"
+  },
+  "body/eeb-3705-lego-minifigure-torso-pink-and-blue-hoodie.jpg": {
+    "name": "Pink And Blue Hoodie"
+  },
+  "body/eeb-4036-lego-minifigure-torso-pink-shirt-with-dog-print.jpg": {
+    "name": "Pink Shirt With Dog Print"
+  },
+  "body/eeb-2698-lego-minifigure-torso-pink-striped-top-flower-necklace.jpg": {
+    "name": "Pink Striped Top Flower Necklace",
+    "exclude": true
+  },
+  "body/eeb-2699-lego-minifigure-torso-pirate-blue-vest-striped-shirt.jpg": {
+    "name": "Pirate / Blue Vest Striped Shirt",
+    "exclude": true
+  },
+  "body/eeb-3831-lego-minifigure-torso-pirate-blue-coat-jacket.jpg": {
+    "name": "Pirate Blue Coat / Jacket"
+  },
+  "body/eeb-4131-lego-minifigure-torso-pirate-reddish-orange-coat-jacket.jpg": {
+    "name": "Pirate Reddish Orange Coat / Jacket"
+  },
+  "body/eeb-3820-lego-minifigure-torso-pirate-ripped-vest-bag-gloves.jpg": {
+    "name": "Pirate Ripped Vest Bag Gloves",
+    "exclude": true
+  },
+  "body/eeb-3008-lego-minifigure-torso-plane-captain-blue-jacket-tie-id-badge.jpg": {
+    "name": "Plane Captain / Blue Jacket Tie ID Badge"
+  },
+  "body/eeb-3822-lego-minifigure-torso-police-officer-dark-blue-uniform-harness.jpg": {
+    "name": "Police Officer / Dark Blue Uniform Harness"
+  },
+  "body/eeb-3344-lego-minifigure-torso-police-officer-police-safety-vest.jpg": {
+    "name": "Police Officer / Police Safety Vest",
+    "exclude": true
+  },
+  "body/eeb-3768-lego-minifigure-torso-police-officer-police-safety-vest.jpg": {
+    "name": "Police Officer / Police Safety Vest 2"
+  },
+  "body/eeb-3345-lego-minifigure-torso-police-officer-police-shirt-with-tie.jpg": {
+    "name": "Police Officer / Police Shirt With Tie",
+    "exclude": true
+  },
+  "body/eeb-3012-lego-minifigure-torso-police-officer-police-uniform.jpg": {
+    "name": "Police Officer / Police Uniform",
+    "exclude": true
+  },
+  "body/eeb-3714-lego-minifigure-torso-police-suit-with-badge-shirt-tie.jpg": {
+    "name": "Police Suit With Badge Shirt Tie"
+  },
+  "body/eeb-3016-lego-minifigure-torso-purple-jacket-gray-sweater-vest-shirt.jpg": {
+    "name": "Purple Jacket Gray Sweater Vest Shirt"
+  },
+  "body/eeb-2525-lego-minifigure-torso-purple-jacket-tie-shirt-camera.jpg": {
+    "name": "Purple Jacket Tie Shirt Camera"
+  },
+  "body/eeb-3707-lego-minifigure-torso-purple-sleeveless-shirt.jpg": {
+    "name": "Purple Sleeveless Shirt"
+  },
+  "body/eeb-3823-lego-minifigure-torso-purple-sweater-with-unicorns.jpg": {
+    "name": "Purple Sweater With Unicorns"
+  },
+  "body/eeb-672-lego-minifigure-torso-purple-sweatshirt-tracksuit.jpg": {
+    "name": "Purple Sweatshirt / Tracksuit"
+  },
+  "body/eeb-3504-lego-minifigure-torso-quilted-jacket-beige-and-orange.jpg": {
+    "name": "Quilted Jacket Beige And Orange"
+  },
+  "body/eeb-575-lego-minifigure-torso-red-female-top-swimsuit.jpg": {
+    "name": "Red Female Top / Swimsuit"
+  },
+  "body/eeb-598-lego-minifigure-torso-red-jacket-with-hood-and-belt.jpg": {
+    "name": "Red Jacket With Hood And Belt",
+    "exclude": true
+  },
+  "body/eeb-4113-lego-minifigure-torso-red-jacket-pink-shirt-necklace.jpg": {
+    "name": "Red Jacket Pink Shirt Necklace",
+    "exclude": true
+  },
+  "body/eeb-1674-lego-minifigure-torso-red-plaid-flannel-shirt.jpg": {
+    "name": "Red Plaid Flannel Shirt"
+  },
+  "body/eeb-3639-lego-minifigure-torso-red-plaid-flannel-shirt.jpg": {
+    "name": "Red Plaid Flannel Shirt 2"
+  },
+  "body/eeb-2416-lego-minifigure-torso-red-shirt-with-collar-white-t-shirt.jpg": {
+    "name": "Red Shirt With Collar White T Shirt"
+  },
+  "body/eeb-646-lego-minifigure-torso-red-sleeveless-shirt-with-pizza.jpg": {
+    "name": "Red Sleeveless Shirt With Pizza",
+    "exclude": true
+  },
+  "body/eeb-3834-lego-minifigure-torso-red-sports-jacket-sweatshirt-with-zipper.jpg": {
+    "name": "Red Sports Jacket / Sweatshirt With Zipper"
+  },
+  "body/eeb-3833-lego-minifigure-torso-red-t-shirt-with-dragon-print.jpg": {
+    "name": "Red T Shirt With Dragon Print"
+  },
+  "body/eeb-4300-lego-minifigure-torso-reddish-brown-apron.jpg": {
+    "name": "Reddish Brown Apron"
+  },
+  "body/eeb-556-lego-minifigure-torso-sand-blue-armor.jpg": {
+    "name": "Sand Blue Armor",
+    "exclude": true
+  },
+  "body/eeb-3819-lego-minifigure-torso-santa-dark-red-jacket-with-fur.jpg": {
+    "name": "Santa Dark Red Jacket With Fur"
+  },
+  "body/eeb-571-lego-minifigure-torso-scientist-white-lab-coat-apron.jpg": {
+    "name": "Scientist White Lab Coat / Apron"
+  },
+  "body/eeb-638-lego-minifigure-torso-scuba-diver-vest.jpg": {
+    "name": "Scuba / Diver Vest"
+  },
+  "body/eeb-641-lego-minifigure-torso-scuba-diver-vest.jpg": {
+    "name": "Scuba / Diver Vest 2",
+    "exclude": true
+  },
+  "body/eeb-3271-lego-minifigure-torso-security-agent-tactical-vest.jpg": {
+    "name": "Security Agent / Tactical Vest"
+  },
+  "body/eeb-3753-lego-minifigure-torso-shirt-longsleeve-with-ice-cream.jpg": {
+    "name": "Shirt / Longsleeve With Ice Cream",
+    "exclude": true
+  },
+  "body/eeb-3752-lego-minifigure-torso-shirt-longsleeve-with-raccoon.jpg": {
+    "name": "Shirt / Longsleeve With Raccoon",
+    "exclude": true
+  },
+  "body/eeb-3410-lego-minifigure-torso-shirt-with-colorful-print.jpg": {
+    "name": "Shirt With Colorful Print",
+    "exclude": true
+  },
+  "body/eeb-3836-lego-minifigure-torso-shirt-with-sloth.jpg": {
+    "name": "Shirt With Sloth"
+  },
+  "body/eeb-1677-lego-minifigure-torso-shirt-with-tie-suspenders.jpg": {
+    "name": "Shirt With Tie Suspenders"
+  },
+  "body/eeb-1047-lego-minifigure-torso-skeleton-black.jpg": {
+    "name": "Skeleton Black",
+    "exclude": true
+  },
+  "body/eeb-1048-lego-minifigure-torso-skeleton-light-bluish-gray.jpg": {
+    "name": "Skeleton Light Bluish Gray",
+    "exclude": true
+  },
+  "body/eeb-647-lego-minifigure-torso-space-enthusiast-shirt-with-astronaut.jpg": {
+    "name": "Space Enthusiast / Shirt With Astronaut",
+    "exclude": true
+  },
+  "body/eeb-3408-lego-minifigure-torso-sporst-jacket-big-fat-belly.jpg": {
+    "name": "Sporst Jacket Big / Fat Belly"
+  },
+  "body/eeb-2516-lego-minifigure-torso-sports-jacket-with-xtreme-logo.jpg": {
+    "name": "Sports Jacket With XTREME Logo",
+    "exclude": true
+  },
+  "body/eeb-2528-lego-minifigure-torso-sports-jacket-vita-rush-logo.jpg": {
+    "name": "Sports Jacket Vita Rush Logo"
+  },
+  "body/eeb-3268-lego-minifigure-torso-striped-vest-shirt-and-bow-tie.jpg": {
+    "name": "Striped Vest Shirt And Bow Tie"
+  },
+  "body/eeb-3019-lego-minifigure-torso-suit-jacket-tuxedo-tailcoat.jpg": {
+    "name": "Suit Jacket / Tuxedo / Tailcoat"
+  },
+  "body/eeb-669-lego-minifigure-torso-tan-top-with-suspender.jpg": {
+    "name": "Tan Top With Suspender",
+    "exclude": true
+  },
+  "body/eeb-3826-lego-minifigure-torso-turquoise-jacket-hood-with-fur.jpg": {
+    "name": "Turquoise Jacket Hood With Fur",
+    "exclude": true
+  },
+  "body/eeb-3632-lego-minifigure-torso-turquoise-ornate-female-top.jpg": {
+    "name": "Turquoise Ornate Female Top"
+  },
+  "body/eeb-3418-lego-minifigure-torso-turquoise-polo-with-collar-and-pocket.jpg": {
+    "name": "Turquoise Polo With Collar And Pocket"
+  },
+  "body/eeb-3395-lego-minifigure-torso-turquoise-quilted-jacket.jpg": {
+    "name": "Turquoise Quilted Jacket"
+  },
+  "body/eeb-3419-lego-minifigure-torso-turquoise-quilted-jacket.jpg": {
+    "name": "Turquoise Quilted Jacket 2"
+  },
+  "body/eeb-3554-lego-minifigure-torso-turquoise-shirt-with-stars-pajamas.jpg": {
+    "name": "Turquoise Shirt With Stars / Pajamas"
+  },
+  "body/eeb-3829-lego-minifigure-torso-two-color-blue-sweatshirt.jpg": {
+    "name": "Two Color Blue Sweatshirt"
+  },
+  "body/eeb-3007-lego-minifigure-torso-vest-with-fringe-lime-shirt-hippie-style.jpg": {
+    "name": "Vest With Fringe Lime Shirt Hippie Style"
+  },
+  "body/eeb-2695-lego-minifigure-torso-vest-with-pockets-animal-rescuer.jpg": {
+    "name": "Vest With Pockets / Animal Rescuer",
+    "exclude": true
+  },
+  "body/eeb-2697-lego-minifigure-torso-vest-with-pockets-animal-rescuer.jpg": {
+    "name": "Vest With Pockets / Animal Rescuer 2",
+    "exclude": true
+  },
+  "body/eeb-3825-lego-minifigure-torso-white-and-black-hoodie.jpg": {
+    "name": "White And Black Hoodie",
+    "exclude": true
+  },
+  "body/eeb-558-lego-minifigure-torso-white-armor.jpg": {
+    "name": "White Armor",
+    "exclude": true
+  },
+  "body/eeb-614-lego-minifigure-torso-white-armor-nexo-knights.jpg": {
+    "name": "White Armor Nexo Knights",
+    "exclude": true
+  },
+  "body/eeb-584-lego-minifigure-torso-white-halter-top-with-green-apples.jpg": {
+    "name": "White Halter Top With Green Apples",
+    "exclude": true
+  },
+  "body/eeb-3754-lego-minifigure-torso-white-hoodie-with-gold-print.jpg": {
+    "name": "White Hoodie With Gold Print",
+    "exclude": true
+  },
+  "body/eeb-3414-lego-minifigure-torso-white-kimono-ninja-robe.jpg": {
+    "name": "White Kimono / Ninja Robe",
+    "exclude": true
+  },
+  "body/eeb-620-lego-minifigure-torso-white-ninja-robe-kimono.jpg": {
+    "name": "White Ninja Robe / Kimono"
+  },
+  "body/eeb-4034-lego-minifigure-torso-white-shirt-with-fruits.jpg": {
+    "name": "White Shirt With Fruits",
+    "exclude": true
+  },
+  "body/eeb-2393-lego-minifigure-torso-white-shirt-brown-suspenders.jpg": {
+    "name": "White Shirt Brown Suspenders",
+    "exclude": true
+  },
+  "body/eeb-644-lego-minifigure-torso-white-striped-shirt-with-collar.jpg": {
+    "name": "White Striped Shirt With Collar",
+    "exclude": true
+  },
+  "body/eeb-4112-lego-minifigure-torso-white-striped-shirt-red-suspenders.jpg": {
+    "name": "White Striped Shirt Red Suspenders",
+    "exclude": true
+  },
+  "body/eeb-663-lego-minifigure-torso-white-sweater-with-red-stripes.jpg": {
+    "name": "White Sweater With Red Stripes",
+    "exclude": true
+  },
+  "body/eeb-2703-lego-minifigure-torso-white-tank-top-with-surfer.jpg": {
+    "name": "White Tank Top With Surfer",
+    "exclude": true
+  },
+  "body/eeb-3027-lego-minifigure-torso-white-top-with-rainbow-stars.jpg": {
+    "name": "White Top With Rainbow Stars",
+    "exclude": true
+  },
+  "body/eeb-3601-lego-minifigure-torso-white-top-with-sailboat.jpg": {
+    "name": "White Top With Sailboat",
+    "exclude": true
+  },
+  "body/eeb-3708-lego-minifigure-torso-white-vest-purple-shirt-gold-medallion.jpg": {
+    "name": "White Vest Purple Shirt Gold Medallion",
+    "exclude": true
+  },
+  "body/eeb-3018-lego-minifigure-torso-white-female-sweatshirt-with-zipper.jpg": {
+    "name": "White Female Sweatshirt With Zipper",
+    "exclude": true
+  },
+  "body/eeb-4292-lego-minifigure-torso-white-solid-color.jpg": {
+    "name": "White Solid Color",
+    "exclude": true
+  },
+  "body/eeb-3821-lego-minifigure-torso-witch-black-jacket-shawl-with-tassels.jpg": {
+    "name": "Witch Black Jacket Shawl With Tassels"
+  },
+  "body/eeb-560-lego-minifigure-torso-worker-orange-jacket-with-hood.jpg": {
+    "name": "Worker / Orange Jacket With Hood"
+  },
+  "body/eeb-637-lego-minifigure-torso-worker-orange-safety-vest.jpg": {
+    "name": "Worker / Orange Safety Vest"
+  },
+  "body/eeb-4133-lego-minifigure-torso-wrestler.jpg": {
+    "name": "Wrestler"
+  },
+  "body/eeb-4182-lego-minifigure-torso-light-blue-sweater-with-pattern.jpg": {
+    "name": "Light Blue Sweater With Pattern"
+  },
+  "body/eeb-3846-lego-wizard-sorcerer-outfit-torso-skirt.jpg": {
+    "name": "Wizard / Sorcerer Outfit Torso + Skirt",
+    "exclude": true
+  },
+  "body/eeb-4261-lego-minifigure-torso-blue-hospital-gown.jpg": {
+    "name": "Blue Hospital Gown"
+  },
+  "body/eeb-4253-lego-minifigure-torso-brown-fur-tan-shirt-with-lacing.jpg": {
+    "name": "Brown Fur Tan Shirt With Lacing"
+  },
+  "body/eeb-4255-lego-minifigure-torso-dark-brown-jacket-red-floral-shirt.jpg": {
+    "name": "Dark Brown Jacket Red Floral Shirt"
+  },
+  "body/eeb-4256-lego-minifigure-torso-dark-green-female-tunic-white-blouse.jpg": {
+    "name": "Dark Green Female Tunic White Blouse"
+  },
+  "body/eeb-4257-lego-minifigure-torso-silver-gray-armor-brown-belt.jpg": {
+    "name": "Silver Gray Armor Brown Belt"
+  },
+  "body/eeb-4260-lego-minifigure-torso-viking-brown-leather-armor.jpg": {
+    "name": "Viking Brown Leather Armor"
+  },
+  "body/eeb-4259-lego-minifigure-torso-viking-olive-green-tunic-with-fur-collar.jpg": {
+    "name": "Viking Olive Green Tunic With Fur Collar"
+  },
+  "body/eeb-4258-lego-minifigure-torso-white-striped-female-top-back-tie.jpg": {
+    "name": "White Striped Female Top Back Tie",
+    "exclude": true
+  },
+  "body/eeb-4254-lego-minifigure-torso-yellowish-green-jacket-white-shirt.jpg": {
+    "name": "Yellowish Green Jacket White Shirt"
+  },
+  "body/eeb-4221-minifigure-torso-blue-sweater-light-nougat-hands-custom-printed-lego-torso.jpg": {
+    "name": "(Blue Sweater Light Nougat Hands) Custom Printed Torso"
+  },
+  "body/eeb-4215-minifigure-torso-blue-sweater-yellow-hands-custom-printed-lego-torso.jpg": {
+    "name": "(Blue Sweater Yellow Hands) Custom Printed Torso"
+  },
+  "body/eeb-4311-minifigure-torso-gray-hoodie-custom-printed-lego-torso.jpg": {
+    "name": "(Gray Hoodie) Custom Printed Torso"
+  },
+  "body/eeb-4218-minifigure-torso-green-checkered-shirt-yellow-hands-custom-printed-lego-torso.jpg": {
+    "name": "(Green Checkered Shirt Yellow Hands) Custom Printed Torso"
+  },
+  "body/eeb-4220-minifigure-torso-hawaiian-shirt-yellow-hands-custom-printed-lego-torso.jpg": {
+    "name": "(Hawaiian Shirt Yellow Hands) Custom Printed Torso"
+  },
+  "body/eeb-4308-minifigure-torso-military-jacket-custom-printed-lego-torso.jpg": {
+    "name": "(Military Jacket) Custom Printed Torso"
+  },
+  "body/eeb-4310-minifigure-torso-muscular-chest-custom-printed-lego-torso.jpg": {
+    "name": "(Muscular Chest) Custom Printed Torso"
+  },
+  "body/eeb-4223-minifigure-torso-panda-shirt-light-nougat-hands-custom-print-on-lego-torso.jpg": {
+    "name": "(Panda Shirt Light Nougat Hands) Custom Print On Torso"
+  },
+  "body/eeb-4217-minifigure-torso-panda-shirt-yellow-hands-custom-printed-lego-torso.jpg": {
+    "name": "(Panda Shirt Yellow Hands) Custom Printed Torso"
+  },
+  "body/eeb-4225-minifigure-torso-red-skull-shirt-light-nougat-hands-custom-print-on-lego-torso.jpg": {
+    "name": "(Red Skull Shirt Light Nougat Hands) Custom Print On Torso"
+  },
+  "body/eeb-4219-minifigure-torso-red-skull-shirt-yellow-hands-custom-printed-lego-torso.jpg": {
+    "name": "(Red Skull Shirt Yellow Hands) Custom Printed Torso"
+  },
+  "body/eeb-4222-minifigure-torso-red-sweater-light-nougat-hands-custom-print-on-lego-torso.jpg": {
+    "name": "(Red Sweater Light Nougat Hands) Custom Print On Torso"
+  },
+  "body/eeb-4216-minifigure-torso-red-sweater-yellow-hands-custom-printed-lego-torso.jpg": {
+    "name": "(Red Sweater Yellow Hands) Custom Printed Torso"
+  },
+  "body/eeb-4212-minifigure-torso-shirt-with-dinosaur-light-nougat-hands-custom-print-on-a-lego-torso.jpg": {
+    "name": "(Shirt With Dinosaur Light Nougat Hands) Custom Print On A Torso",
+    "exclude": true
+  },
+  "body/eeb-4211-minifigure-torso-shirt-with-dinosaur-yellow-hands-custom-print-on-a-lego-torso.jpg": {
+    "name": "(Shirt With Dinosaur Yellow Hands) Custom Print On A Torso",
+    "exclude": true
+  },
+  "body/eeb-4210-minifigure-torso-shirt-with-dog-light-nougat-hands-custom-printed-lego-torso.jpg": {
+    "name": "(Shirt With Dog Light Nougat Hands) Custom Printed Torso",
+    "exclude": true
+  },
+  "body/eeb-4209-minifigure-torso-shirt-with-dog-yellow-hands-custom-printed-lego-torso.jpg": {
+    "name": "(Shirt With Dog Yellow Hands) Custom Printed Torso",
+    "exclude": true
+  },
+  "body/eeb-4309-minifigure-torso-sports-shirt-gold-chain-custom-printed-lego-torso.jpg": {
+    "name": "(Sports Shirt Gold Chain) Custom Printed Torso",
+    "exclude": true
+  },
+  "pants/eeb-2512-lego-minifigure-legs-blue-pants.jpg": {
+    "name": "Blue Pants",
+    "exclude": true
+  },
+  "pants/eeb-737-lego-minifigure-legs-dark-red-pants-knee-pads-shoes.jpg": {
+    "name": "Dark Red Pants Knee Pads Shoes"
+  },
+  "pants/eeb-1718-lego-minifigure-short-legs-dark-beige-dark-tan-pants.jpg": {
+    "name": "Short Legs Dark Beige / Dark Tan Pants",
+    "exclude": true
+  },
+  "pants/eeb-729-lego-minifigure-legs-artist-painter-gray-pants-paint-spots.jpg": {
+    "name": "Artist / Painter Gray Pants Paint Spots"
+  },
+  "pants/eeb-2082-lego-minifigure-legs-beige-tan-pants.jpg": {
+    "name": "Beige / Tan Pants"
+  },
+  "pants/eeb-700-lego-minifigure-legs-beige-and-dark-blue-pants-pouch.jpg": {
+    "name": "Beige And Dark Blue Pants Pouch",
+    "exclude": true
+  },
+  "pants/eeb-1720-lego-minifigure-legs-black-pants.jpg": {
+    "name": "Black Pants"
+  },
+  "pants/eeb-2391-lego-minifigure-legs-black-pants-with-blue-apron.jpg": {
+    "name": "Black Pants With Blue Apron",
+    "exclude": true
+  },
+  "pants/eeb-2499-lego-minifigure-legs-black-pants-with-knee-pads.jpg": {
+    "name": "Black Pants With Knee Pads",
+    "exclude": true
+  },
+  "pants/eeb-3813-lego-minifigure-legs-black-pants-with-print.jpg": {
+    "name": "Black Pants With Print",
+    "exclude": true
+  },
+  "pants/eeb-714-lego-minifigure-legs-black-pants-belt-key-chain.jpg": {
+    "name": "Black Pants Belt Key Chain"
+  },
+  "pants/eeb-3049-lego-minifigure-legs-black-pants-long-belt-boots.jpg": {
+    "name": "Black Pants Long Belt Boots"
+  },
+  "pants/eeb-2277-lego-minifigure-legs-black-pants-print.jpg": {
+    "name": "Black Pants Print",
+    "exclude": true
+  },
+  "pants/eeb-731-lego-minifigure-legs-black-pants-red-stripes.jpg": {
+    "name": "Black Pants Red Stripes"
+  },
+  "pants/eeb-1723-lego-minifigure-legs-black-pants-reflective-stripes.jpg": {
+    "name": "Black Pants Reflective Stripes"
+  },
+  "pants/eeb-2278-lego-minifigure-legs-black-pants-silver-belt-and-tapes.jpg": {
+    "name": "Black Pants Silver Belt And Tapes"
+  },
+  "pants/eeb-3539-lego-minifigure-legs-blue-jeans-and-red-cowboy-boots.jpg": {
+    "name": "Blue Jeans And Red Cowboy Boots"
+  },
+  "pants/eeb-3570-lego-minifigure-legs-blue-jeans-white-boots.jpg": {
+    "name": "Blue Jeans White Boots",
+    "exclude": true
+  },
+  "pants/eeb-686-lego-minifigure-legs-blue-pants.jpg": {
+    "name": "Blue Pants 2",
+    "exclude": true
+  },
+  "pants/eeb-3042-lego-minifigure-legs-blue-pants-knee-pads.jpg": {
+    "name": "Blue Pants Knee Pads",
+    "exclude": true
+  },
+  "pants/eeb-3803-lego-minifigure-legs-blue-pants-red-boots.jpg": {
+    "name": "Blue Pants Red Boots",
+    "exclude": true
+  },
+  "pants/eeb-3724-lego-minifigure-legs-bright-green-pants.jpg": {
+    "name": "Bright Green Pants",
+    "exclude": true
+  },
+  "pants/eeb-3903-lego-minifigure-legs-bright-light-blue-pants.jpg": {
+    "name": "Bright Light Blue Pants",
+    "exclude": true
+  },
+  "pants/eeb-4069-lego-minifigure-legs-bright-light-blue-pants-jeans-with-pockets.jpg": {
+    "name": "Bright Light Blue Pants / Jeans With Pockets"
+  },
+  "pants/eeb-718-lego-minifigure-legs-bright-light-orange-pants-print.jpg": {
+    "name": "Bright Light Orange Pants Print"
+  },
+  "pants/eeb-746-lego-minifigure-legs-brown-pants-gunbelt-with-bullets.jpg": {
+    "name": "Brown Pants Gunbelt With Bullets"
+  },
+  "pants/eeb-3726-lego-minifigure-legs-coral-pants.jpg": {
+    "name": "Coral Pants",
+    "exclude": true
+  },
+  "pants/eeb-3811-lego-minifigure-legs-cowboy-pants.jpg": {
+    "name": "Cowboy Pants"
+  },
+  "pants/eeb-1708-lego-minifigure-legs-dark-beige-dark-tan-pants.jpg": {
+    "name": "Dark Beige / Dark Tan Pants"
+  },
+  "pants/eeb-3284-lego-minifigure-legs-dark-beige-pants-with-pockets.jpg": {
+    "name": "Dark Beige Pants With Pockets",
+    "exclude": true
+  },
+  "pants/eeb-3806-lego-minifigure-legs-dark-beige-pants-brown-boots.jpg": {
+    "name": "Dark Beige Pants Brown Boots",
+    "exclude": true
+  },
+  "pants/eeb-3804-lego-minifigure-legs-dark-blue-jeans-denim-pants-with-patches.jpg": {
+    "name": "Dark Blue Jeans / Denim Pants With Patches"
+  },
+  "pants/eeb-688-lego-minifigure-legs-dark-blue-pants.jpg": {
+    "name": "Dark Blue Pants",
+    "exclude": true
+  },
+  "pants/eeb-2509-lego-minifigure-legs-dark-blue-pants-belt-and-holster.jpg": {
+    "name": "Dark Blue Pants Belt And Holster"
+  },
+  "pants/eeb-716-lego-minifigure-legs-dark-blue-pants-orange-stripes.jpg": {
+    "name": "Dark Blue Pants Orange Stripes",
+    "exclude": true
+  },
+  "pants/eeb-2511-lego-minifigure-legs-dark-blue-pants-patch-paint-splotches.jpg": {
+    "name": "Dark Blue Pants Patch Paint Splotches",
+    "exclude": true
+  },
+  "pants/eeb-1711-lego-minifigure-legs-dark-bluish-gray-pants.jpg": {
+    "name": "Dark Bluish Gray Pants"
+  },
+  "pants/eeb-4127-lego-minifigure-legs-dark-bluish-gray-pants-stripes-on-sides.jpg": {
+    "name": "Dark Bluish Gray Pants Stripes On Sides",
+    "exclude": true
+  },
+  "pants/eeb-2389-lego-minifigure-legs-dark-brown-pants.jpg": {
+    "name": "Dark Brown Pants",
+    "exclude": true
+  },
+  "pants/eeb-3905-lego-minifigure-legs-dark-gray-pants-with-belt.jpg": {
+    "name": "Dark Gray Pants With Belt"
+  },
+  "pants/eeb-1714-lego-minifigure-legs-dark-green-pants.jpg": {
+    "name": "Dark Green Pants"
+  },
+  "pants/eeb-1715-lego-minifigure-legs-dark-orange-pants.jpg": {
+    "name": "Dark Orange Pants"
+  },
+  "pants/eeb-728-lego-minifigure-legs-dark-orange-pants-harness.jpg": {
+    "name": "Dark Orange Pants Harness"
+  },
+  "pants/eeb-2281-lego-minifigure-legs-dark-orange-pants-watch-on-chain.jpg": {
+    "name": "Dark Orange Pants Watch On Chain"
+  },
+  "pants/eeb-3645-lego-minifigure-legs-dark-pink-pants.jpg": {
+    "name": "Dark Pink Pants",
+    "exclude": true
+  },
+  "pants/eeb-1710-lego-minifigure-legs-dark-red-pants.jpg": {
+    "name": "Dark Red Pants"
+  },
+  "pants/eeb-2711-lego-minifigure-legs-dark-tan-pants-with-pockets.jpg": {
+    "name": "Dark Tan Pants With Pockets"
+  },
+  "pants/eeb-3631-lego-minifigure-legs-dark-turquoise-pants.jpg": {
+    "name": "Dark Turquoise Pants",
+    "exclude": true
+  },
+  "pants/eeb-3347-lego-minifigure-legs-fitness-outfit-with-boots.jpg": {
+    "name": "Fitness Outfit With Boots"
+  },
+  "pants/eeb-3043-lego-minifigure-legs-fitness-outfit-leggings.jpg": {
+    "name": "Fitness Outfit / Leggings"
+  },
+  "pants/eeb-3044-lego-minifigure-legs-fitness-outfit-leggings.jpg": {
+    "name": "Fitness Outfit / Leggings 2",
+    "exclude": true
+  },
+  "pants/eeb-3904-lego-minifigure-legs-flat-silver-pants.jpg": {
+    "name": "Flat Silver Pants"
+  },
+  "pants/eeb-1044-lego-minifigure-legs-ghost-spook-yellow.jpg": {
+    "name": "Ghost / Spook Yellow",
+    "exclude": true
+  },
+  "pants/eeb-2515-lego-minifigure-legs-gray-long-skirt.jpg": {
+    "name": "Gray Long Skirt",
+    "exclude": true
+  },
+  "pants/eeb-3805-lego-minifigure-legs-gray-pants-with-belt-and-pockets-red-boots.jpg": {
+    "name": "Gray Pants With Belt And Pockets Red Boots"
+  },
+  "pants/eeb-3814-lego-minifigure-legs-gray-shorts-with-belt.jpg": {
+    "name": "Gray Shorts With Belt",
+    "exclude": true
+  },
+  "pants/eeb-691-lego-minifigure-legs-green-pants.jpg": {
+    "name": "Green Pants",
+    "exclude": true
+  },
+  "pants/eeb-3808-lego-minifigure-legs-green-pants-and-boots.jpg": {
+    "name": "Green Pants And Boots",
+    "exclude": true
+  },
+  "pants/eeb-2514-lego-minifigure-legs-green-pants-with-knee-pads.jpg": {
+    "name": "Green Pants With Knee Pads",
+    "exclude": true
+  },
+  "pants/eeb-704-lego-minifigure-legs-green-pants-with-print-armor.jpg": {
+    "name": "Green Pants With Print / Armor"
+  },
+  "pants/eeb-3423-lego-minifigure-legs-green-pants-with-reflective-stripes.jpg": {
+    "name": "Green Pants With Reflective Stripes"
+  },
+  "pants/eeb-3809-lego-minifigure-legs-green-pants-tool-belt.jpg": {
+    "name": "Green Pants Tool Belt"
+  },
+  "pants/eeb-1713-lego-minifigure-legs-light-bluish-gray-pants.jpg": {
+    "name": "Light Bluish Gray Pants"
+  },
+  "pants/eeb-736-lego-minifigure-legs-light-bluish-gray-pants-knee-pads.jpg": {
+    "name": "Light Bluish Gray Pants Knee Pads"
+  },
+  "pants/eeb-692-lego-minifigure-legs-lime-pants.jpg": {
+    "name": "Lime Pants",
+    "exclude": true
+  },
+  "pants/eeb-689-lego-minifigure-legs-magenta-pants.jpg": {
+    "name": "Magenta Pants",
+    "exclude": true
+  },
+  "pants/eeb-3801-lego-minifigure-legs-magenta-shorts.jpg": {
+    "name": "Magenta Shorts",
+    "exclude": true
+  },
+  "pants/eeb-717-lego-minifigure-legs-mechanic-green-pants-tools.jpg": {
+    "name": "Mechanic / Green Pants Tools"
+  },
+  "pants/eeb-693-lego-minifigure-legs-medium-azure-pants.jpg": {
+    "name": "Medium Azure Pants",
+    "exclude": true
+  },
+  "pants/eeb-694-lego-minifigure-legs-medium-blue-pants.jpg": {
+    "name": "Medium Blue Pants",
+    "exclude": true
+  },
+  "pants/eeb-2388-lego-minifigure-legs-medium-nougat-pants.jpg": {
+    "name": "Medium Nougat Pants",
+    "exclude": true
+  },
+  "pants/eeb-3725-lego-minifigure-legs-nougat-pants.jpg": {
+    "name": "Nougat Pants",
+    "exclude": true
+  },
+  "pants/eeb-1719-lego-minifigure-legs-olive-green-pants.jpg": {
+    "name": "Olive Green Pants"
+  },
+  "pants/eeb-3346-lego-minifigure-legs-orange-pants.jpg": {
+    "name": "Orange Pants",
+    "exclude": true
+  },
+  "pants/eeb-747-lego-minifigure-legs-orange-pants-with-white-belt.jpg": {
+    "name": "Orange Pants With White Belt"
+  },
+  "pants/eeb-2279-lego-minifigure-legs-orange-pants-belt-shoes-silver-panels.jpg": {
+    "name": "Orange Pants Belt Shoes Silver Panels"
+  },
+  "pants/eeb-3047-lego-minifigure-legs-painter-pants-with-paint-spots.jpg": {
+    "name": "Painter / Pants With Paint Spots"
+  },
+  "pants/eeb-690-lego-minifigure-legs-purple-pants.jpg": {
+    "name": "Purple Pants",
+    "exclude": true
+  },
+  "pants/eeb-2715-lego-minifigure-legs-purple-pants-with-boots.jpg": {
+    "name": "Purple Pants With Boots",
+    "exclude": true
+  },
+  "pants/eeb-3425-lego-minifigure-legs-red-pants.jpg": {
+    "name": "Red Pants",
+    "exclude": true
+  },
+  "pants/eeb-4070-lego-minifigure-legs-red-pants-with-yellow-belt-and-patches.jpg": {
+    "name": "Red Pants With Yellow Belt And Patches"
+  },
+  "pants/eeb-3807-lego-minifigure-legs-red-pants-black-boots.jpg": {
+    "name": "Red Pants Black Boots",
+    "exclude": true
+  },
+  "pants/eeb-3802-lego-minifigure-legs-red-shorts.jpg": {
+    "name": "Red Shorts",
+    "exclude": true
+  },
+  "pants/eeb-697-lego-minifigure-legs-reddish-brown-pants.jpg": {
+    "name": "Reddish Brown Pants"
+  },
+  "pants/eeb-3520-lego-minifigure-legs-ripped-gray-pants-with-belt.jpg": {
+    "name": "Ripped Gray Pants With Belt"
+  },
+  "pants/eeb-698-lego-minifigure-legs-sand-blue-pants.jpg": {
+    "name": "Sand Blue Pants"
+  },
+  "pants/eeb-3800-lego-minifigure-legs-sand-blue-pants-jeans-with-pockets.jpg": {
+    "name": "Sand Blue Pants / Jeans With Pockets"
+  },
+  "pants/eeb-2508-lego-minifigure-legs-sand-blue-pants-with-pockets.jpg": {
+    "name": "Sand Blue Pants With Pockets"
+  },
+  "pants/eeb-3644-lego-minifigure-legs-sand-green-pants.jpg": {
+    "name": "Sand Green Pants"
+  },
+  "pants/eeb-3045-lego-minifigure-legs-tan-pants-with-pockets.jpg": {
+    "name": "Tan Pants With Pockets"
+  },
+  "pants/eeb-1724-lego-minifigure-legs-white-pants.jpg": {
+    "name": "White Pants"
+  },
+  "pants/eeb-711-lego-minifigure-legs-white-pants-with-belt-and-print.jpg": {
+    "name": "White Pants With Belt And Print"
+  },
+  "pants/eeb-3812-lego-minifigure-legs-white-pants-with-print.jpg": {
+    "name": "White Pants With Print",
+    "exclude": true
+  },
+  "pants/eeb-3817-lego-minifigure-legs-white-long-skirt.jpg": {
+    "name": "White Long Skirt",
+    "exclude": true
+  },
+  "pants/eeb-4031-lego-minifigure-legs-pants-medium-lavender.jpg": {
+    "name": "/ Pants Medium Lavender",
+    "exclude": true
+  },
+  "pants/eeb-4183-lego-minifigure-legs-black-pants-with-boots.jpg": {
+    "name": "Black Pants With Boots",
+    "exclude": true
+  },
+  "pants/eeb-1035-lego-minifigure-short-child-legs-blue-dark-azure-pants.jpg": {
+    "name": "Short / Child Legs Blue / Dark Azure Pants",
+    "exclude": true
+  },
+  "pants/eeb-3348-lego-minifigure-short-child-legs-dark-blue-pants.jpg": {
+    "name": "Short / Child Legs Dark Blue Pants",
+    "exclude": true
+  },
+  "pants/eeb-3505-lego-minifigure-short-child-legs-medium-blue-pants.jpg": {
+    "name": "Short / Child Legs Medium Blue Pants",
+    "exclude": true
+  },
+  "pants/eeb-1034-lego-minifigure-short-legs-black-pants.jpg": {
+    "name": "Short Legs Black Pants",
+    "exclude": true
+  },
+  "pants/eeb-1709-lego-minifigure-short-legs-blue-pants.jpg": {
+    "name": "Short Legs Blue Pants",
+    "exclude": true
+  },
+  "pants/eeb-3815-lego-minifigure-short-legs-bright-green-pants.jpg": {
+    "name": "Short Legs Bright Green Pants",
+    "exclude": true
+  },
+  "pants/eeb-1036-lego-minifigure-short-legs-dark-bluish-gray-pants.jpg": {
+    "name": "Short Legs Dark Bluish Gray Pants",
+    "exclude": true
+  },
+  "pants/eeb-3055-lego-minifigure-short-legs-dark-brown-pants.jpg": {
+    "name": "Short Legs Dark Brown Pants",
+    "exclude": true
+  },
+  "pants/eeb-1712-lego-minifigure-short-legs-dark-green-pants.jpg": {
+    "name": "Short Legs Dark Green Pants",
+    "exclude": true
+  },
+  "pants/eeb-3901-lego-minifigure-short-legs-dark-red-pants.jpg": {
+    "name": "Short Legs Dark Red Pants",
+    "exclude": true
+  },
+  "pants/eeb-2387-lego-minifigure-short-legs-dark-turquoise-pants.jpg": {
+    "name": "Short Legs Dark Turquoise Pants",
+    "exclude": true
+  },
+  "pants/eeb-3816-lego-minifigure-short-legs-dark-turquoise-shorts.jpg": {
+    "name": "Short Legs Dark Turquoise Shorts",
+    "exclude": true
+  },
+  "pants/eeb-1038-lego-minifigure-short-legs-green-pants.jpg": {
+    "name": "Short Legs Green Pants",
+    "exclude": true
+  },
+  "pants/eeb-1042-lego-minifigure-short-legs-green-pants-with-yellow-stripes.jpg": {
+    "name": "Short Legs Green Pants With Yellow Stripes",
+    "exclude": true
+  },
+  "pants/eeb-1040-lego-minifigure-short-legs-lavender-pants.jpg": {
+    "name": "Short Legs Lavender Pants",
+    "exclude": true
+  },
+  "pants/eeb-1039-lego-minifigure-short-legs-light-bluish-gray-pants.jpg": {
+    "name": "Short Legs Light Bluish Gray Pants",
+    "exclude": true
+  },
+  "pants/eeb-1721-lego-minifigure-short-legs-red-pants.jpg": {
+    "name": "Short Legs Red Pants",
+    "exclude": true
+  },
+  "pants/eeb-3420-lego-minifigure-short-legs-reddish-brown-pants.jpg": {
+    "name": "Short Legs Reddish Brown Pants",
+    "exclude": true
+  },
+  "pants/eeb-3899-lego-minifigure-short-legs-sand-blue-pants.jpg": {
+    "name": "Short Legs Sand Blue Pants",
+    "exclude": true
+  },
+  "pants/eeb-2506-lego-minifigure-short-legs-tan-pants.jpg": {
+    "name": "Short Legs Tan Pants",
+    "exclude": true
+  },
+  "pants/eeb-3053-lego-minifigure-short-legs-white-pants.jpg": {
+    "name": "Short Legs White Pants",
+    "exclude": true
+  },
+  "pants/eeb-4126-lego-minifigure-short-legs-white-shorts.jpg": {
+    "name": "Short Legs White Shorts",
+    "exclude": true
+  },
+  "pants/eeb-4277-lego-minifigure-legs-dark-blue-shorts.jpg": {
+    "name": "Dark Blue Shorts"
+  },
+  "pants/eeb-4278-lego-minifigure-legs-lime-green-swimwear-bottom.jpg": {
+    "name": "Lime Green Swimwear Bottom"
+  },
+  "pants/eeb-4279-lego-minifigure-legs-pirate-with-peg-leg.jpg": {
+    "name": "Pirate With Peg Leg"
   }
 }

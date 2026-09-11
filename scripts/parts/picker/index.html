@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Part picker · QA</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --navy: #171c3a;
+        --muted: #7b7f93;
+        --line: #dcdde3;
+        --base: #f2f2f4;
+        --red: #e3000b;
+        --green: #12a150;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+      }
+      body {
+        font-family: 'DM Sans', sans-serif;
+        color: var(--navy);
+        background: var(--base);
+        display: grid;
+        grid-template-rows: auto minmax(0, 1fr) auto auto;
+        height: 100dvh;
+        overflow: hidden;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 10px 18px;
+        background: #fff;
+        border-bottom: 1px solid var(--line);
+      }
+      .tabs {
+        display: flex;
+        gap: 4px;
+      }
+      .tab {
+        font:
+          500 12px/1 'DM Mono',
+          monospace;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        border: 1px solid var(--line);
+        background: #fff;
+        color: var(--muted);
+        border-radius: 999px;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+      .tab.is-on {
+        background: var(--navy);
+        color: #fff;
+        border-color: var(--navy);
+      }
+      .tab b {
+        color: var(--green);
+        margin-left: 6px;
+      }
+      .tab.is-on b {
+        color: #8ef0b4;
+      }
+      .stats {
+        font:
+          12px/1.4 'DM Mono',
+          monospace;
+        color: var(--muted);
+        text-align: right;
+      }
+      .stage {
+        position: relative;
+        display: grid;
+        place-items: center;
+        padding: 14px;
+      }
+      .card {
+        position: relative;
+        width: min(70dvh, 92vw);
+        aspect-ratio: 1;
+        background: #fff;
+        border-radius: 22px;
+        box-shadow: 0 30px 60px -30px rgba(23, 28, 58, 0.45);
+        overflow: hidden;
+        display: grid;
+        place-items: center;
+        transition:
+          transform 0.18s ease,
+          opacity 0.18s ease;
+      }
+      .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+      }
+      .card.out-left {
+        transform: translateX(-60px) rotate(-4deg);
+        opacity: 0;
+      }
+      .card.out-right {
+        transform: translateX(60px) rotate(4deg);
+        opacity: 0;
+      }
+      .card .badge {
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        font:
+          500 11px/1 'DM Mono',
+          monospace;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        background: var(--navy);
+        color: #fff;
+        padding: 7px 10px;
+        border-radius: 999px;
+      }
+      .card .imgnav {
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        display: flex;
+        gap: 6px;
+      }
+      .card .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--line);
+      }
+      .card .dot.is-on {
+        background: var(--navy);
+      }
+      .card .guide {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.25;
+      }
+      .card .guide::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        border-left: 1px dashed var(--red);
+      }
+      .card.crop .half {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        background: rgba(23, 28, 58, 0.55);
+        backdrop-filter: grayscale(1);
+      }
+      .title {
+        text-align: center;
+        padding: 0 18px;
+      }
+      .title h2 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .title p {
+        margin: 4px 0 0;
+        font:
+          12px/1.4 'DM Mono',
+          monospace;
+        color: var(--muted);
+      }
+      .title a {
+        color: inherit;
+      }
+      .actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 18px calc(16px + env(safe-area-inset-bottom));
+      }
+      .btn {
+        font:
+          600 14px/1 'DM Sans',
+          sans-serif;
+        border: 1px solid var(--line);
+        background: #fff;
+        color: var(--navy);
+        border-radius: 999px;
+        padding: 14px 20px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .btn kbd {
+        font:
+          500 11px/1 'DM Mono',
+          monospace;
+        background: var(--base);
+        border-radius: 6px;
+        padding: 4px 6px;
+        color: var(--muted);
+      }
+      .btn.skip {
+        border-color: #f2b8bb;
+        color: var(--red);
+      }
+      .btn.keep {
+        background: var(--green);
+        border-color: var(--green);
+        color: #fff;
+      }
+      .btn.keep kbd {
+        background: rgba(255, 255, 255, 0.2);
+        color: #fff;
+      }
+      .btn.crop.is-on {
+        background: var(--navy);
+        color: #fff;
+        border-color: var(--navy);
+      }
+      .btn:disabled {
+        opacity: 0.4;
+        cursor: default;
+      }
+      .kept {
+        display: flex;
+        gap: 6px;
+        overflow-x: auto;
+        padding: 0 18px 10px;
+        scrollbar-width: none;
+      }
+      .kept img {
+        width: 44px;
+        height: 44px;
+        border-radius: 8px;
+        background: #fff;
+        border: 1px solid var(--line);
+        object-fit: contain;
+        cursor: pointer;
+        flex: 0 0 auto;
+      }
+      .kept img.crop {
+        outline: 2px solid var(--navy);
+      }
+      .done {
+        display: grid;
+        place-items: center;
+        text-align: center;
+        gap: 8px;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="tabs" id="tabs"></div>
+      <div class="stats" id="stats"></div>
+      <div class="stats" id="saved"></div>
+      <div style="display: flex; gap: 8px">
+        <button class="btn" id="reset" title="Clear all decisions for this slot">Reset slot</button>
+        <button class="btn" id="export">Export picks.json</button>
+      </div>
+    </header>
+    <section class="stage">
+      <div class="card" id="card">
+        <span class="badge" id="badge"></span>
+        <div class="imgnav" id="imgnav"></div>
+        <img id="img" alt="" />
+        <div class="guide"></div>
+        <div class="half"></div>
+      </div>
+    </section>
+    <div class="title">
+      <h2 id="title"></h2>
+      <p id="sub"></p>
+    </div>
+    <div class="kept" id="kept"></div>
+    <div class="actions">
+      <button class="btn" id="undo">Undo <kbd>Backspace</kbd></button>
+      <button class="btn skip" id="skip">Skip <kbd>←</kbd></button>
+      <button class="btn crop" id="crop">Crop left half <kbd>C</kbd></button>
+      <button class="btn" id="cycle">Other photo <kbd>I</kbd></button>
+      <button class="btn keep" id="keep">Keep <kbd>→</kbd></button>
+    </div>
+    <script src="./candidates.js"></script>
+    <script>
+      const CDN = 'https://cdn.shopify.com/s/files/1/0856/6715/2205/files/'
+      // No hair: the shop photographs hair on a clear display stand, which the pipeline cannot remove.
+      const SLOTS = ['head', 'body', 'pants']
+      const LABEL = { head: 'Heads', body: 'Torsos', pants: 'Legs' }
+      const KEY = 'minifig-picks-v1'
+      const all = window.CANDIDATES
+      // decisions[id] = { keep: boolean, image: index, crop: boolean }
+      const decisions = JSON.parse(localStorage.getItem(KEY) || '{}')
+      const history = []
+      let slot = location.hash.slice(1) || 'head'
+      if (!SLOTS.includes(slot)) slot = 'head'
+      let imageIndex = 0
+      // Shop photos are front+back composites, so the front half is the default.
+      let crop = true
+      const $ = (id) => document.getElementById(id)
+      const picks = () =>
+        all
+          .filter((c) => decisions[c.id]?.keep)
+          .map((c) => ({
+            id: c.id,
+            slot: c.slot,
+            title: c.title,
+            handle: c.handle,
+            image: `${CDN}${c.images[decisions[c.id].image]}`,
+            crop: decisions[c.id].crop ? 'left' : undefined,
+          }))
+      // Every decision is mirrored to docs/picks.json through the Vite dev server.
+      const save = () => {
+        localStorage.setItem(KEY, JSON.stringify(decisions))
+        fetch('/__picker/picks', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(picks(), null, 2) + '\n',
+        }).then(
+          () => ($('saved').textContent = `saved · ${picks().length} picks in docs/picks.json`),
+          () => ($('saved').textContent = 'not saved: dev server unreachable'),
+        )
+      }
+      const pool = () => all.filter((c) => c.slot === slot)
+      const current = () => pool().find((c) => !(c.id in decisions))
+      const keptIn = (s) => all.filter((c) => c.slot === s && decisions[c.id]?.keep)
+
+      function render() {
+        const c = current()
+        const p = pool()
+        const decided = p.filter((x) => x.id in decisions).length
+        $('tabs').innerHTML = SLOTS.map(
+          (s) =>
+            `<button class="tab ${s === slot ? 'is-on' : ''}" data-slot="${s}">${LABEL[s]}<b>${keptIn(s).length}</b></button>`,
+        ).join('')
+        $('stats').textContent =
+          `${decided} / ${p.length} reviewed · ${keptIn(slot).length} kept · ${Object.values(decisions).filter((d) => d.keep).length} total`
+        $('kept').innerHTML = keptIn(slot)
+          .map(
+            (k) =>
+              `<img src="${CDN}${k.images[decisions[k.id].image]}?width=120" title="${k.title} (click to remove)" data-id="${k.id}" class="${decisions[k.id].crop ? 'crop' : ''}">`,
+          )
+          .join('')
+        const card = $('card')
+        if (!c) {
+          card.style.display = 'none'
+          $('title').textContent = `All ${LABEL[slot].toLowerCase()} reviewed`
+          $('sub').textContent = 'Switch slot above, or export.'
+          return
+        }
+        card.style.display = ''
+        card.classList.toggle('crop', crop)
+        $('crop').classList.toggle('is-on', crop)
+        $('badge').textContent = `${LABEL[slot]} · ${decided + 1} / ${p.length}`
+        $('img').src = `${CDN}${c.images[imageIndex]}?width=1000`
+        $('imgnav').innerHTML =
+          c.images.length > 1
+            ? c.images
+                .map((_, i) => `<span class="dot ${i === imageIndex ? 'is-on' : ''}"></span>`)
+                .join('')
+            : ''
+        $('cycle').disabled = c.images.length < 2
+        $('title').textContent = c.title
+        $('sub').innerHTML =
+          `${c.images[imageIndex]} · <a href="https://www.choose-a-brick.com/products/${c.handle}" target="_blank" rel="noreferrer">shop page</a>`
+        $('undo').disabled = history.length === 0
+      }
+
+      function decide(keep) {
+        const c = current()
+        if (!c) return
+        const card = $('card')
+        card.classList.add(keep ? 'out-right' : 'out-left')
+        setTimeout(() => {
+          decisions[c.id] = { keep, image: imageIndex, crop: keep && crop }
+          history.push(c.id)
+          save()
+          imageIndex = 0
+          crop = true
+          card.classList.remove('out-right', 'out-left')
+          render()
+        }, 160)
+      }
+
+      function undo() {
+        const id = history.pop()
+        if (id === undefined) return
+        delete decisions[id]
+        save()
+        render()
+      }
+
+      function cycleImage() {
+        const c = current()
+        if (!c || c.images.length < 2) return
+        imageIndex = (imageIndex + 1) % c.images.length
+        render()
+      }
+
+      function exportPicks() {
+        const a = document.createElement('a')
+        a.href = URL.createObjectURL(
+          new Blob([JSON.stringify(picks(), null, 2) + '\n'], { type: 'application/json' }),
+        )
+        a.download = 'picks.json'
+        a.click()
+      }
+
+      $('tabs').addEventListener('click', (event) => {
+        const button = event.target.closest('.tab')
+        if (!button) return
+        slot = button.dataset.slot
+        location.hash = slot
+        imageIndex = 0
+        crop = true
+        render()
+      })
+      $('kept').addEventListener('click', (event) => {
+        const id = Number(event.target.dataset.id)
+        if (!id) return
+        delete decisions[id]
+        save()
+        render()
+      })
+      $('skip').onclick = () => decide(false)
+      $('keep').onclick = () => decide(true)
+      $('undo').onclick = undo
+      $('cycle').onclick = cycleImage
+      $('crop').onclick = () => {
+        crop = !crop
+        render()
+      }
+      $('export').onclick = exportPicks
+      $('reset').onclick = () => {
+        if (!confirm(`Clear all decisions for ${LABEL[slot]}?`)) return
+        for (const c of pool()) delete decisions[c.id]
+        save()
+        render()
+      }
+      document.addEventListener('keydown', (event) => {
+        if (event.metaKey || event.ctrlKey) return
+        if (event.key === 'ArrowRight') decide(true)
+        else if (event.key === 'ArrowLeft') decide(false)
+        else if (event.key === 'Backspace') {
+          event.preventDefault()
+          undo()
+        } else if (event.key.toLowerCase() === 'i') cycleImage()
+        else if (event.key.toLowerCase() === 'c') {
+          crop = !crop
+          render()
+        } else if (event.key === '1' || event.key === '2' || event.key === '3') {
+          slot = SLOTS[Number(event.key) - 1]
+          location.hash = slot
+          imageIndex = 0
+          render()
+        }
+      })
+      // Preload the next few photos so swiping feels instant.
+      setInterval(() => {
+        const next = pool()
+          .filter((c) => !(c.id in decisions))
+          .slice(1, 6)
+        for (const c of next) {
+          const img = new Image()
+          img.src = `${CDN}${c.images[0]}?width=1000`
+        }
+      }, 1500)
+      render()
+    </script>
+  </body>
+</html>
