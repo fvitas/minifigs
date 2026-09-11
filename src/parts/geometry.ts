@@ -43,7 +43,9 @@ export const GEOMETRY: Record<Slot, SlotGeometry> = {
     anchor: 'hem',
     bottomInset: 90,
     stackOffset: 214,
-    explodeGap: 150,
+    // The hands hang up to 76px below the hem, so this gap is measured from them, not from the
+    // torso block: at 150 the longest arms touched the hips.
+    explodeGap: 210,
     arrowCenter: 220,
   },
   head: {

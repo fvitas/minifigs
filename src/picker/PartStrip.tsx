@@ -113,7 +113,6 @@ export function PartStrip({ slot, bySlot, selected, color, onSelect }: PartStrip
               <PartTile
                 part={part}
                 selected={id === selected}
-                index={index}
                 color={color}
                 className={cx(
                   'size-[68px]',
