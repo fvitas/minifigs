@@ -187,7 +187,7 @@
   },
   "head/cab-minifigure-head-with-curled-moustache-and-sideburns.jpg": {
     "crop": "left",
-    "name": "Curled Moustache and Sideburns"
+    "name": "Curled Moustache"
   },
   "body/cab-plaid-jacket-torso-with-sand-green-shirt-973pb4033c01.jpg": {
     "crop": "left",
@@ -293,7 +293,7 @@
   },
   "head/cab-harry-potter-dual-sided-head-with-glasses-3626pb2168.jpg": {
     "crop": "left",
-    "name": "Harry Potter with Glasses"
+    "name": "Wizard Glasses"
   },
   "head/cab-female-minifigure-head-with-ski-goggles-3626pb2139.jpg": {
     "crop": "left",
@@ -309,7 +309,7 @@
   },
   "head/cab-female-minifigure-head-with-raised-eyebrow-and-frown-3626pb3989.jpg": {
     "crop": "left",
-    "name": "Female Raised Eyebrow and Frown"
+    "name": "Eyebrow & Frown"
   },
   "head/cab-dual-sided-minifigure-head-with-beard-and-moustache-3626pb3918.jpg": {
     "crop": "left",
@@ -325,7 +325,7 @@
   },
   "head/cab-minifigure-head-with-curly-moustache-sideburns-3626pb3600.jpg": {
     "crop": "left",
-    "name": "Curly Moustache & Sideburns"
+    "name": "Curly Moustache"
   },
   "head/cab-dual-sided-female-minifigure-head-with-glasses-3626pb3521.jpg": {
     "crop": "left",
@@ -337,7 +337,7 @@
   },
   "head/cab-minifigure-head-with-nervous-sweating-expression-3626pb2973.jpg": {
     "crop": "left",
-    "name": "Nervous Sweating Expression"
+    "name": "Nervous Sweat"
   },
   "head/cab-minifigure-head-3626pb0534-with-raised-eyebrow.jpg": {
     "crop": "left",
@@ -345,11 +345,11 @@
   },
   "head/cab-female-minifigure-head-with-smile-and-beauty-mark.jpg": {
     "crop": "left",
-    "name": "Female Smile and Beauty Mark"
+    "name": "Beauty Mark"
   },
   "head/cab-dual-sided-child-minifigure-head-with-mechanical-goggles.jpg": {
     "crop": "left",
-    "name": "Child with Mechanical Goggles"
+    "name": "Mech Goggles"
   },
   "head/cab-minifigure-head-with-glasses-beard-3626px14.jpg": {
     "crop": "left",
@@ -413,7 +413,7 @@
   },
   "head/cab-dual-sided-head-with-glasses-happy-worried.jpg": {
     "crop": "left",
-    "name": "Glasses (Happy / Worried)"
+    "name": "Worried Glasses"
   },
   "head/cab-minifigure-female-head-with-confident-grin.jpg": {
     "crop": "left",
@@ -433,15 +433,15 @@
   },
   "head/cab-minifigure-head-yellow-dual-sided-with-pink-eyeshadow-and-expressions.jpg": {
     "crop": "left",
-    "name": "Yellow, with Pink Eyeshadow and Expressions"
+    "name": "Pink Eyeshadow"
   },
   "head/cab-female-dual-sided-head-sad-smile-medium-tan-3626pb3240.jpg": {
     "crop": "left",
-    "name": "Female Sad / Smile Medium Tan"
+    "name": "Tan Sad Smile"
   },
   "head/cab-yellow-dual-sided-head-with-smile-and-singing-expression.jpg": {
     "crop": "left",
-    "name": "Yellow with Smile and Singing Expression"
+    "name": "Singing Smile"
   },
   "head/cab-scowl-and-angry-fur-head-3626pb3394.jpg": {
     "crop": "left",
@@ -469,15 +469,15 @@
   },
   "head/cab-child-minifigure-head-with-freckles-and-smile-3626pb0471.jpg": {
     "crop": "left",
-    "name": "Child with Freckles and Smile"
+    "name": "Freckled Smile"
   },
   "head/cab-head-with-hearing-aid-open-mouth-smile-3626pb3081.jpg": {
     "crop": "left",
-    "name": "Hearing Aid & Open Mouth Smile"
+    "name": "Hearing Aid"
   },
   "head/cab-minifigure-head-with-orange-eyebrows-moustache.jpg": {
     "crop": "left",
-    "name": "Orange Eyebrows & Moustache"
+    "name": "Ginger Moustache"
   },
   "head/cab-angry-eyebrows-and-scowl-minifigure-head-3626pb1973.jpg": {
     "crop": "left",
@@ -489,7 +489,7 @@
   },
   "head/cab-minifigure-head-child-brown-eyebrows-and-freckles-open-smile-white-pupils-pattern-blocked-open.jpg": {
     "crop": "left",
-    "name": "Child Brown Eyebrows and Freckles, Open Smile, White Pupils - Blocked Open"
+    "name": "Freckles & Grin"
   },
   "head/cab-female-dual-sided-smiling-minifigure-head-3626pb2964.jpg": {
     "crop": "left",
@@ -525,7 +525,7 @@
   },
   "head/cab-stubble-and-right-eyebrow-scar-minifigure-head-3626pb1330.jpg": {
     "crop": "left",
-    "name": "Stubble and Right Eyebrow Scar"
+    "name": "Scar & Stubble"
   },
   "head/cab-minifigure-head-with-goatee-and-soot-3626pb1466.jpg": {
     "crop": "left",
@@ -533,10 +533,10 @@
   },
   "head/cab-sideburns-and-open-mouth-smile-minifigure-head-3626pb1074.jpg": {
     "crop": "left",
-    "name": "Sideburns and Open-Mouth Smile"
+    "name": "Sideburns Grin"
   },
   "body/cab-torso-wrapped-robe-with-gold-dragon-head-and-tail-silver-clasps-pattern-blue-arms-black-hands.jpg": {
-    "name": "Wrapped Robe with Gold Dragon and Tail, Silver Clasps"
+    "name": "Gold Dragon Robe"
   },
   "body/cab-torso-t-shirt-with-white-minifigure-head-skull-pattern-light-bluish-gray-arms-with-black-short-sl.jpg": {
     "name": "T-Shirt with White Skull"
@@ -552,7 +552,7 @@
     "exclude": true
   },
   "body/cab-torso-tracksuit-with-medium-lavender-zipper-and-white-mountain-logo-on-back-pattern-dark-purple-a.jpg": {
-    "name": "Tracksuit with Medium Lavender Zipper and White Mountain Logo on Back / Dark Purple A",
+    "name": "Lavender Tracksuit",
     "crop": "left"
   },
   "body/cab-lego-female-tank-top-torso-973pb6256c01.jpg": {
@@ -575,7 +575,7 @@
     "exclude": true
   },
   "body/cab-pilot-torso-973pb1433c01-with-tie-and-wings-badge.jpg": {
-    "name": "Pilot with Tie and Wings Badge",
+    "name": "Pilot Wings",
     "crop": "left"
   },
   "body/cab-female-bright-pink-shirt-torso-973pb3165c01.jpg": {
@@ -621,7 +621,7 @@
     "crop": "left"
   },
   "body/cab-torso-female-cardigan-with-striped-sun-shirt-973pb6105c01.jpg": {
-    "name": "Female Cardigan with Striped Sun Shirt",
+    "name": "Sun Cardigan",
     "crop": "left"
   },
   "body/cab-dark-red-jacket-minifigure-torso-with-straps-973pb4707c01.jpg": {
@@ -650,7 +650,7 @@
     "exclude": true
   },
   "body/cab-torso-tuxedo-with-gold-tie-and-vest-silver-speckles-pattern-white-arms-with-silver-speckles-patt.jpg": {
-    "name": "Tuxedo with Gold Tie and Vest, Silver Speckles",
+    "name": "Gold Tie Tuxedo",
     "crop": "left"
   },
   "body/cab-torso-construction-with-reflective-stripe-and-buckles-front-pouch-and-red-pen-blue-shirt-pattern.jpg": {
@@ -679,11 +679,11 @@
     "exclude": true
   },
   "body/cab-dark-red-torso-female-laced-corset-with-white-blouse-pattern-white-arms-yellow-hands.jpg": {
-    "name": "Dark Red Female Laced Corset with White Blouse - White Arms - Yellow Hands",
+    "name": "Laced Corset",
     "crop": "left"
   },
   "body/cab-green-torso-coveralls-with-pockets-red-undershirt-with-circles-silver-diaz-id-badge-black-splotch-pattern-green-arms-dark-bluish-gray-hands.jpg": {
-    "name": "Green Coveralls with Pockets, Red Undershirt with Circles, Silver 'DIAZ' ID Badge, Black Splotch - Green Arms - Dark Bluish Gray Hands",
+    "name": "DIAZ Coveralls",
     "crop": "left"
   },
   "body/cab-dark-blue-love-is-love-statement-shirt-torso-973pb4445c01.jpg": {
@@ -702,7 +702,7 @@
     "exclude": true
   },
   "body/cab-white-torso-baseball-jersey-with-vertical-red-stripes-buttons-and-clutchers-logo-pattern-white-arms-yellow-hands.jpg": {
-    "name": "White Baseball Jersey with Vertical Red Stripes, Buttons and 'Clutchers' Logo - White Arms - Yellow Hands",
+    "name": "Baseball Jersey",
     "crop": "left"
   },
   "body/cab-black-jacket-torso-with-fang-necklace-yin-yang-belt-973pb4153c01.jpg": {
@@ -721,7 +721,7 @@
     "exclude": true
   },
   "body/cab-female-prisoner-uniform-torso-striped.jpg": {
-    "name": "Female Prisoner Uniform (Striped)",
+    "name": "Prisoner Stripes",
     "crop": "left"
   },
   "body/cab-pixelated-torso-with-dark-orange-and-brown-stripes-silver-belt-buckle.jpg": {
@@ -730,7 +730,7 @@
     "exclude": true
   },
   "body/cab-lime-torso-hoodie-with-white-drawstrings-silver-adjusters-and-kangaroo-pockets-pattern-yellow-arms-yellow-hands.jpg": {
-    "name": "Lime Hoodie with White Drawstrings, Silver Adjusters and Kangaroo Pockets - Yellow Arms - Yellow Hands",
+    "name": "Lime Hoodie",
     "crop": "left"
   },
   "body/cab-city-worker-jacket-torso-blue-with-orange-stripes.jpg": {
@@ -758,7 +758,7 @@
     "exclude": true
   },
   "body/cab-lime-torso-shirt-with-gold-pendant-and-orange-bead-necklace-pattern-lime-arms-yellow-hands.jpg": {
-    "name": "Lime Shirt with Gold Pendant and Orange Bead Necklace",
+    "name": "Beaded Lime Shirt",
     "crop": "left"
   },
   "body/cab-green-torso-pixelated-nougat-neck-bright-green-dark-green-and-yellow-shirt-pattern-light-bluish-gray-arm-left-green-arm-right-nougat-hands.jpg": {
@@ -797,7 +797,7 @@
     "exclude": true
   },
   "body/cab-white-torso-vest-with-open-shirt-medallion-and-hairy-chest-pattern-dark-purple-arms-yellow-hands.jpg": {
-    "name": "White Vest with Open Shirt, Medallion and Hairy Chest - Dark Purple Arms - Yellow Hands",
+    "name": "Medallion Vest",
     "crop": "left"
   },
   "body/cab-torso-hoodie-with-medium-blue-and-white-diagonal-stripes-pattern-bright-pink-arms-yellow-hands-bright-pink-arms-yellow-hands.jpg": {
@@ -810,11 +810,11 @@
     "crop": "left"
   },
   "body/cab-light-bluish-gray-torso-henley-shirt-with-light-nougat-neck-and-creases-pattern-light-bluish-gray-arms-light-nougat-hands.jpg": {
-    "name": "Light Bluish Gray Henley Shirt with Light Nougat Neck and Creases - Light Bluish Gray Arms - Light Nougat Hands",
+    "name": "Gray Henley",
     "crop": "left"
   },
   "body/cab-torso-viking-vest-with-chain-mail-and-belts-pattern-yellow-arms-yellow-hands.jpg": {
-    "name": "Viking Vest with Chain Mail and Belts",
+    "name": "Chain Mail Vest",
     "crop": "left"
   },
   "body/cab-female-tank-top-torso-with-shoulder-bag-scarf.jpg": {
@@ -833,7 +833,7 @@
     "exclude": true
   },
   "body/cab-red-torso-suit-jacket-two-buttons-necklace-press-pass-and-back-print-pattern-red-arms-yellow-hands.jpg": {
-    "name": "Red Suit Jacket, Two Buttons, Necklace, Press Pass and Back - Red Arms - Yellow Hands",
+    "name": "Press Pass Suit",
     "crop": "left"
   },
   "body/cab-diving-suit-torso-973pb4194c01-printed-minifigure-part.jpg": {
@@ -842,7 +842,7 @@
     "exclude": true
   },
   "body/cab-torso-with-gray-jacket-and-black-shirt-pattern.jpg": {
-    "name": "Gray Jacket and Black Shirt",
+    "name": "Gray Jacket",
     "crop": "left"
   },
   "body/cab-lego-minifigure-torso-overalls-973pb3472c01.jpg": {
@@ -856,7 +856,7 @@
     "exclude": true
   },
   "body/cab-white-torso-sand-green-apron-dark-green-splotches-pen-and-pad-in-pocket-pattern-white-arms-yellow-hands.jpg": {
-    "name": "White Sand Green Apron, Dark Green Splotches, Pen and Pad in Pocket - White Arms - Yellow Hands",
+    "name": "Waiter Apron",
     "crop": "left"
   },
   "pants/cab-hips-legs-with-black-pockets-and-white-flaps-pattern.jpg": {
@@ -888,7 +888,7 @@
     "exclude": true
   },
   "pants/cab-hips-and-legs-with-gold-medium-azure-and-white-circuitry-and-boot-tips-pattern.jpg": {
-    "name": "Gold, Medium Azure, and White Circuitry and Boot Tips",
+    "name": "Circuitry Suit",
     "crop": "left"
   },
   "pants/cab-hips-and-legs-with-tiny-silver-triangles-light-bluish-gray-knee-wrappings-black-zori-sandals-patt.jpg": {
@@ -897,7 +897,7 @@
     "exclude": true
   },
   "pants/cab-hips-and-legs-with-earbud-dark-turquoise-wire-pattern.jpg": {
-    "name": "Earbud & Dark Turquoise Wire",
+    "name": "Earbud Wire",
     "crop": "left"
   },
   "pants/cab-white-legs-with-elegant-gold-pattern.jpg": {
@@ -911,7 +911,7 @@
     "exclude": true
   },
   "pants/cab-red-minifigure-legs-with-diagonal-stripes.jpg": {
-    "name": "Red with Diagonal Stripes",
+    "name": "Red Stripes",
     "crop": "left"
   },
   "pants/cab-legs-with-chain-key-silver-toes-purple-wraps.jpg": {
@@ -934,7 +934,7 @@
     "exclude": true
   },
   "pants/cab-white-legs-with-gold-and-black-boots.jpg": {
-    "name": "White with Gold and Black Boots",
+    "name": "White & Gold",
     "crop": "left"
   },
   "pants/cab-hips-and-medium-legs-plain.jpg": {
@@ -948,7 +948,7 @@
     "exclude": true
   },
   "pants/cab-dark-blue-hips-and-legs-with-reddish-brown-belt-and-hip-holster-on-right-side-pattern.jpg": {
-    "name": "Dark Blue with Reddish Brown Belt and Hip Holster on Right Side",
+    "name": "Holster Jeans",
     "crop": "left"
   },
   "pants/cab-hips-and-legs-with-stormtrooper-bandages-970c00pb1668.jpg": {
@@ -960,7 +960,7 @@
     "crop": "left"
   },
   "pants/cab-hips-and-legs-with-reddish-brown-belt-with-silver-buckle-and-circles-tan-tunic-with-fur-hem-and-ce.jpg": {
-    "name": "Reddish Brown Belt with Silver Buckle and Circles, Tan Tunic with Fur Hem and Ce",
+    "name": "Fur Hem Tunic",
     "crop": "left"
   },
   "pants/cab-minifigure-legs-with-lime-belt-and-torn-knees-970c00pb1465.jpg": {
@@ -968,7 +968,7 @@
     "crop": "left"
   },
   "pants/cab-hips-and-legs-with-dark-brown-belt-silver-buckle-and-pockets-with-black-stitching-pattern.jpg": {
-    "name": "Dark Brown Belt, Silver Buckle and Pockets with Black Stitching",
+    "name": "Brown Belt & Buckle",
     "crop": "left"
   },
   "pants/cab-hips-and-legs-with-red-wraps-and-gold-belt-pattern.jpg": {
@@ -980,7 +980,7 @@
     "crop": "left"
   },
   "pants/cab-olive-green-legs-with-dark-brown-boots-970c00pb1573.jpg": {
-    "name": "Olive Green with Dark Brown Boots",
+    "name": "Olive & Boots",
     "crop": "left"
   },
   "pants/cab-hips-and-white-legs.jpg": {
@@ -999,7 +999,7 @@
     "exclude": true
   },
   "pants/cab-bright-light-blue-hips-and-legs-with-ripped-denim-pants-pockets-black-belt-pattern.jpg": {
-    "name": "Bright Light Blue with Ripped Denim Pants, Pockets, Black Belt",
+    "name": "Ripped Denim",
     "crop": "left"
   },
   "pants/cab-minifigure-legs-with-tied-shirt-oil-stain-print-970c00pb1731.jpg": {
@@ -1032,7 +1032,7 @@
     "exclude": true
   },
   "pants/cab-minifigure-legs-with-dark-brown-rivets-and-silver-toes.jpg": {
-    "name": "Dark Brown Rivets and Silver Toes",
+    "name": "Riveted Boots",
     "crop": "left"
   },
   "pants/cab-minifigure-legs-with-sandals-and-pocket-pattern-970c00pb1682.jpg": {
@@ -1297,16 +1297,16 @@
     "exclude": true
   },
   "body/eeb-3402-lego-minifigure-torso-female-orange-sweater-green-shirt.jpg": {
-    "name": "Female Orange Sweater Green Shirt"
+    "name": "Orange Sweater"
   },
   "body/eeb-3633-lego-minifigure-torso-beige-sweater-vest-collared-shirt.jpg": {
-    "name": "Beige Sweater Vest Collared Shirt"
+    "name": "Beige Sweater Vest"
   },
   "body/eeb-621-lego-minifigure-torso-black-ninja-robe-kimono-with-dragon.jpg": {
-    "name": "Black Ninja Robe / Kimono With Dragon"
+    "name": "Dragon Kimono"
   },
   "pants/eeb-2712-lego-minifigure-legs-black-pants-with-belt-and-chains.jpg": {
-    "name": "Black Pants With Belt And Chains"
+    "name": "Chain Belt"
   },
   "pants/eeb-3727-lego-minifigure-legs-black-long-skirt.jpg": {
     "name": "Black Long Skirt",
@@ -1542,13 +1542,13 @@
     "exclude": true
   },
   "hair/eeb-3434-lego-minifigure-hair-female-black-short-with-side-part.jpg": {
-    "name": "Female Black Short With Side Part",
+    "name": "Black Side Part",
     "keyOut": "white",
     "scale": 0.96,
     "offsetY": -0.038
   },
   "hair/eeb-2382-lego-minifigure-hair-female-black-swept-back-into-bun.jpg": {
-    "name": "Female Black Swept Back Into Bun",
+    "name": "Black Bun",
     "keyOut": "white",
     "scale": 0.96,
     "offsetY": -0.008
@@ -1609,7 +1609,7 @@
     "exclude": true
   },
   "hair/eeb-416-lego-minifigure-hair-female-blonde-short-with-side-part.jpg": {
-    "name": "Female Blonde Short With Side Part",
+    "name": "Blonde Side Part",
     "keyOut": "white",
     "scale": 1.0125,
     "offsetX": 0.0025,
@@ -1656,7 +1656,7 @@
     "exclude": true
   },
   "hair/eeb-420-lego-minifigure-hair-female-brown-swept-back-into-bun.jpg": {
-    "name": "Female Brown Swept Back Into Bun",
+    "name": "Brown Bun",
     "keyOut": "white",
     "offsetY": -0.015
   },
@@ -1736,7 +1736,7 @@
     "exclude": true
   },
   "hair/eeb-3438-lego-minifigure-hair-female-dark-brown-two-pigtails.jpg": {
-    "name": "Female Dark Brown Two Pigtails",
+    "name": "Brown Pigtails",
     "keyOut": "white",
     "scale": 1.056,
     "offsetX": -0.015,
@@ -2122,7 +2122,7 @@
     "exclude": true
   },
   "hair/eeb-2801-lego-minifigure-hair-male-brown-with-black-glasses.jpg": {
-    "name": "Male Brown With Black Glasses",
+    "name": "Brown with Glasses",
     "keyOut": "white",
     "offsetY": -0.0583
   },
@@ -2176,7 +2176,7 @@
     "exclude": true
   },
   "hair/eeb-3954-lego-minifigure-hair-male-dark-brown-parted-on-right.jpg": {
-    "name": "Male Dark Brown Parted On Right",
+    "name": "Dark Brown Part",
     "keyOut": "white"
   },
   "hair/eeb-429-lego-minifigure-hair-male-dark-brown-short.jpg": {
@@ -2320,7 +2320,7 @@
     "exclude": true
   },
   "hair/eeb-1755-lego-minifigure-hair-male-reddish-brown-short.jpg": {
-    "name": "Male Reddish Brown Short 2",
+    "name": "Auburn Short",
     "keyOut": "white"
   },
   "hair/eeb-2081-lego-minifigure-hair-male-reddish-brown-spiked.jpg": {
@@ -2378,7 +2378,7 @@
     "exclude": true
   },
   "hair/eeb-442-lego-minifigure-hair-male-yellowish-green-spiked-up.jpg": {
-    "name": "Male Yellowish Green Spiked Up",
+    "name": "Green Spikes",
     "keyOut": "white",
     "offsetY": -0.1055,
     "scale": 1.1794,
@@ -2410,7 +2410,7 @@
     "exclude": true
   },
   "hair/eeb-4189-lego-minifigure-hair-black-short-with-parting-male.jpg": {
-    "name": "Black Short With Parting (Male)",
+    "name": "Black Part",
     "keyOut": "white"
   },
   "hair/eeb-4307-lego-minifigure-hair-female-dark-brown-long-ponytail.jpg": {
@@ -2489,7 +2489,7 @@
     "exclude": true
   },
   "hair/eeb-3721-lego-aviator-bomber-hat-with-goggles-reddish-brown.jpg": {
-    "name": "Aviator / Bomber Hat With Goggles Reddish Brown",
+    "name": "Aviator Cap",
     "keyOut": "white",
     "scale": 1.3,
     "offsetY": 0.0477
@@ -2550,7 +2550,7 @@
     "exclude": true
   },
   "hair/eeb-4066-lego-castle-knight-helmet-black.jpg": {
-    "name": "Castle / Knight Helmet Black",
+    "name": "Great Helm",
     "keyOut": "white",
     "offsetY": -0.035
   },
@@ -2565,7 +2565,7 @@
     "exclude": true
   },
   "hair/eeb-3998-lego-castle-knights-helmet-black.jpg": {
-    "name": "Castle / Knight'S Helmet Black",
+    "name": "Knight Helmet",
     "keyOut": "white",
     "scale": 1.12,
     "offsetX": 0.018
@@ -2636,7 +2636,7 @@
     "exclude": true
   },
   "hair/eeb-1789-lego-construction-helmet-yellow.jpg": {
-    "name": "Construction Helmet Yellow",
+    "name": "Hard Hat",
     "keyOut": "white",
     "scale": 1.24
   },
@@ -2646,7 +2646,7 @@
     "exclude": true
   },
   "hair/eeb-1783-lego-cooks-chefs-hat-white.jpg": {
-    "name": "Cook'S / Chef'S Hat White",
+    "name": "Chef Hat",
     "keyOut": "white"
   },
   "hair/eeb-1769-lego-cooks-dinner-hat-white.jpg": {
@@ -2660,7 +2660,7 @@
     "exclude": true
   },
   "hair/eeb-1793-lego-fedora-hat-wide-brim-beige.jpg": {
-    "name": "Fedora Hat Wide Brim Beige",
+    "name": "Beige Fedora",
     "keyOut": "white",
     "scale": 1.22
   },
@@ -3082,54 +3082,54 @@
     "exclude": true
   },
   "body/eeb-3400-lego-minifigure-torso-bare-chest-tattoo-on-back.jpg": {
-    "name": "Bare Chest Tattoo On Back"
+    "name": "Tattooed Chest"
   },
   "body/eeb-1675-lego-minifigure-torso-beige-tan-knit-sweater.jpg": {
     "name": "Beige / Tan Knit Sweater"
   },
   "body/eeb-3017-lego-minifigure-torso-beige-sweater-vest-bow-tie-shirt.jpg": {
-    "name": "Beige Sweater Vest Bow Tie Shirt"
+    "name": "Beige Bow Tie Vest"
   },
   "body/eeb-3906-lego-minifigure-torso-beige-worn-out-vest-with-strings.jpg": {
-    "name": "Beige Worn Out Vest With Strings"
+    "name": "Worn Beige Vest"
   },
   "body/eeb-2518-lego-minifigure-torso-black-and-lime-jacket-sweatshirt.jpg": {
-    "name": "Black And Lime Jacket / Sweatshirt"
+    "name": "Black & Lime Jacket"
   },
   "body/eeb-3273-lego-minifigure-torso-black-fire-jacket-with-harness.jpg": {
     "name": "Black Fire Jacket With Harness",
     "exclude": true
   },
   "body/eeb-2529-lego-minifigure-torso-black-jacket-claw-necklace-gloves.jpg": {
-    "name": "Black Jacket Claw Necklace Gloves"
+    "name": "Claw Necklace"
   },
   "body/eeb-4132-lego-minifigure-torso-black-kimono-ninja-robe-tiger-head-on-back.jpg": {
-    "name": "Black Kimono / Ninja Robe Tiger Head On Back"
+    "name": "Tiger Kimono"
   },
   "body/eeb-2998-lego-minifigure-torso-black-leather-jacket.jpg": {
     "name": "Black Leather Jacket 2"
   },
   "body/eeb-3711-lego-minifigure-torso-black-suit-jacket-white-shirt-with-collar.jpg": {
-    "name": "Black Suit Jacket White Shirt With Collar"
+    "name": "Black Suit Jacket"
   },
   "body/eeb-2396-lego-minifigure-torso-blouse-and-olive-vest.jpg": {
     "name": "Blouse And Olive Vest",
     "exclude": true
   },
   "body/eeb-3269-lego-minifigure-torso-blue-and-orange-sports-jacket.jpg": {
-    "name": "Blue And Orange Sports Jacket"
+    "name": "Blue Sports Jacket"
   },
   "body/eeb-615-lego-minifigure-torso-blue-armor-nexo-knights.jpg": {
     "name": "Blue Armor Nexo Knights"
   },
   "body/eeb-3837-lego-minifigure-torso-blue-blouse-in-christmas-style.jpg": {
-    "name": "Blue Blouse In Christmas Style"
+    "name": "Christmas Blouse"
   },
   "body/eeb-3706-lego-minifigure-torso-blue-female-knotted-shirt.jpg": {
-    "name": "Blue Female Knotted Shirt"
+    "name": "Knotted Blue Shirt"
   },
   "body/eeb-4033-lego-minifigure-torso-blue-flannel-vest-white-t-shirt-with-print.jpg": {
-    "name": "Blue Flannel Vest White T Shirt With Print"
+    "name": "Flannel Vest"
   },
   "body/eeb-586-lego-minifigure-torso-blue-hooded-sweatshirt.jpg": {
     "name": "Blue Hooded Sweatshirt",
@@ -3151,28 +3151,28 @@
     "exclude": true
   },
   "body/eeb-4032-lego-minifigure-torso-blue-shirt-with-skull-and-bones.jpg": {
-    "name": "Blue Shirt With Skull And Bones"
+    "name": "Skull & Bones Tee"
   },
   "body/eeb-678-lego-minifigure-torso-blue-striped-shirt-red-bow-tie.jpg": {
-    "name": "Blue Striped Shirt Red Bow Tie"
+    "name": "Striped Bow Tie"
   },
   "body/eeb-3928-lego-minifigure-torso-blue-sweater-with-red-heart.jpg": {
-    "name": "Blue Sweater With Red Heart"
+    "name": "Heart Sweater"
   },
   "body/eeb-3391-lego-minifigure-torso-blue-tank-top-with-print.jpg": {
     "name": "Blue Tank Top With Print"
   },
   "body/eeb-4111-lego-minifigure-torso-blue-top-with-cup-and-straw-graphic.jpg": {
-    "name": "Blue Top With Cup And Straw Graphic"
+    "name": "Soda Cup Top"
   },
   "body/eeb-3701-lego-minifigure-torso-blue-winter-jacket-gray-gloves.jpg": {
-    "name": "Blue Winter Jacket Gray Gloves"
+    "name": "Blue Winter Coat"
   },
   "body/eeb-4129-lego-minifigure-torso-bright-light-blue-shirt-with-classic-space-logo.jpg": {
-    "name": "Bright Light Blue Shirt With Classic Space Logo"
+    "name": "Classic Space Tee"
   },
   "body/eeb-3832-lego-minifigure-torso-bright-orange-shirt-with-print.jpg": {
-    "name": "Bright Orange Shirt With Print"
+    "name": "Orange Print Shirt"
   },
   "body/eeb-552-lego-minifigure-torso-brown-armor.jpg": {
     "name": "Brown Armor",
@@ -3182,47 +3182,47 @@
     "name": "Brown Vest With Pockets"
   },
   "body/eeb-3696-lego-minifigure-torso-cardigan-sweater-with-hood-collar-shirt.jpg": {
-    "name": "Cardigan Sweater With Hood Collar Shirt"
+    "name": "Hooded Cardigan"
   },
   "body/eeb-3270-lego-minifigure-torso-castaway-shaman-indian-bare-chest.jpg": {
     "name": "Castaway / Shaman / Indian Bare Chest",
     "exclude": true
   },
   "body/eeb-3020-lego-minifigure-torso-coast-guard-jacket-with-harness.jpg": {
-    "name": "Coast Guard / Jacket With Harness"
+    "name": "Coast Guard"
   },
   "body/eeb-3713-lego-minifigure-torso-colorful-blouse-with-belt.jpg": {
-    "name": "Colorful Blouse With Belt"
+    "name": "Belted Blouse"
   },
   "body/eeb-3702-lego-minifigure-torso-colorful-hoodie-jacket-red-gloves.jpg": {
-    "name": "Colorful Hoodie / Jacket Red Gloves"
+    "name": "Colorful Hoodie"
   },
   "body/eeb-3699-lego-minifigure-torso-colorful-jacket-with-zipper.jpg": {
-    "name": "Colorful Jacket With Zipper"
+    "name": "Colorful Zip Jacket"
   },
   "body/eeb-3005-lego-minifigure-torso-cook-chef-white-jacket-with-buttons.jpg": {
-    "name": "Cook / Chef White Jacket With Buttons"
+    "name": "Chef Jacket"
   },
   "body/eeb-4110-lego-minifigure-torso-coral-checked-shirt.jpg": {
     "name": "Coral Checked Shirt"
   },
   "body/eeb-675-lego-minifigure-torso-dark-beige-vest-with-pockets.jpg": {
-    "name": "Dark Beige Vest With Pockets"
+    "name": "Beige Vest"
   },
   "body/eeb-1671-lego-minifigure-torso-dark-blue-checked-shirt.jpg": {
     "name": "Dark Blue Checked Shirt"
   },
   "body/eeb-3712-lego-minifigure-torso-dark-blue-jacket-vest-shirt-and-tie.jpg": {
-    "name": "Dark Blue Jacket Vest Shirt And Tie"
+    "name": "Blue Vest & Tie"
   },
   "body/eeb-3907-lego-minifigure-torso-dark-blue-shirt-with-patterns.jpg": {
-    "name": "Dark Blue Shirt With Patterns"
+    "name": "Patterned Blue"
   },
   "body/eeb-3337-lego-minifigure-torso-dark-blue-sport-sweatshirt.jpg": {
-    "name": "Dark Blue Sport Sweatshirt"
+    "name": "Blue Sweatshirt"
   },
   "body/eeb-3638-lego-minifigure-torso-dark-blue-suit-jacket-pocket-watch.jpg": {
-    "name": "Dark Blue Suit Jacket Pocket Watch"
+    "name": "Pocket Watch Suit"
   },
   "body/eeb-3710-lego-minifigure-torso-dark-brown-jacket-with-shark-on-back.jpg": {
     "name": "Dark Brown Jacket With Shark On Back",
@@ -3232,7 +3232,7 @@
     "name": "Dark Green Hoodie 2"
   },
   "body/eeb-3931-lego-minifigure-torso-dark-green-jacket-beige-sweater.jpg": {
-    "name": "Dark Green Jacket Beige Sweater"
+    "name": "Dark Green Jacket"
   },
   "body/eeb-2693-lego-minifigure-torso-dark-orange-vest-ammunition-belt.jpg": {
     "name": "Dark Orange Vest Ammunition Belt",
@@ -3242,29 +3242,29 @@
     "name": "Dark Tan Sweater"
   },
   "body/eeb-4108-lego-minifigure-torso-dark-turquoise-zip-up-jacket.jpg": {
-    "name": "Dark Turquoise Zip Up Jacket"
+    "name": "Turquoise Zip"
   },
   "body/eeb-3818-lego-minifigure-torso-decorated-robe-scarf-bag-on-the-back.jpg": {
-    "name": "Decorated Robe Scarf Bag On The Back"
+    "name": "Decorated Robe"
   },
   "body/eeb-3403-lego-minifigure-torso-denim-jacket-red-shirt.jpg": {
     "name": "Denim Jacket Red Shirt"
   },
   "body/eeb-3006-lego-minifigure-torso-dentist-dental-white-coat.jpg": {
-    "name": "Dentist / Dental White Coat"
+    "name": "Dentist Coat"
   },
   "body/eeb-3340-lego-minifigure-torso-doctor-medical-apron-coat.jpg": {
-    "name": "Doctor Medical Apron / Coat"
+    "name": "Doctor Coat"
   },
   "body/eeb-4130-lego-minifigure-torso-doctor-medical-apron-coat.jpg": {
     "name": "Doctor Medical Apron / Coat 2",
     "exclude": true
   },
   "body/eeb-3566-lego-minifigure-torso-female-tank-top-scarf-shoulder-bag.jpg": {
-    "name": "Female Tank Top Scarf Shoulder Bag"
+    "name": "Tank Top & Bag"
   },
   "body/eeb-3406-lego-minifigure-torso-female-blue-blouse-with-glitter.jpg": {
-    "name": "Female Blue Blouse With Glitter"
+    "name": "Glitter Blouse"
   },
   "body/eeb-3393-lego-minifigure-torso-female-blue-open-sweater.jpg": {
     "name": "Female Blue Open Sweater"
@@ -3273,14 +3273,14 @@
     "name": "Female Denim Vest Gloves"
   },
   "body/eeb-4107-lego-minifigure-torso-female-denim-vest-white-t-shirt-with-record-print.jpg": {
-    "name": "Female Denim Vest White T Shirt With Record Print"
+    "name": "Denim Record Vest"
   },
   "body/eeb-3390-lego-minifigure-torso-female-pink-sweater.jpg": {
     "name": "Female Pink Sweater",
     "exclude": true
   },
   "body/eeb-3399-lego-minifigure-torso-female-short-jacket-shirt.jpg": {
-    "name": "Female Short Jacket Shirt"
+    "name": "Short Jacket"
   },
   "body/eeb-3009-lego-minifigure-torso-firefighter-fireman-orange-jacket.jpg": {
     "name": "Firefighter / Fireman Orange Jacket",
@@ -3290,10 +3290,10 @@
     "name": "Gamer'S Shirt Green"
   },
   "body/eeb-1943-lego-minifigure-torso-gray-cardigan-sweater-shirt-tie.jpg": {
-    "name": "Gray Cardigan Sweater Shirt Tie"
+    "name": "Gray Cardigan"
   },
   "body/eeb-3339-lego-minifigure-torso-gray-henley-shirt-longsleeve.jpg": {
-    "name": "Gray Henley Shirt / Longsleeve"
+    "name": "Gray Longsleeve"
   },
   "body/eeb-2191-lego-minifigure-torso-gray-striped-sweater.jpg": {
     "name": "Gray Striped Sweater"
@@ -3303,17 +3303,17 @@
     "exclude": true
   },
   "body/eeb-4035-lego-minifigure-torso-green-jacket-white-shirt-necklace.jpg": {
-    "name": "Green Jacket White Shirt Necklace"
+    "name": "Green Necklace Jacket"
   },
   "body/eeb-3341-lego-minifigure-torso-green-sweater-with-zigzag-lines.jpg": {
-    "name": "Green Sweater With Zigzag Lines"
+    "name": "Zigzag Sweater"
   },
   "body/eeb-3715-lego-minifigure-torso-green-top-with-dolphin.jpg": {
     "name": "Green Top With Dolphin",
     "exclude": true
   },
   "body/eeb-3767-lego-minifigure-torso-grey-sweatshirt-with-print.jpg": {
-    "name": "Grey Sweatshirt With Print"
+    "name": "Printed Sweatshirt"
   },
   "body/eeb-585-lego-minifigure-torso-hawaiian-shirt-with-flowers.jpg": {
     "name": "Hawaiian Shirt With Flowers",
@@ -3324,61 +3324,61 @@
     "exclude": true
   },
   "body/eeb-3828-lego-minifigure-torso-jacket-with-fur-gloves-striped-blouse.jpg": {
-    "name": "Jacket With Fur Gloves Striped Blouse"
+    "name": "Fur Trim Jacket"
   },
   "body/eeb-600-lego-minifigure-torso-jacket-with-hood-and-belt.jpg": {
     "name": "Jacket With Hood And Belt",
     "exclude": true
   },
   "body/eeb-3694-lego-minifigure-torso-jacket-with-zipper-brown-and-pink.jpg": {
-    "name": "Jacket With Zipper Brown And Pink"
+    "name": "Pink Zip Jacket"
   },
   "body/eeb-3698-lego-minifigure-torso-leather-jacket-bare-chest.jpg": {
-    "name": "Leather Jacket Bare Chest"
+    "name": "Open Leather Jacket"
   },
   "body/eeb-629-lego-minifigure-torso-lifeguard-white-polo-shirt-whistle.jpg": {
     "name": "Lifeguard / White Polo Shirt Whistle",
     "exclude": true
   },
   "body/eeb-3010-lego-minifigure-torso-lime-safety-vest-blue-jacket.jpg": {
-    "name": "Lime Safety Vest Blue Jacket"
+    "name": "Lime Safety Vest"
   },
   "body/eeb-2394-lego-minifigure-torso-lime-shirt-with-collar-and-tie.jpg": {
-    "name": "Lime Shirt With Collar And Tie"
+    "name": "Lime Collar & Tie"
   },
   "body/eeb-3755-lego-minifigure-torso-mechanic-blue-shirt-and-overalls.jpg": {
-    "name": "Mechanic / Blue Shirt And Overalls"
+    "name": "Blue Overalls"
   },
   "body/eeb-3013-lego-minifigure-torso-mechanic-coveralls-gloves.jpg": {
-    "name": "Mechanic / Coveralls Gloves"
+    "name": "Mechanic Coveralls"
   },
   "body/eeb-3704-lego-minifigure-torso-medical-rescuer-paramedic-jacket.jpg": {
-    "name": "Medical Rescuer / Paramedic Jacket"
+    "name": "Paramedic Jacket"
   },
   "body/eeb-667-lego-minifigure-torso-miner-orange-jacket-with-zipper.jpg": {
     "name": "Miner / Orange Jacket With Zipper",
     "exclude": true
   },
   "body/eeb-2701-lego-minifigure-torso-orange-jacket-gold-necklace.jpg": {
-    "name": "Orange Jacket Gold Necklace"
+    "name": "Gold Chain Jacket"
   },
   "body/eeb-665-lego-minifigure-torso-orange-ripped-shirt.jpg": {
     "name": "Orange Ripped Shirt"
   },
   "body/eeb-4109-lego-minifigure-torso-orange-shirt-with-bees-print.jpg": {
-    "name": "Orange Shirt With Bees Print"
+    "name": "Bee Print Shirt"
   },
   "body/eeb-3700-lego-minifigure-torso-orange-winter-jacket-black-gloves.jpg": {
-    "name": "Orange Winter Jacket Black Gloves"
+    "name": "Orange Winter Coat"
   },
   "body/eeb-3929-lego-minifigure-torso-painter-paint-stained-jacket.jpg": {
-    "name": "Painter Paint Stained Jacket"
+    "name": "Painter Jacket"
   },
   "body/eeb-3705-lego-minifigure-torso-pink-and-blue-hoodie.jpg": {
     "name": "Pink And Blue Hoodie"
   },
   "body/eeb-4036-lego-minifigure-torso-pink-shirt-with-dog-print.jpg": {
-    "name": "Pink Shirt With Dog Print"
+    "name": "Dog Print Shirt"
   },
   "body/eeb-2698-lego-minifigure-torso-pink-striped-top-flower-necklace.jpg": {
     "name": "Pink Striped Top Flower Necklace",
@@ -3389,27 +3389,27 @@
     "exclude": true
   },
   "body/eeb-3831-lego-minifigure-torso-pirate-blue-coat-jacket.jpg": {
-    "name": "Pirate Blue Coat / Jacket"
+    "name": "Blue Pirate Coat"
   },
   "body/eeb-4131-lego-minifigure-torso-pirate-reddish-orange-coat-jacket.jpg": {
-    "name": "Pirate Reddish Orange Coat / Jacket"
+    "name": "Orange Pirate Coat"
   },
   "body/eeb-3820-lego-minifigure-torso-pirate-ripped-vest-bag-gloves.jpg": {
     "name": "Pirate Ripped Vest Bag Gloves",
     "exclude": true
   },
   "body/eeb-3008-lego-minifigure-torso-plane-captain-blue-jacket-tie-id-badge.jpg": {
-    "name": "Plane Captain / Blue Jacket Tie ID Badge"
+    "name": "Captain Jacket"
   },
   "body/eeb-3822-lego-minifigure-torso-police-officer-dark-blue-uniform-harness.jpg": {
-    "name": "Police Officer / Dark Blue Uniform Harness"
+    "name": "Police Harness"
   },
   "body/eeb-3344-lego-minifigure-torso-police-officer-police-safety-vest.jpg": {
     "name": "Police Officer / Police Safety Vest",
     "exclude": true
   },
   "body/eeb-3768-lego-minifigure-torso-police-officer-police-safety-vest.jpg": {
-    "name": "Police Officer / Police Safety Vest 2"
+    "name": "Police Safety Vest"
   },
   "body/eeb-3345-lego-minifigure-torso-police-officer-police-shirt-with-tie.jpg": {
     "name": "Police Officer / Police Shirt With Tie",
@@ -3420,28 +3420,28 @@
     "exclude": true
   },
   "body/eeb-3714-lego-minifigure-torso-police-suit-with-badge-shirt-tie.jpg": {
-    "name": "Police Suit With Badge Shirt Tie"
+    "name": "Police Suit"
   },
   "body/eeb-3016-lego-minifigure-torso-purple-jacket-gray-sweater-vest-shirt.jpg": {
-    "name": "Purple Jacket Gray Sweater Vest Shirt"
+    "name": "Purple Vest Jacket"
   },
   "body/eeb-2525-lego-minifigure-torso-purple-jacket-tie-shirt-camera.jpg": {
-    "name": "Purple Jacket Tie Shirt Camera"
+    "name": "Camera Jacket"
   },
   "body/eeb-3707-lego-minifigure-torso-purple-sleeveless-shirt.jpg": {
     "name": "Purple Sleeveless Shirt"
   },
   "body/eeb-3823-lego-minifigure-torso-purple-sweater-with-unicorns.jpg": {
-    "name": "Purple Sweater With Unicorns"
+    "name": "Unicorn Sweater"
   },
   "body/eeb-672-lego-minifigure-torso-purple-sweatshirt-tracksuit.jpg": {
-    "name": "Purple Sweatshirt / Tracksuit"
+    "name": "Purple Tracksuit"
   },
   "body/eeb-3504-lego-minifigure-torso-quilted-jacket-beige-and-orange.jpg": {
-    "name": "Quilted Jacket Beige And Orange"
+    "name": "Quilted Beige"
   },
   "body/eeb-575-lego-minifigure-torso-red-female-top-swimsuit.jpg": {
-    "name": "Red Female Top / Swimsuit"
+    "name": "Red Swimsuit"
   },
   "body/eeb-598-lego-minifigure-torso-red-jacket-with-hood-and-belt.jpg": {
     "name": "Red Jacket With Hood And Belt",
@@ -3455,20 +3455,20 @@
     "name": "Red Plaid Flannel Shirt"
   },
   "body/eeb-3639-lego-minifigure-torso-red-plaid-flannel-shirt.jpg": {
-    "name": "Red Plaid Flannel Shirt 2"
+    "name": "Red Flannel"
   },
   "body/eeb-2416-lego-minifigure-torso-red-shirt-with-collar-white-t-shirt.jpg": {
-    "name": "Red Shirt With Collar White T Shirt"
+    "name": "Red Collared Shirt"
   },
   "body/eeb-646-lego-minifigure-torso-red-sleeveless-shirt-with-pizza.jpg": {
     "name": "Red Sleeveless Shirt With Pizza",
     "exclude": true
   },
   "body/eeb-3834-lego-minifigure-torso-red-sports-jacket-sweatshirt-with-zipper.jpg": {
-    "name": "Red Sports Jacket / Sweatshirt With Zipper"
+    "name": "Red Zip Jacket"
   },
   "body/eeb-3833-lego-minifigure-torso-red-t-shirt-with-dragon-print.jpg": {
-    "name": "Red T Shirt With Dragon Print"
+    "name": "Dragon Tee"
   },
   "body/eeb-4300-lego-minifigure-torso-reddish-brown-apron.jpg": {
     "name": "Reddish Brown Apron"
@@ -3478,10 +3478,10 @@
     "exclude": true
   },
   "body/eeb-3819-lego-minifigure-torso-santa-dark-red-jacket-with-fur.jpg": {
-    "name": "Santa Dark Red Jacket With Fur"
+    "name": "Santa Jacket"
   },
   "body/eeb-571-lego-minifigure-torso-scientist-white-lab-coat-apron.jpg": {
-    "name": "Scientist White Lab Coat / Apron"
+    "name": "Lab Coat"
   },
   "body/eeb-638-lego-minifigure-torso-scuba-diver-vest.jpg": {
     "name": "Scuba / Diver Vest"
@@ -3491,7 +3491,7 @@
     "exclude": true
   },
   "body/eeb-3271-lego-minifigure-torso-security-agent-tactical-vest.jpg": {
-    "name": "Security Agent / Tactical Vest"
+    "name": "Tactical Vest"
   },
   "body/eeb-3753-lego-minifigure-torso-shirt-longsleeve-with-ice-cream.jpg": {
     "name": "Shirt / Longsleeve With Ice Cream",
@@ -3509,7 +3509,7 @@
     "name": "Shirt With Sloth"
   },
   "body/eeb-1677-lego-minifigure-torso-shirt-with-tie-suspenders.jpg": {
-    "name": "Shirt With Tie Suspenders"
+    "name": "Tie & Suspenders"
   },
   "body/eeb-1047-lego-minifigure-torso-skeleton-black.jpg": {
     "name": "Skeleton Black",
@@ -3524,20 +3524,20 @@
     "exclude": true
   },
   "body/eeb-3408-lego-minifigure-torso-sporst-jacket-big-fat-belly.jpg": {
-    "name": "Sporst Jacket Big / Fat Belly"
+    "name": "Belly Jacket"
   },
   "body/eeb-2516-lego-minifigure-torso-sports-jacket-with-xtreme-logo.jpg": {
     "name": "Sports Jacket With XTREME Logo",
     "exclude": true
   },
   "body/eeb-2528-lego-minifigure-torso-sports-jacket-vita-rush-logo.jpg": {
-    "name": "Sports Jacket Vita Rush Logo"
+    "name": "Vita Rush Jacket"
   },
   "body/eeb-3268-lego-minifigure-torso-striped-vest-shirt-and-bow-tie.jpg": {
-    "name": "Striped Vest Shirt And Bow Tie"
+    "name": "Striped Bow Tie Vest"
   },
   "body/eeb-3019-lego-minifigure-torso-suit-jacket-tuxedo-tailcoat.jpg": {
-    "name": "Suit Jacket / Tuxedo / Tailcoat"
+    "name": "Tailcoat"
   },
   "body/eeb-669-lego-minifigure-torso-tan-top-with-suspender.jpg": {
     "name": "Tan Top With Suspender",
@@ -3548,25 +3548,25 @@
     "exclude": true
   },
   "body/eeb-3632-lego-minifigure-torso-turquoise-ornate-female-top.jpg": {
-    "name": "Turquoise Ornate Female Top"
+    "name": "Ornate Top"
   },
   "body/eeb-3418-lego-minifigure-torso-turquoise-polo-with-collar-and-pocket.jpg": {
-    "name": "Turquoise Polo With Collar And Pocket"
+    "name": "Turquoise Polo"
   },
   "body/eeb-3395-lego-minifigure-torso-turquoise-quilted-jacket.jpg": {
     "name": "Turquoise Quilted Jacket"
   },
   "body/eeb-3419-lego-minifigure-torso-turquoise-quilted-jacket.jpg": {
-    "name": "Turquoise Quilted Jacket 2"
+    "name": "Quilted Turquoise"
   },
   "body/eeb-3554-lego-minifigure-torso-turquoise-shirt-with-stars-pajamas.jpg": {
-    "name": "Turquoise Shirt With Stars / Pajamas"
+    "name": "Star Pajamas"
   },
   "body/eeb-3829-lego-minifigure-torso-two-color-blue-sweatshirt.jpg": {
-    "name": "Two Color Blue Sweatshirt"
+    "name": "Two-Tone Blue"
   },
   "body/eeb-3007-lego-minifigure-torso-vest-with-fringe-lime-shirt-hippie-style.jpg": {
-    "name": "Vest With Fringe Lime Shirt Hippie Style"
+    "name": "Fringe Vest"
   },
   "body/eeb-2695-lego-minifigure-torso-vest-with-pockets-animal-rescuer.jpg": {
     "name": "Vest With Pockets / Animal Rescuer",
@@ -3601,7 +3601,7 @@
     "exclude": true
   },
   "body/eeb-620-lego-minifigure-torso-white-ninja-robe-kimono.jpg": {
-    "name": "White Ninja Robe / Kimono"
+    "name": "White Kimono"
   },
   "body/eeb-4034-lego-minifigure-torso-white-shirt-with-fruits.jpg": {
     "name": "White Shirt With Fruits",
@@ -3648,19 +3648,19 @@
     "exclude": true
   },
   "body/eeb-3821-lego-minifigure-torso-witch-black-jacket-shawl-with-tassels.jpg": {
-    "name": "Witch Black Jacket Shawl With Tassels"
+    "name": "Witch Shawl"
   },
   "body/eeb-560-lego-minifigure-torso-worker-orange-jacket-with-hood.jpg": {
-    "name": "Worker / Orange Jacket With Hood"
+    "name": "Worker Hoodie"
   },
   "body/eeb-637-lego-minifigure-torso-worker-orange-safety-vest.jpg": {
-    "name": "Worker / Orange Safety Vest"
+    "name": "Orange Safety Vest"
   },
   "body/eeb-4133-lego-minifigure-torso-wrestler.jpg": {
     "name": "Wrestler"
   },
   "body/eeb-4182-lego-minifigure-torso-light-blue-sweater-with-pattern.jpg": {
-    "name": "Light Blue Sweater With Pattern"
+    "name": "Patterned Knit"
   },
   "body/eeb-3846-lego-wizard-sorcerer-outfit-torso-skirt.jpg": {
     "name": "Wizard / Sorcerer Outfit Torso + Skirt",
@@ -3670,68 +3670,68 @@
     "name": "Blue Hospital Gown"
   },
   "body/eeb-4253-lego-minifigure-torso-brown-fur-tan-shirt-with-lacing.jpg": {
-    "name": "Brown Fur Tan Shirt With Lacing"
+    "name": "Fur & Laces"
   },
   "body/eeb-4255-lego-minifigure-torso-dark-brown-jacket-red-floral-shirt.jpg": {
-    "name": "Dark Brown Jacket Red Floral Shirt"
+    "name": "Floral Brown Jacket"
   },
   "body/eeb-4256-lego-minifigure-torso-dark-green-female-tunic-white-blouse.jpg": {
-    "name": "Dark Green Female Tunic White Blouse"
+    "name": "Green Tunic"
   },
   "body/eeb-4257-lego-minifigure-torso-silver-gray-armor-brown-belt.jpg": {
-    "name": "Silver Gray Armor Brown Belt"
+    "name": "Silver Armor"
   },
   "body/eeb-4260-lego-minifigure-torso-viking-brown-leather-armor.jpg": {
-    "name": "Viking Brown Leather Armor"
+    "name": "Viking Armor"
   },
   "body/eeb-4259-lego-minifigure-torso-viking-olive-green-tunic-with-fur-collar.jpg": {
-    "name": "Viking Olive Green Tunic With Fur Collar"
+    "name": "Viking Tunic"
   },
   "body/eeb-4258-lego-minifigure-torso-white-striped-female-top-back-tie.jpg": {
     "name": "White Striped Female Top Back Tie",
     "exclude": true
   },
   "body/eeb-4254-lego-minifigure-torso-yellowish-green-jacket-white-shirt.jpg": {
-    "name": "Yellowish Green Jacket White Shirt"
+    "name": "Olive Jacket"
   },
   "body/eeb-4221-minifigure-torso-blue-sweater-light-nougat-hands-custom-printed-lego-torso.jpg": {
-    "name": "(Blue Sweater Light Nougat Hands) Custom Printed Torso"
+    "name": "Custom Blue Knit (Tan)"
   },
   "body/eeb-4215-minifigure-torso-blue-sweater-yellow-hands-custom-printed-lego-torso.jpg": {
-    "name": "(Blue Sweater Yellow Hands) Custom Printed Torso"
+    "name": "Custom Blue Knit"
   },
   "body/eeb-4311-minifigure-torso-gray-hoodie-custom-printed-lego-torso.jpg": {
-    "name": "(Gray Hoodie) Custom Printed Torso"
+    "name": "Custom Gray Hoodie"
   },
   "body/eeb-4218-minifigure-torso-green-checkered-shirt-yellow-hands-custom-printed-lego-torso.jpg": {
-    "name": "(Green Checkered Shirt Yellow Hands) Custom Printed Torso"
+    "name": "Custom Check Shirt"
   },
   "body/eeb-4220-minifigure-torso-hawaiian-shirt-yellow-hands-custom-printed-lego-torso.jpg": {
-    "name": "(Hawaiian Shirt Yellow Hands) Custom Printed Torso"
+    "name": "Custom Hawaiian"
   },
   "body/eeb-4308-minifigure-torso-military-jacket-custom-printed-lego-torso.jpg": {
-    "name": "(Military Jacket) Custom Printed Torso"
+    "name": "Custom Military"
   },
   "body/eeb-4310-minifigure-torso-muscular-chest-custom-printed-lego-torso.jpg": {
-    "name": "(Muscular Chest) Custom Printed Torso"
+    "name": "Custom Muscles"
   },
   "body/eeb-4223-minifigure-torso-panda-shirt-light-nougat-hands-custom-print-on-lego-torso.jpg": {
-    "name": "(Panda Shirt Light Nougat Hands) Custom Print On Torso"
+    "name": "Custom Panda Tee (Tan)"
   },
   "body/eeb-4217-minifigure-torso-panda-shirt-yellow-hands-custom-printed-lego-torso.jpg": {
-    "name": "(Panda Shirt Yellow Hands) Custom Printed Torso"
+    "name": "Custom Panda Tee"
   },
   "body/eeb-4225-minifigure-torso-red-skull-shirt-light-nougat-hands-custom-print-on-lego-torso.jpg": {
-    "name": "(Red Skull Shirt Light Nougat Hands) Custom Print On Torso"
+    "name": "Custom Skull Tee (Tan)"
   },
   "body/eeb-4219-minifigure-torso-red-skull-shirt-yellow-hands-custom-printed-lego-torso.jpg": {
-    "name": "(Red Skull Shirt Yellow Hands) Custom Printed Torso"
+    "name": "Custom Skull Tee"
   },
   "body/eeb-4222-minifigure-torso-red-sweater-light-nougat-hands-custom-print-on-lego-torso.jpg": {
-    "name": "(Red Sweater Light Nougat Hands) Custom Print On Torso"
+    "name": "Custom Red Knit (Tan)"
   },
   "body/eeb-4216-minifigure-torso-red-sweater-yellow-hands-custom-printed-lego-torso.jpg": {
-    "name": "(Red Sweater Yellow Hands) Custom Printed Torso"
+    "name": "Custom Red Knit"
   },
   "body/eeb-4212-minifigure-torso-shirt-with-dinosaur-light-nougat-hands-custom-print-on-a-lego-torso.jpg": {
     "name": "(Shirt With Dinosaur Light Nougat Hands) Custom Print On A Torso",
@@ -3758,14 +3758,14 @@
     "exclude": true
   },
   "pants/eeb-737-lego-minifigure-legs-dark-red-pants-knee-pads-shoes.jpg": {
-    "name": "Dark Red Pants Knee Pads Shoes"
+    "name": "Red Knee Pads"
   },
   "pants/eeb-1718-lego-minifigure-short-legs-dark-beige-dark-tan-pants.jpg": {
     "name": "Short Legs Dark Beige / Dark Tan Pants",
     "exclude": true
   },
   "pants/eeb-729-lego-minifigure-legs-artist-painter-gray-pants-paint-spots.jpg": {
-    "name": "Artist / Painter Gray Pants Paint Spots"
+    "name": "Painter Gray"
   },
   "pants/eeb-2082-lego-minifigure-legs-beige-tan-pants.jpg": {
     "name": "Beige / Tan Pants"
@@ -3790,10 +3790,10 @@
     "exclude": true
   },
   "pants/eeb-714-lego-minifigure-legs-black-pants-belt-key-chain.jpg": {
-    "name": "Black Pants Belt Key Chain"
+    "name": "Key Chain"
   },
   "pants/eeb-3049-lego-minifigure-legs-black-pants-long-belt-boots.jpg": {
-    "name": "Black Pants Long Belt Boots"
+    "name": "Long Belt"
   },
   "pants/eeb-2277-lego-minifigure-legs-black-pants-print.jpg": {
     "name": "Black Pants Print",
@@ -3803,13 +3803,13 @@
     "name": "Black Pants Red Stripes"
   },
   "pants/eeb-1723-lego-minifigure-legs-black-pants-reflective-stripes.jpg": {
-    "name": "Black Pants Reflective Stripes"
+    "name": "Reflective Stripes"
   },
   "pants/eeb-2278-lego-minifigure-legs-black-pants-silver-belt-and-tapes.jpg": {
-    "name": "Black Pants Silver Belt And Tapes"
+    "name": "Silver Belt"
   },
   "pants/eeb-3539-lego-minifigure-legs-blue-jeans-and-red-cowboy-boots.jpg": {
-    "name": "Blue Jeans And Red Cowboy Boots"
+    "name": "Cowboy Boots"
   },
   "pants/eeb-3570-lego-minifigure-legs-blue-jeans-white-boots.jpg": {
     "name": "Blue Jeans White Boots",
@@ -3836,13 +3836,13 @@
     "exclude": true
   },
   "pants/eeb-4069-lego-minifigure-legs-bright-light-blue-pants-jeans-with-pockets.jpg": {
-    "name": "Bright Light Blue Pants / Jeans With Pockets"
+    "name": "Light Blue Jeans"
   },
   "pants/eeb-718-lego-minifigure-legs-bright-light-orange-pants-print.jpg": {
-    "name": "Bright Light Orange Pants Print"
+    "name": "Light Orange"
   },
   "pants/eeb-746-lego-minifigure-legs-brown-pants-gunbelt-with-bullets.jpg": {
-    "name": "Brown Pants Gunbelt With Bullets"
+    "name": "Gunbelt"
   },
   "pants/eeb-3726-lego-minifigure-legs-coral-pants.jpg": {
     "name": "Coral Pants",
@@ -3852,7 +3852,7 @@
     "name": "Cowboy Pants"
   },
   "pants/eeb-1708-lego-minifigure-legs-dark-beige-dark-tan-pants.jpg": {
-    "name": "Dark Beige / Dark Tan Pants"
+    "name": "Dark Tan"
   },
   "pants/eeb-3284-lego-minifigure-legs-dark-beige-pants-with-pockets.jpg": {
     "name": "Dark Beige Pants With Pockets",
@@ -3863,14 +3863,14 @@
     "exclude": true
   },
   "pants/eeb-3804-lego-minifigure-legs-dark-blue-jeans-denim-pants-with-patches.jpg": {
-    "name": "Dark Blue Jeans / Denim Pants With Patches"
+    "name": "Patched Jeans"
   },
   "pants/eeb-688-lego-minifigure-legs-dark-blue-pants.jpg": {
     "name": "Dark Blue Pants",
     "exclude": true
   },
   "pants/eeb-2509-lego-minifigure-legs-dark-blue-pants-belt-and-holster.jpg": {
-    "name": "Dark Blue Pants Belt And Holster"
+    "name": "Blue Holster"
   },
   "pants/eeb-716-lego-minifigure-legs-dark-blue-pants-orange-stripes.jpg": {
     "name": "Dark Blue Pants Orange Stripes",
@@ -3892,7 +3892,7 @@
     "exclude": true
   },
   "pants/eeb-3905-lego-minifigure-legs-dark-gray-pants-with-belt.jpg": {
-    "name": "Dark Gray Pants With Belt"
+    "name": "Dark Gray Belt"
   },
   "pants/eeb-1714-lego-minifigure-legs-dark-green-pants.jpg": {
     "name": "Dark Green Pants"
@@ -3901,10 +3901,10 @@
     "name": "Dark Orange Pants"
   },
   "pants/eeb-728-lego-minifigure-legs-dark-orange-pants-harness.jpg": {
-    "name": "Dark Orange Pants Harness"
+    "name": "Orange Harness"
   },
   "pants/eeb-2281-lego-minifigure-legs-dark-orange-pants-watch-on-chain.jpg": {
-    "name": "Dark Orange Pants Watch On Chain"
+    "name": "Watch Chain"
   },
   "pants/eeb-3645-lego-minifigure-legs-dark-pink-pants.jpg": {
     "name": "Dark Pink Pants",
@@ -3914,17 +3914,17 @@
     "name": "Dark Red Pants"
   },
   "pants/eeb-2711-lego-minifigure-legs-dark-tan-pants-with-pockets.jpg": {
-    "name": "Dark Tan Pants With Pockets"
+    "name": "Tan Pockets"
   },
   "pants/eeb-3631-lego-minifigure-legs-dark-turquoise-pants.jpg": {
     "name": "Dark Turquoise Pants",
     "exclude": true
   },
   "pants/eeb-3347-lego-minifigure-legs-fitness-outfit-with-boots.jpg": {
-    "name": "Fitness Outfit With Boots"
+    "name": "Gym Boots"
   },
   "pants/eeb-3043-lego-minifigure-legs-fitness-outfit-leggings.jpg": {
-    "name": "Fitness Outfit / Leggings"
+    "name": "Leggings"
   },
   "pants/eeb-3044-lego-minifigure-legs-fitness-outfit-leggings.jpg": {
     "name": "Fitness Outfit / Leggings 2",
@@ -3942,7 +3942,7 @@
     "exclude": true
   },
   "pants/eeb-3805-lego-minifigure-legs-gray-pants-with-belt-and-pockets-red-boots.jpg": {
-    "name": "Gray Pants With Belt And Pockets Red Boots"
+    "name": "Gray & Red Boots"
   },
   "pants/eeb-3814-lego-minifigure-legs-gray-shorts-with-belt.jpg": {
     "name": "Gray Shorts With Belt",
@@ -3961,10 +3961,10 @@
     "exclude": true
   },
   "pants/eeb-704-lego-minifigure-legs-green-pants-with-print-armor.jpg": {
-    "name": "Green Pants With Print / Armor"
+    "name": "Green Armor"
   },
   "pants/eeb-3423-lego-minifigure-legs-green-pants-with-reflective-stripes.jpg": {
-    "name": "Green Pants With Reflective Stripes"
+    "name": "Green Hi-Vis"
   },
   "pants/eeb-3809-lego-minifigure-legs-green-pants-tool-belt.jpg": {
     "name": "Green Pants Tool Belt"
@@ -3973,7 +3973,7 @@
     "name": "Light Bluish Gray Pants"
   },
   "pants/eeb-736-lego-minifigure-legs-light-bluish-gray-pants-knee-pads.jpg": {
-    "name": "Light Bluish Gray Pants Knee Pads"
+    "name": "Gray Knee Pads"
   },
   "pants/eeb-692-lego-minifigure-legs-lime-pants.jpg": {
     "name": "Lime Pants",
@@ -3988,7 +3988,7 @@
     "exclude": true
   },
   "pants/eeb-717-lego-minifigure-legs-mechanic-green-pants-tools.jpg": {
-    "name": "Mechanic / Green Pants Tools"
+    "name": "Mechanic Tools"
   },
   "pants/eeb-693-lego-minifigure-legs-medium-azure-pants.jpg": {
     "name": "Medium Azure Pants",
@@ -4014,13 +4014,13 @@
     "exclude": true
   },
   "pants/eeb-747-lego-minifigure-legs-orange-pants-with-white-belt.jpg": {
-    "name": "Orange Pants With White Belt"
+    "name": "Orange & White"
   },
   "pants/eeb-2279-lego-minifigure-legs-orange-pants-belt-shoes-silver-panels.jpg": {
-    "name": "Orange Pants Belt Shoes Silver Panels"
+    "name": "Orange Panels"
   },
   "pants/eeb-3047-lego-minifigure-legs-painter-pants-with-paint-spots.jpg": {
-    "name": "Painter / Pants With Paint Spots"
+    "name": "Paint Spots"
   },
   "pants/eeb-690-lego-minifigure-legs-purple-pants.jpg": {
     "name": "Purple Pants",
@@ -4035,7 +4035,7 @@
     "exclude": true
   },
   "pants/eeb-4070-lego-minifigure-legs-red-pants-with-yellow-belt-and-patches.jpg": {
-    "name": "Red Pants With Yellow Belt And Patches"
+    "name": "Red & Yellow Belt"
   },
   "pants/eeb-3807-lego-minifigure-legs-red-pants-black-boots.jpg": {
     "name": "Red Pants Black Boots",
@@ -4049,16 +4049,16 @@
     "name": "Reddish Brown Pants"
   },
   "pants/eeb-3520-lego-minifigure-legs-ripped-gray-pants-with-belt.jpg": {
-    "name": "Ripped Gray Pants With Belt"
+    "name": "Ripped Gray"
   },
   "pants/eeb-698-lego-minifigure-legs-sand-blue-pants.jpg": {
     "name": "Sand Blue Pants"
   },
   "pants/eeb-3800-lego-minifigure-legs-sand-blue-pants-jeans-with-pockets.jpg": {
-    "name": "Sand Blue Pants / Jeans With Pockets"
+    "name": "Sand Blue Jeans"
   },
   "pants/eeb-2508-lego-minifigure-legs-sand-blue-pants-with-pockets.jpg": {
-    "name": "Sand Blue Pants With Pockets"
+    "name": "Sand Blue"
   },
   "pants/eeb-3644-lego-minifigure-legs-sand-green-pants.jpg": {
     "name": "Sand Green Pants"
@@ -4070,7 +4070,7 @@
     "name": "White Pants"
   },
   "pants/eeb-711-lego-minifigure-legs-white-pants-with-belt-and-print.jpg": {
-    "name": "White Pants With Belt And Print"
+    "name": "White Belted"
   },
   "pants/eeb-3812-lego-minifigure-legs-white-pants-with-print.jpg": {
     "name": "White Pants With Print",
@@ -4180,7 +4180,7 @@
     "name": "Dark Blue Shorts"
   },
   "pants/eeb-4278-lego-minifigure-legs-lime-green-swimwear-bottom.jpg": {
-    "name": "Lime Green Swimwear Bottom"
+    "name": "Lime Swim Trunks"
   },
   "pants/eeb-4279-lego-minifigure-legs-pirate-with-peg-leg.jpg": {
     "name": "Pirate With Peg Leg"
