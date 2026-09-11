@@ -53,7 +53,7 @@ export function SlotLayer({
   return (
     <motion.div
       className={cx(
-        'group absolute left-0 cursor-pointer',
+        'group pointer-events-none absolute left-0',
         active && 'drop-shadow-[0_12px_20px_rgba(23,28,58,0.3)]',
       )}
       style={{
@@ -88,6 +88,14 @@ export function SlotLayer({
           />
         )}
       </AnimatePresence>
+      <span
+        className='pointer-events-auto absolute inset-x-0 cursor-pointer'
+        style={{
+          top: exploded ? 0 : geometry.hitTop * scale,
+          height: (exploded ? geometry.canvasHeight : geometry.hitHeight) * scale,
+        }}
+        data-testid={`hit-${slot}`}
+      />
       <ArrowControls
         slot={slot}
         visible={active}

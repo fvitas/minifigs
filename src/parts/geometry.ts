@@ -26,6 +26,13 @@ export type SlotGeometry = {
   arrowCenter: number
   // Exploded hair hangs by its lowest pixel, well below where it sits stacked.
   explodedArrowCenter?: number
+  // Assembled, the canvases overlap deeply (hair's reaches down across the torso) and the layer
+  // above swallows the hover and the arrow clicks of the one below. Pointer events use this band
+  // instead, in px below the canvas top: the four bands tile the figure without overlapping, and
+  // each slot's arrowCenter sits far enough inside its own band for the whole button to clear the
+  // band below. Boundaries follow the seams: hem, chin, forehead.
+  hitTop: number
+  hitHeight: number
 }
 
 export const GEOMETRY: Record<Slot, SlotGeometry> = {
@@ -35,6 +42,8 @@ export const GEOMETRY: Record<Slot, SlotGeometry> = {
     stackOffset: 0,
     explodeGap: 0,
     arrowCenter: 230,
+    hitTop: 116,
+    hitHeight: 304,
   },
   // Hip block top is ~312 above the legs' bottom (the hip pins above it hide inside the torso).
   body: {
@@ -47,6 +56,8 @@ export const GEOMETRY: Record<Slot, SlotGeometry> = {
     // torso block: at 150 the longest arms touched the hips.
     explodeGap: 210,
     arrowCenter: 220,
+    hitTop: 154,
+    hitHeight: 216,
   },
   head: {
     canvasHeight: 320,
@@ -54,6 +65,8 @@ export const GEOMETRY: Record<Slot, SlotGeometry> = {
     stackOffset: 306,
     explodeGap: 150,
     arrowCenter: 195,
+    hitTop: 140,
+    hitHeight: 180,
   },
   hair: {
     canvasHeight: 600,
@@ -63,6 +76,8 @@ export const GEOMETRY: Record<Slot, SlotGeometry> = {
     explodeGap: 400,
     arrowCenter: 300,
     explodedArrowCenter: 500,
+    hitTop: 0,
+    hitHeight: 320,
   },
 }
 
