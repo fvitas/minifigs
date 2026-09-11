@@ -3,12 +3,11 @@ import { cx } from './cx'
 
 type StepperProps = {
   activeSlot: Slot | null
-  done: boolean
   color: boolean
 }
 
 // Step numbers sit centred under the four slot cards, joined by one dashed line.
-export function Stepper({ activeSlot, done, color }: StepperProps) {
+export function Stepper({ activeSlot, color }: StepperProps) {
   return (
     <div className='relative grid w-fit grid-cols-[repeat(4,112px)] gap-[18px]'>
       <span
@@ -23,11 +22,7 @@ export function Stepper({ activeSlot, done, color }: StepperProps) {
           key={slot}
           className={cx(
             'relative mx-auto grid size-[26px] place-items-center rounded-full text-xs font-semibold transition-[background-color,color,transform] duration-300',
-            color
-              ? 'bg-(--on-slot) text-(--slot)'
-              : done
-                ? 'bg-lego text-white'
-                : 'bg-navy text-white',
+            color ? 'bg-(--on-slot) text-(--slot)' : 'bg-navy text-white',
             activeSlot === slot && 'scale-[1.15]',
           )}
         >

@@ -82,7 +82,7 @@ function Configurator() {
         'grid h-dvh grid-cols-[minmax(0,1fr)] overflow-hidden transition-[background-color,color] duration-500',
         desktop
           ? 'grid-rows-[auto_minmax(0,1fr)_auto]'
-          : 'grid-rows-[auto_auto_minmax(0,1fr)_auto]',
+          : 'grid-rows-[auto_minmax(0,1fr)_auto_auto]',
         color ? 'bg-(--slot) text-(--on-slot)' : 'bg-fog text-ink',
       )}
       style={{ '--slot': palette.slot, '--on-slot': palette.onSlot } as CSSProperties}

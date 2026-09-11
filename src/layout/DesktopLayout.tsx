@@ -79,7 +79,7 @@ export function DesktopLayout({
             />
           </div>
           <div className='mt-[22px]'>
-            <Stepper activeSlot={state.activeSlot} done={!state.exploded} color={color} />
+            <Stepper activeSlot={state.activeSlot} color={color} />
           </div>
         </section>
         <div className='grid h-full min-h-0 grid-rows-[minmax(0,1fr)_auto] gap-4'>
@@ -112,10 +112,7 @@ export function DesktopLayout({
           <div className='relative z-[1] flex items-center justify-center gap-[10px]'>
             <button
               type='button'
-              className={cx(
-                snapButtonClass(state.exploded, color),
-                'h-11 w-[150px] whitespace-nowrap',
-              )}
+              className={cx(snapButtonClass(color), 'h-11 w-[150px] whitespace-nowrap')}
               onClick={onToggleExploded}
               data-testid='snap'
             >

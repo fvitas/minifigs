@@ -29,7 +29,7 @@ export function ModeSwitch({ mode, onChange }: ModeSwitchProps) {
           <span
             key={value}
             className={cx(
-              'relative flex items-center rounded-full px-3 transition-colors duration-200 md:px-[14px]',
+              'relative flex items-center rounded-full px-2.5 transition-colors duration-200 md:px-[14px]',
               on ? 'text-white' : 'group-hover:text-navy',
             )}
           >

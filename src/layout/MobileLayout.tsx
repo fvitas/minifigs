@@ -33,6 +33,26 @@ export function MobileLayout({
 
   return (
     <>
+      <section
+        ref={stageRef}
+        className='relative grid min-h-0 place-items-center overflow-hidden'
+        data-testid='stage'
+      >
+        <Backdrop color={color} word={state.exploded ? SLOT_WORD[slot] : 'DONE'} compact />
+        {scale > 0 && (
+          <Figure
+            catalog={catalog}
+            selection={state.selection}
+            exploded={state.exploded}
+            activeSlot={slot}
+            direction={state.direction}
+            scale={scale}
+            hoverArrows={false}
+            onActivate={activate}
+            onCycle={onCycle}
+          />
+        )}
+      </section>
       <nav className='z-[1] grid grid-cols-4 px-[14px]' data-testid='tabs'>
         {SLOTS.map((tab) => {
           const active = tab === slot
@@ -66,26 +86,6 @@ export function MobileLayout({
           )
         })}
       </nav>
-      <section
-        ref={stageRef}
-        className='relative grid min-h-0 place-items-center overflow-hidden'
-        data-testid='stage'
-      >
-        <Backdrop color={color} word={state.exploded ? SLOT_WORD[slot] : 'DONE'} compact />
-        {scale > 0 && (
-          <Figure
-            catalog={catalog}
-            selection={state.selection}
-            exploded={state.exploded}
-            activeSlot={slot}
-            direction={state.direction}
-            scale={scale}
-            hoverArrows={false}
-            onActivate={activate}
-            onCycle={onCycle}
-          />
-        )}
-      </section>
       <section className='z-[2] grid grid-cols-[minmax(0,1fr)] gap-[10px] pt-2 pb-[calc(14px+env(safe-area-inset-bottom))]'>
         <div
           className={cx(
@@ -110,10 +110,7 @@ export function MobileLayout({
         <div className='mx-[14px] mt-0.5 flex items-center gap-2'>
           <button
             type='button'
-            className={cx(
-              snapButtonClass(state.exploded, color),
-              'h-[50px] flex-1 text-[15px] whitespace-nowrap',
-            )}
+            className={cx(snapButtonClass(color), 'h-[50px] flex-1 text-[15px] whitespace-nowrap')}
             onClick={onToggleExploded}
             data-testid='snap'
           >
