@@ -58,9 +58,9 @@ export function DesktopLayout({
             )}
           >
             <b className={cx('font-medium', color ? 'text-(--on-slot)' : 'text-navy')}>
-              Four pieces.
+              Endless combinations.
             </b>{' '}
-            {catalog.manifest.parts.length} parts. No wrong answers.
+            Pick any. All yours.
           </p>
           <div ref={panelRef} className='relative min-h-[190px]'>
             <SlotCards
