@@ -29,7 +29,14 @@ function Configurator() {
   const onShuffle = () => {
     const picks = randomSelection(catalog.bySlot)
     SLOTS.forEach((slot, index) => {
-      setTimeout(() => onSelect(slot, picks[slot], index % 2 ? -1 : 1), index * SHUFFLE_STAGGER_MS)
+      const action = {
+        type: 'set',
+        slot,
+        id: picks[slot],
+        direction: index % 2 ? -1 : 1,
+        focus: false,
+      } as const
+      setTimeout(() => dispatch(action), index * SHUFFLE_STAGGER_MS)
     })
   }
 
@@ -55,6 +62,9 @@ function Configurator() {
         dispatch({ type: 'activate', slot: SLOTS[(index + 1) % SLOTS.length] ?? 'hair' })
         break
       case ' ':
+      case 'Enter':
+        // Both keys already press whatever control has focus; the stage only takes them when none does.
+        if (event.target instanceof HTMLElement && event.target.closest('button, a, input')) break
         event.preventDefault()
         onToggleExploded()
         break

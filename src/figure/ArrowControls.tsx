@@ -8,10 +8,12 @@ type ArrowControlsProps = {
   slot: Slot
   visible: boolean
   hoverReveal: boolean
+  // Px below the layer's top edge: the row this slot's arrows always sit on.
+  center: number
   onCycle: (slot: Slot, direction: Direction) => void
 }
 
-export function ArrowControls({ slot, visible, hoverReveal, onCycle }: ArrowControlsProps) {
+export function ArrowControls({ slot, visible, hoverReveal, center, onCycle }: ArrowControlsProps) {
   const arrow = (direction: Direction) => {
     const onClick = (event: MouseEvent<HTMLButtonElement>) => {
       event.stopPropagation()
@@ -23,11 +25,12 @@ export function ArrowControls({ slot, visible, hoverReveal, onCycle }: ArrowCont
         type='button'
         aria-label={`${direction < 0 ? 'Previous' : 'Next'} ${slot}`}
         className={cx(
-          'absolute top-1/2 z-10 grid size-[34px] -translate-y-1/2 place-items-center rounded-full border-[1.5px] border-line bg-white text-navy shadow-[0_8px_20px_-12px_rgba(0,0,0,.4)] transition-[opacity,transform,border-color,color] duration-200 hover:border-lego hover:text-lego active:scale-95 md:size-9',
+          'absolute z-10 grid size-[34px] -translate-y-1/2 place-items-center rounded-full border-[1.5px] border-line bg-white text-navy shadow-[0_8px_20px_-12px_rgba(0,0,0,.4)] transition-[opacity,transform,border-color,color] duration-200 hover:border-lego hover:text-lego active:scale-95 md:size-9',
           direction < 0 ? '-left-[30px] md:-left-3' : '-right-[30px] md:-right-3',
           visible ? 'opacity-100' : 'pointer-events-none opacity-0',
           hoverReveal && !visible && 'group-hover:pointer-events-auto group-hover:opacity-100',
         )}
+        style={{ top: center }}
         onClick={onClick}
         data-testid={`arrow-${slot}-${direction < 0 ? 'prev' : 'next'}`}
       >

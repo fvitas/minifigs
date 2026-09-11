@@ -31,7 +31,7 @@ export type ConfiguratorState = {
 }
 
 export type Action =
-  | { type: 'set'; slot: Slot; id: string | null; direction?: Direction }
+  | { type: 'set'; slot: Slot; id: string | null; direction?: Direction; focus?: boolean }
   | { type: 'cycle'; slot: Slot; direction: Direction; bySlot: PartsBySlot }
   | { type: 'activate'; slot: Slot | null }
   | { type: 'focus'; slot: Slot }
@@ -74,7 +74,9 @@ export function reduce(state: ConfiguratorState, action: Action): ConfiguratorSt
         ...state,
         selection: { ...state.selection, [action.slot]: action.id },
         direction: action.direction ?? 1,
-        focusSlot: action.slot,
+        // Shuffle passes focus: false — it changes all four slots, and following each one would
+        // strobe the stage through four palettes and four words.
+        focusSlot: action.focus === false ? state.focusSlot : action.slot,
       }
     }
     case 'cycle': {

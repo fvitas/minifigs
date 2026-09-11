@@ -20,10 +20,22 @@ export type SlotGeometry = {
   // Extra px gap added when the figure is exploded. For hair it is measured from the part's
   // lowest pixel: SlotLayer drops the image by Part.bottomGap so hats and hair hover alike.
   explodeGap: number
+  // Where the cycle arrows sit, in px below the canvas top. One position per slot rather than the
+  // middle of each piece: pieces differ in height, and arrows that followed them hopped while
+  // cycling. Every piece of the slot reaches this row.
+  arrowCenter: number
+  // Exploded hair hangs by its lowest pixel, well below where it sits stacked.
+  explodedArrowCenter?: number
 }
 
 export const GEOMETRY: Record<Slot, SlotGeometry> = {
-  pants: { canvasHeight: 420, targetWidth: UNIT * 0.7, stackOffset: 0, explodeGap: 0 },
+  pants: {
+    canvasHeight: 420,
+    targetWidth: UNIT * 0.7,
+    stackOffset: 0,
+    explodeGap: 0,
+    arrowCenter: 230,
+  },
   // Hip block top is ~312 above the legs' bottom (the hip pins above it hide inside the torso).
   body: {
     canvasHeight: 460,
@@ -32,14 +44,23 @@ export const GEOMETRY: Record<Slot, SlotGeometry> = {
     bottomInset: 90,
     stackOffset: 214,
     explodeGap: 150,
+    arrowCenter: 220,
   },
-  head: { canvasHeight: 320, targetWidth: UNIT * 0.54, stackOffset: 306, explodeGap: 150 },
+  head: {
+    canvasHeight: 320,
+    targetWidth: UNIT * 0.54,
+    stackOffset: 306,
+    explodeGap: 150,
+    arrowCenter: 195,
+  },
   hair: {
     canvasHeight: 600,
     targetWidth: UNIT * 0.648,
     bottomInset: 230,
     stackOffset: -100,
     explodeGap: 400,
+    arrowCenter: 300,
+    explodedArrowCenter: 500,
   },
 }
 

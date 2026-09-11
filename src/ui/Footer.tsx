@@ -10,7 +10,7 @@ export function Footer({ color }: { color: boolean }) {
       )}
     >
       <Credit />
-      <span>← → swap · ↑ ↓ change part · Space snaps</span>
+      <span>← → swap · ↑ ↓ change part · Space or ⏎ snaps</span>
     </footer>
   )
 }

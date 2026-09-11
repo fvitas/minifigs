@@ -46,6 +46,10 @@ export function SlotLayer({
   // Exploded hair hangs by its lowest pixel; offsetting the image (not the layer) keeps the
   // layer still when switching between hats and hair.
   const drop = exploded && slot === 'hair' ? (part?.bottomGap ?? 0) * scale : 0
+  const geometry = GEOMETRY[slot]
+  const center =
+    (exploded ? (geometry.explodedArrowCenter ?? geometry.arrowCenter) : geometry.arrowCenter) *
+    scale
   return (
     <motion.div
       className={cx(
@@ -54,7 +58,7 @@ export function SlotLayer({
       )}
       style={{
         width: CANVAS_WIDTH * scale,
-        height: GEOMETRY[slot].canvasHeight * scale,
+        height: geometry.canvasHeight * scale,
         zIndex: SLOTS.length - index,
       }}
       initial={{ bottom, y: -140, opacity: 0 }}
@@ -84,7 +88,13 @@ export function SlotLayer({
           />
         )}
       </AnimatePresence>
-      <ArrowControls slot={slot} visible={active} hoverReveal={hoverArrows} onCycle={onCycle} />
+      <ArrowControls
+        slot={slot}
+        visible={active}
+        hoverReveal={hoverArrows}
+        center={center}
+        onCycle={onCycle}
+      />
     </motion.div>
   )
 }
