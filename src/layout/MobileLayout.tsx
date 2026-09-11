@@ -122,6 +122,7 @@ export function MobileLayout({
           <AssembledActions compact selection={state.selection} catalog={catalog} />
         </div>
         <Credit
+          inline
           className={cx(
             'text-center text-[10px] transition-colors duration-500',
             color ? 'text-(--on-slot)/75' : 'text-muted',

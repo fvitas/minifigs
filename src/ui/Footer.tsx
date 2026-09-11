@@ -5,7 +5,7 @@ export function Footer({ color }: { color: boolean }) {
   return (
     <footer
       className={cx(
-        'flex justify-between px-10 py-3 text-xs transition-colors duration-500',
+        'flex items-end justify-between px-10 py-3 text-xs transition-colors duration-500',
         color ? 'text-(--on-slot)/75' : 'text-muted',
       )}
     >

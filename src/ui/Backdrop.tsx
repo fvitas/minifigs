@@ -24,7 +24,8 @@ export function Backdrop({ color, word, compact }: BackdropProps) {
       />
       <div
         className={cx(
-          'pointer-events-none absolute inset-0 z-0 flex items-center justify-center transition-opacity duration-500 select-none',
+          // Nudged below the stage's middle: centred, the word ran across the face.
+          'pointer-events-none absolute inset-0 z-0 flex translate-y-[5%] items-center justify-center transition-opacity duration-500 select-none',
           color ? 'opacity-[.14]' : 'opacity-0',
         )}
         aria-hidden='true'
