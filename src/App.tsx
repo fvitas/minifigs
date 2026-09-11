@@ -15,7 +15,7 @@ const SHUFFLE_STAGGER_MS = 70
 
 function Configurator() {
   const catalog = useCatalog()
-  const [state, dispatch] = useConfigurator(catalog.bySlot)
+  const [state, dispatch, pushHistory] = useConfigurator(catalog.bySlot)
   const desktop = useMediaQuery('(min-width: 768px)')
   const color = state.mode === 'color'
   const palette = SLOT_PALETTE[state.focusSlot]
@@ -28,6 +28,7 @@ function Configurator() {
   const onMode = (mode: Mode) => dispatch({ type: 'mode', mode })
   const onShuffle = () => {
     const picks = randomSelection(catalog.bySlot)
+    pushHistory()
     SLOTS.forEach((slot, index) => {
       const action = {
         type: 'set',

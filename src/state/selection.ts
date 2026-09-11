@@ -32,6 +32,7 @@ export type ConfiguratorState = {
 
 export type Action =
   | { type: 'set'; slot: Slot; id: string | null; direction?: Direction; focus?: boolean }
+  | { type: 'restore'; shared: Shared }
   | { type: 'cycle'; slot: Slot; direction: Direction; bySlot: PartsBySlot }
   | { type: 'activate'; slot: Slot | null }
   | { type: 'focus'; slot: Slot }
@@ -79,6 +80,9 @@ export function reduce(state: ConfiguratorState, action: Action): ConfiguratorSt
         focusSlot: action.focus === false ? state.focusSlot : action.slot,
       }
     }
+    // Browser history: the URL is the whole share state, so Back replaces selection and mode.
+    case 'restore':
+      return { ...state, selection: action.shared.selection, mode: action.shared.mode }
     case 'cycle': {
       const id = nextOption(
         action.bySlot,
