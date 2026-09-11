@@ -9,6 +9,7 @@ import { snapButtonClass } from '../ui/buttons'
 import { Credit } from '../ui/Credit'
 import { cx } from '../ui/cx'
 import { SLOT_SHORT, SLOT_WORD } from '../ui/palette'
+import { ShuffleButton } from '../ui/ShuffleButton'
 import type { LayoutProps } from './ConfiguratorProps'
 import { useStageScale } from './useStageScale'
 
@@ -19,6 +20,7 @@ export function MobileLayout({
   color,
   onCycle,
   onSelect,
+  onShuffle,
   onToggleExploded,
 }: LayoutProps) {
   const { stageRef, scale } = useStageScale(true)
@@ -53,6 +55,9 @@ export function MobileLayout({
           />
         )}
       </section>
+      <div className='z-[1] flex justify-end px-[14px] pt-2'>
+        <ShuffleButton className='h-11 pr-[18px] pl-[14px] text-sm' onShuffle={onShuffle} />
+      </div>
       <nav className='z-[1] grid grid-cols-4 px-[14px]' data-testid='tabs'>
         {SLOTS.map((tab) => {
           const active = tab === slot

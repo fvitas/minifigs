@@ -75,21 +75,30 @@ function Configurator() {
     }
   })
 
-  const layoutProps = { catalog, state, dispatch, color, onCycle, onSelect, onToggleExploded }
+  const layoutProps = {
+    catalog,
+    state,
+    dispatch,
+    color,
+    onCycle,
+    onSelect,
+    onShuffle,
+    onToggleExploded,
+  }
   return (
     <div
       className={cx(
         'grid h-dvh grid-cols-[minmax(0,1fr)] overflow-hidden transition-[background-color,color] duration-500',
         desktop
           ? 'grid-rows-[auto_minmax(0,1fr)_auto]'
-          : 'grid-rows-[auto_minmax(0,1fr)_auto_auto]',
+          : 'grid-rows-[auto_minmax(0,1fr)_auto_auto_auto]',
         color ? 'bg-(--slot) text-(--on-slot)' : 'bg-fog text-ink',
       )}
       style={{ '--slot': palette.slot, '--on-slot': palette.onSlot } as CSSProperties}
       data-mode={state.mode}
       data-slot={state.focusSlot}
     >
-      <Header mode={state.mode} onMode={onMode} onShuffle={onShuffle} />
+      <Header desktop={desktop} mode={state.mode} onMode={onMode} onShuffle={onShuffle} />
       {desktop ? <DesktopLayout {...layoutProps} /> : <MobileLayout {...layoutProps} />}
     </div>
   )

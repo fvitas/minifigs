@@ -10,5 +10,6 @@ export type LayoutProps = {
   color: boolean
   onCycle: (slot: Slot, direction: Direction) => void
   onSelect: (slot: Slot, id: string | null, direction: Direction) => void
+  onShuffle: () => void
   onToggleExploded: () => void
 }

@@ -19,7 +19,8 @@ export function ModeSwitch({ mode, onChange }: ModeSwitchProps) {
       role='switch'
       aria-checked={mode === 'color'}
       aria-label='Color background'
-      className='group flex h-[34px] rounded-full border border-line bg-fog p-[2px] text-[11px] font-semibold text-muted md:h-10 md:p-[3px] md:text-xs'
+      // Taller than the desktop switch on purpose: 34px was under the 44px iOS touch target.
+      className='group flex h-11 rounded-full border border-line bg-fog p-[3px] text-[13px] font-semibold text-muted md:h-10 md:text-xs'
       onClick={() => onChange(mode === 'color' ? 'white' : 'color')}
       data-testid='mode-switch'
     >
@@ -29,7 +30,7 @@ export function ModeSwitch({ mode, onChange }: ModeSwitchProps) {
           <span
             key={value}
             className={cx(
-              'relative flex items-center rounded-full px-2.5 transition-colors duration-200 md:px-[14px]',
+              'relative flex items-center rounded-full px-4 transition-colors duration-200 md:px-[14px]',
               on ? 'text-white' : 'group-hover:text-navy',
             )}
           >
