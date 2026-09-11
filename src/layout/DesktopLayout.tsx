@@ -18,7 +18,7 @@ export function DesktopLayout({
   catalog,
   state,
   dispatch,
-  block,
+  color,
   onCycle,
   onSelect,
   onToggleExploded,
@@ -38,14 +38,14 @@ export function DesktopLayout({
           <h1
             className={cx(
               'mb-4 font-display text-[clamp(36px,3.9vw,54px)] leading-[.98] font-extrabold tracking-[-.035em] whitespace-nowrap transition-colors duration-500',
-              block ? 'text-(--on-slot)' : 'text-navy',
+              color ? 'text-(--on-slot)' : 'text-navy',
             )}
           >
             Design your{' '}
             <em
               className={cx(
                 'not-italic transition-[color,opacity] duration-500',
-                block ? 'text-(--on-slot) opacity-55' : 'text-lego',
+                color ? 'text-(--on-slot) opacity-55' : 'text-lego',
               )}
             >
               figurine.
@@ -54,10 +54,10 @@ export function DesktopLayout({
           <p
             className={cx(
               'mb-[34px] font-mono text-xs tracking-[.14em] uppercase transition-colors duration-500',
-              block ? 'text-(--on-slot)/75' : 'text-muted',
+              color ? 'text-(--on-slot)/75' : 'text-muted',
             )}
           >
-            <b className={cx('font-medium', block ? 'text-(--on-slot)' : 'text-navy')}>
+            <b className={cx('font-medium', color ? 'text-(--on-slot)' : 'text-navy')}>
               Four pieces.
             </b>{' '}
             {catalog.manifest.parts.length} parts. No wrong answers.
@@ -67,7 +67,7 @@ export function DesktopLayout({
               catalog={catalog}
               selection={state.selection}
               activeSlot={state.activeSlot}
-              block={block}
+              color={color}
               onActivate={toggleSlot}
             />
             <PartGrid
@@ -79,7 +79,7 @@ export function DesktopLayout({
             />
           </div>
           <div className='mt-[22px]'>
-            <Stepper activeSlot={state.activeSlot} done={!state.exploded} block={block} />
+            <Stepper activeSlot={state.activeSlot} done={!state.exploded} color={color} />
           </div>
         </section>
         <div className='grid h-full min-h-0 grid-rows-[minmax(0,1fr)_auto] gap-4'>
@@ -89,7 +89,7 @@ export function DesktopLayout({
             data-testid='stage'
           >
             <Backdrop
-              block={block}
+              color={color}
               word={state.exploded ? SLOT_WORD[state.focusSlot] : 'DONE'}
               compact={false}
             />
@@ -113,7 +113,7 @@ export function DesktopLayout({
             <button
               type='button'
               className={cx(
-                snapButtonClass(state.exploded, block),
+                snapButtonClass(state.exploded, color),
                 'h-11 w-[150px] whitespace-nowrap',
               )}
               onClick={onToggleExploded}
@@ -125,7 +125,7 @@ export function DesktopLayout({
           </div>
         </div>
       </main>
-      <Footer block={block} />
+      <Footer color={color} />
     </>
   )
 }

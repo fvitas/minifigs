@@ -7,7 +7,7 @@ export type LayoutProps = {
   catalog: Catalog
   state: ConfiguratorState
   dispatch: Dispatch<Action>
-  block: boolean
+  color: boolean
   onCycle: (slot: Slot, direction: Direction) => void
   onSelect: (slot: Slot, id: string | null, direction: Direction) => void
   onToggleExploded: () => void

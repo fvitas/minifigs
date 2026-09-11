@@ -17,7 +17,7 @@ function Configurator() {
   const catalog = useCatalog()
   const [state, dispatch] = useConfigurator(catalog.bySlot)
   const desktop = useMediaQuery('(min-width: 768px)')
-  const block = state.mode === 'block'
+  const color = state.mode === 'color'
   const palette = SLOT_PALETTE[state.focusSlot]
 
   const onCycle = (slot: Slot, direction: Direction) =>
@@ -64,7 +64,7 @@ function Configurator() {
     }
   })
 
-  const layoutProps = { catalog, state, dispatch, block, onCycle, onSelect, onToggleExploded }
+  const layoutProps = { catalog, state, dispatch, color, onCycle, onSelect, onToggleExploded }
   return (
     <div
       className={cx(
@@ -72,7 +72,7 @@ function Configurator() {
         desktop
           ? 'grid-rows-[auto_minmax(0,1fr)_auto]'
           : 'grid-rows-[auto_auto_minmax(0,1fr)_auto]',
-        block ? 'bg-(--slot) text-(--on-slot)' : 'bg-fog text-ink',
+        color ? 'bg-(--slot) text-(--on-slot)' : 'bg-fog text-ink',
       )}
       style={{ '--slot': palette.slot, '--on-slot': palette.onSlot } as CSSProperties}
       data-mode={state.mode}

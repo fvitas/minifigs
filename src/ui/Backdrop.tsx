@@ -2,25 +2,25 @@ import { AnimatePresence, motion } from 'motion/react'
 import { cx } from './cx'
 
 type BackdropProps = {
-  block: boolean
+  color: boolean
   word: string
   compact: boolean
 }
 
-// Block-mode stage dressing: soft white highlight behind the figure and the big ghost word.
-export function Backdrop({ block, word, compact }: BackdropProps) {
+// Color-mode stage dressing: soft white highlight behind the figure and the big ghost word.
+export function Backdrop({ color, word, compact }: BackdropProps) {
   return (
     <>
       <div
         className={cx(
           'pointer-events-none absolute inset-[-10%_-20%] z-0 bg-[radial-gradient(ellipse_50%_45%_at_50%_52%,rgba(255,255,255,.28),transparent_100%)] blur-[40px] transition-opacity duration-500',
-          block ? 'opacity-100' : 'opacity-0',
+          color ? 'opacity-100' : 'opacity-0',
         )}
       />
       <div
         className={cx(
           'pointer-events-none absolute inset-0 z-0 grid place-items-center transition-opacity duration-500 select-none',
-          block ? 'opacity-[.14]' : 'opacity-0',
+          color ? 'opacity-[.14]' : 'opacity-0',
         )}
         aria-hidden='true'
       >

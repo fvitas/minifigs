@@ -46,7 +46,7 @@ export function PartGrid({ slot, bySlot, selected, onSelect, onClose }: PartGrid
                   part={part}
                   selected={id === selected}
                   index={index}
-                  block={false}
+                  color={false}
                   onSelect={() => onSelect(slot, id, index >= currentIndex ? 1 : -1)}
                 />
               )

@@ -8,32 +8,30 @@ type ModeSwitchProps = {
 }
 
 const MODES: { value: Mode; label: string }[] = [
-  { value: 'plain', label: 'Plain' },
-  { value: 'block', label: 'Block' },
+  { value: 'white', label: 'White' },
+  { value: 'color', label: 'Color' },
 ]
 
 export function ModeSwitch({ mode, onChange }: ModeSwitchProps) {
   return (
-    <div
-      role='radiogroup'
-      aria-label='Background mode'
-      className='flex h-[34px] rounded-full border border-line bg-fog p-[2px] text-[11px] font-semibold text-muted md:h-10 md:p-[3px] md:text-xs'
+    <button
+      type='button'
+      role='switch'
+      aria-checked={mode === 'color'}
+      aria-label='Color background'
+      className='group flex h-[34px] rounded-full border border-line bg-fog p-[2px] text-[11px] font-semibold text-muted md:h-10 md:p-[3px] md:text-xs'
+      onClick={() => onChange(mode === 'color' ? 'white' : 'color')}
       data-testid='mode-switch'
     >
       {MODES.map(({ value, label }) => {
         const on = value === mode
         return (
-          <button
+          <span
             key={value}
-            type='button'
-            role='radio'
-            aria-checked={on}
             className={cx(
-              'relative rounded-full px-3 transition-colors duration-200 md:px-[14px]',
-              on ? 'text-white' : 'hover:text-navy',
+              'relative flex items-center rounded-full px-3 transition-colors duration-200 md:px-[14px]',
+              on ? 'text-white' : 'group-hover:text-navy',
             )}
-            onClick={() => onChange(value)}
-            data-testid={`mode-${value}`}
           >
             {on && (
               <motion.span
@@ -43,9 +41,9 @@ export function ModeSwitch({ mode, onChange }: ModeSwitchProps) {
               />
             )}
             <span className='relative z-[1]'>{label}</span>
-          </button>
+          </span>
         )
       })}
-    </div>
+    </button>
   )
 }

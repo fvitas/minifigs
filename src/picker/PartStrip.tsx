@@ -10,14 +10,14 @@ type PartStripProps = {
   slot: Slot
   bySlot: PartsBySlot
   selected: string | null
-  block: boolean
+  color: boolean
   onSelect: (slot: Slot, id: string | null, direction: Direction) => void
 }
 
 const EDGE_SLACK = 4
 
 // Mobile: one horizontal row of thumbs. Edge fades and chevrons show where more thumbs are hidden.
-export function PartStrip({ slot, bySlot, selected, block, onSelect }: PartStripProps) {
+export function PartStrip({ slot, bySlot, selected, color, onSelect }: PartStripProps) {
   const scroller = useRef<HTMLDivElement>(null)
   const [edges, setEdges] = useState({ left: false, right: false })
   const options = optionsFor(bySlot, slot)
@@ -53,7 +53,7 @@ export function PartStrip({ slot, bySlot, selected, block, onSelect }: PartStrip
     })
   }
 
-  const style = { '--edge': block ? 'var(--slot)' : 'var(--color-fog)' } as CSSProperties
+  const style = { '--edge': color ? 'var(--slot)' : 'var(--color-fog)' } as CSSProperties
   const fade = 'pointer-events-none absolute inset-y-0 z-[2] w-14 transition-opacity duration-300'
   const chevron =
     'absolute top-1/2 z-[3] grid size-[30px] -translate-y-1/2 place-items-center rounded-full border border-line bg-white text-navy shadow-[0_6px_16px_-10px_rgba(0,0,0,.5)] transition-[opacity,transform] duration-300 active:scale-90'
@@ -114,10 +114,10 @@ export function PartStrip({ slot, bySlot, selected, block, onSelect }: PartStrip
                 part={part}
                 selected={id === selected}
                 index={index}
-                block={block}
+                color={color}
                 className={cx(
                   'size-[68px]',
-                  !block && !(id === selected) && 'border-line bg-white',
+                  !color && !(id === selected) && 'border-line bg-white',
                 )}
                 onSelect={() => onSelect(slot, id, index >= currentIndex ? 1 : -1)}
               />

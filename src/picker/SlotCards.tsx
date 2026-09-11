@@ -7,11 +7,11 @@ type SlotCardsProps = {
   catalog: Catalog
   selection: Selection
   activeSlot: Slot | null
-  block: boolean
+  color: boolean
   onActivate: (slot: Slot) => void
 }
 
-export function SlotCards({ catalog, selection, activeSlot, block, onActivate }: SlotCardsProps) {
+export function SlotCards({ catalog, selection, activeSlot, color, onActivate }: SlotCardsProps) {
   return (
     <div className='grid grid-cols-[repeat(4,112px)] gap-[18px]' data-testid='slot-cards'>
       {SLOTS.map((slot) => {
@@ -24,7 +24,7 @@ export function SlotCards({ catalog, selection, activeSlot, block, onActivate }:
             type='button'
             className={cx(
               'grid gap-2 text-center text-xs transition-colors duration-500',
-              block ? 'text-(--on-slot)/75' : 'text-muted',
+              color ? 'text-(--on-slot)/75' : 'text-muted',
             )}
             onClick={() => onActivate(slot)}
             data-testid={`card-${slot}`}
@@ -33,10 +33,10 @@ export function SlotCards({ catalog, selection, activeSlot, block, onActivate }:
               className={cx(
                 'grid h-[112px] place-items-center rounded-[14px] border-[1.5px] bg-white transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-[3px] hover:shadow-[0_14px_30px_-18px_rgba(23,28,58,.5)]',
                 active
-                  ? block
+                  ? color
                     ? 'border-white shadow-[0_0_0_4px_rgba(255,255,255,.5)]'
                     : 'border-lego shadow-[0_0_0_4px_rgba(227,0,11,.12)]'
-                  : block
+                  : color
                     ? 'border-transparent'
                     : 'border-line',
               )}
@@ -52,7 +52,7 @@ export function SlotCards({ catalog, selection, activeSlot, block, onActivate }:
                 <span className='text-[28px] text-muted'>×</span>
               )}
             </span>
-            <span className={cx('font-medium', block ? 'text-(--on-slot)' : 'text-ink')}>
+            <span className={cx('font-medium', color ? 'text-(--on-slot)' : 'text-ink')}>
               {part?.name ?? 'No hair'}
             </span>
           </button>

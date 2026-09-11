@@ -6,12 +6,12 @@ type PartTileProps = {
   part: Part | null
   selected: boolean
   index: number
-  block: boolean
+  color: boolean
   className?: string
   onSelect: () => void
 }
 
-export function PartTile({ part, selected, index, block, className, onSelect }: PartTileProps) {
+export function PartTile({ part, selected, index, color, className, onSelect }: PartTileProps) {
   return (
     <motion.button
       type='button'
@@ -19,7 +19,7 @@ export function PartTile({ part, selected, index, block, className, onSelect }: 
       className={cx(
         'grid aspect-square place-items-center rounded-xl border-[1.5px] p-2 transition-[transform,border-color,background-color,box-shadow] duration-150 hover:-translate-y-0.5',
         selected
-          ? block
+          ? color
             ? 'border-white bg-white shadow-[0_0_0_3px_rgba(255,255,255,.45)]'
             : 'border-lego bg-white shadow-[0_0_0_3px_rgba(227,0,11,.12)]'
           : 'border-transparent bg-fog hover:border-line hover:bg-white',

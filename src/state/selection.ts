@@ -13,7 +13,13 @@ export const DEFAULT_SELECTION: Selection = {
   pants: 'tan-camo',
 }
 
-export type Mode = 'plain' | 'block'
+// 'white' is the quiet stage, 'color' floods it with the focused slot's colour.
+export type Mode = 'white' | 'color'
+
+export const DEFAULT_MODE: Mode = 'color'
+
+// What a share link carries.
+export type Shared = { selection: Selection; mode: Mode }
 
 export type ConfiguratorState = {
   selection: Selection
@@ -32,14 +38,14 @@ export type Action =
   | { type: 'explode'; exploded: boolean }
   | { type: 'mode'; mode: Mode }
 
-export function initialState(selection: Selection): ConfiguratorState {
+export function initialState({ selection, mode }: Shared): ConfiguratorState {
   return {
     selection,
     exploded: true,
     activeSlot: null,
     focusSlot: 'body',
     direction: 1,
-    mode: 'plain',
+    mode,
   }
 }
 

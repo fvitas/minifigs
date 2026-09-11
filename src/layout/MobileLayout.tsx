@@ -16,7 +16,7 @@ export function MobileLayout({
   catalog,
   state,
   dispatch,
-  block,
+  color,
   onCycle,
   onSelect,
   onToggleExploded,
@@ -42,7 +42,7 @@ export function MobileLayout({
               type='button'
               className={cx(
                 'relative pt-3 pb-[10px] font-mono text-[11px] tracking-[.14em] uppercase transition-[color,opacity] duration-300',
-                block
+                color
                   ? cx('text-(--on-slot)', active ? 'opacity-100' : 'opacity-60')
                   : active
                     ? 'text-navy'
@@ -57,7 +57,7 @@ export function MobileLayout({
                   layoutId='tab-underline'
                   className={cx(
                     'absolute inset-x-0 bottom-0 h-0.5',
-                    block ? 'bg-(--on-slot)' : 'bg-lego',
+                    color ? 'bg-(--on-slot)' : 'bg-lego',
                   )}
                   transition={{ type: 'spring', stiffness: 500, damping: 40 }}
                 />
@@ -71,7 +71,7 @@ export function MobileLayout({
         className='relative grid min-h-0 place-items-center overflow-hidden'
         data-testid='stage'
       >
-        <Backdrop block={block} word={state.exploded ? SLOT_WORD[slot] : 'DONE'} compact />
+        <Backdrop color={color} word={state.exploded ? SLOT_WORD[slot] : 'DONE'} compact />
         {scale > 0 && (
           <Figure
             catalog={catalog}
@@ -90,10 +90,10 @@ export function MobileLayout({
         <div
           className={cx(
             'flex min-h-[18px] items-baseline justify-between px-4 text-xs transition-colors duration-500',
-            block ? 'text-(--on-slot)' : 'text-muted',
+            color ? 'text-(--on-slot)' : 'text-muted',
           )}
         >
-          <b className={cx('text-sm font-semibold', block ? 'text-(--on-slot)' : 'text-navy')}>
+          <b className={cx('text-sm font-semibold', color ? 'text-(--on-slot)' : 'text-navy')}>
             {part?.name ?? 'No hair'}
           </b>
           <span>
@@ -104,14 +104,14 @@ export function MobileLayout({
           slot={slot}
           bySlot={catalog.bySlot}
           selected={selected}
-          block={block}
+          color={color}
           onSelect={onSelect}
         />
         <div className='mx-[14px] mt-0.5 flex items-center gap-2'>
           <button
             type='button'
             className={cx(
-              snapButtonClass(state.exploded, block),
+              snapButtonClass(state.exploded, color),
               'h-[50px] flex-1 text-[15px] whitespace-nowrap',
             )}
             onClick={onToggleExploded}
@@ -124,7 +124,7 @@ export function MobileLayout({
         <Credit
           className={cx(
             'text-center text-[10px] transition-colors duration-500',
-            block ? 'text-(--on-slot)/75' : 'text-muted',
+            color ? 'text-(--on-slot)/75' : 'text-muted',
           )}
         />
       </section>

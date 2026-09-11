@@ -8,7 +8,7 @@ export function useConfigurator(bySlot: PartsBySlot) {
     initialState(decode(window.location.search, parts)),
   )
   useEffect(() => {
-    window.history.replaceState(null, '', encode(state.selection))
-  }, [state.selection])
+    window.history.replaceState(null, '', encode({ selection: state.selection, mode: state.mode }))
+  }, [state.selection, state.mode])
   return [state, dispatch] as const satisfies readonly [ConfiguratorState, unknown]
 }
