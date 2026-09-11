@@ -76,6 +76,8 @@ export function SlotLayer({
           <motion.img
             key={part.id}
             src={part.src}
+            // CORS mode so the preload hits and the export reuses this bitmap instead of refetching.
+            crossOrigin='anonymous'
             alt={part.name}
             draggable={false}
             className='absolute inset-0 block size-full select-none'

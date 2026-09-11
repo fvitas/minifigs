@@ -12,6 +12,8 @@
     "typecheck": "tsc -b --noEmit",
     "test": "vitest run",
     "parts": "tsx scripts/parts/build.ts",
+    "assets": "tsx scripts/parts/publish.ts",
+    "deploy": "pnpm dlx vercel@latest build --prod --yes && pnpm dlx vercel@latest deploy --prebuilt --prod --yes",
     "mockups": "vite --config mockups/vite.config.ts"
   },
   "dependencies": {

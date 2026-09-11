@@ -9,6 +9,8 @@ const DRAW_ORDER: Slot[] = ['pants', 'body', 'head', 'hair']
 function loadImage(src: string): Promise<HTMLImageElement> {
   return new Promise((resolve, reject) => {
     const image = new Image()
+    // The parts come from another origin; without CORS the canvas is tainted and toBlob throws.
+    image.crossOrigin = 'anonymous'
     image.onload = () => resolve(image)
     image.onerror = () => reject(new Error(`Could not load ${src}`))
     image.src = src
@@ -29,7 +31,9 @@ export async function composePng(selection: Selection, catalog: Catalog): Promis
     const id = selection[slot]
     const part = id ? catalog.byId.get(id) : undefined
     if (!part) continue
-    const image = await loadImage(part.png)
+    // WebP, not the PNG master: every browser that can run this decodes it, the canvas re-encodes
+    // to PNG anyway, and the masters never leave the repo.
+    const image = await loadImage(part.src)
     const height = GEOMETRY[slot].canvasHeight * scale
     const y = EXPORT_HEIGHT - (bottoms[slot] + GEOMETRY[slot].canvasHeight) * scale
     context.drawImage(image, 0, y, canvas.width, height)

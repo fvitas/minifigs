@@ -59,3 +59,23 @@ Hair is the one slot that is judged by how it sits rather than by good or bad. W
 ### Erase what is left over
 
 Some artifacts survive every threshold — a grey hairline where the display figure blurred into the wig, a speck of the stand. Those are wiped by hand: with `pnpm dev` running, open `http://localhost:5173/scripts/parts/erase/index.html`, pick a piece and drag over it. The brush slider (or `[` and `]`) sets its size, `⌘Z` undoes a stroke, `Clear piece` starts over, the background button swaps the reference figure for magenta or a checker, and holding space pans a zoomed-in view. Strokes are saved to `assets/parts.erase.json` as a brush radius and the points it walked through, in the pixels of that part's canvas — they are source, so `pnpm parts` replays them onto the freshly built PNG and the retouch survives a rebuild. Run `pnpm parts` after a session to bake them in. Changing a piece's `scale` or `offset` afterwards moves the piece out from under its strokes, so fit first, erase second.
+
+## Deploy
+
+The app is on Vercel; the images are not. `public/parts` is 83 MB, and serving it from the deploy
+would spend Vercel's free 100 GB of transfer at roughly 3 MB a visit, so the WebP live in
+[fvitas/minifig-assets](https://github.com/fvitas/minifig-assets) and are served over GitHub Pages,
+which does not meter bandwidth. The build drops `dist/parts` and points every image at
+`PARTS_CDN` (`src/parts/cdn.ts`); `pnpm dev` still reads `public/`, so a fresh `pnpm parts` shows up
+without publishing.
+
+```sh
+pnpm parts     # rebuild the images
+pnpm assets    # push the WebP and the manifest to the Pages repo
+pnpm deploy    # build and ship the app
+```
+
+Publish before deploying whenever parts changed — the app fetches its manifest from Pages, so a new
+part that has not been pushed does not exist as far as the deploy is concerned. Pages takes about a
+minute to go live and caches for ten. The PNG masters never leave this machine: only the erase tool
+reads them.

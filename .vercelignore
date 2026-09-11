@@ -1,0 +1,7 @@
+# The parts are served from GitHub Pages, so the deploy never needs the 83 MB of images, the raw
+# photos they were built from, or the local-only notes.
+public/parts
+assets
+docs
+mockups
+scripts/parts/picker

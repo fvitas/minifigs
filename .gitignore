@@ -11,6 +11,9 @@ mockups/
 !README.md
 !.claude/skills/**/*.md
 
+# clone of the GitHub Pages repo that serves the parts
+.assets/
+
 # tooling noise
 .playwright-mcp/
 .DS_Store
@@ -22,3 +25,4 @@ mockups/
 
 # Generated picker data
 scripts/parts/picker/candidates.js
+.vercel
