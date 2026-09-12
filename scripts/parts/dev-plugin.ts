@@ -21,6 +21,11 @@ export function partsDevPlugin(): Plugin {
   return {
     name: 'minifig-parts-dev',
     apply: 'serve',
+    // The pages POST after every stroke; unwatched, or the watcher sees its own write and
+    // full-reloads the page mid-edit, dropping the zoom, the pan and the piece you were on.
+    config: () => ({
+      server: { watch: { ignored: Object.values(STORES).map((store) => store.file) } },
+    }),
     configureServer(server) {
       for (const [route, store] of Object.entries(STORES)) {
         server.middlewares.use(route, async (request, response) => {
