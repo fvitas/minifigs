@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>og</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #222;
+        font-family: 'DM Sans', sans-serif;
+      }
+      #card {
+        position: relative;
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+        background: #e3000b;
+        color: #fff;
+      }
+      #glow {
+        position: absolute;
+        inset: -20% -10%;
+        background: radial-gradient(
+          ellipse 46% 52% at 72% 55%,
+          rgba(255, 255, 255, 0.3),
+          transparent 100%
+        );
+        filter: blur(40px);
+      }
+      #copy {
+        position: absolute;
+        z-index: 4;
+        top: 50%;
+        left: 76px;
+        width: 470px;
+        transform: translateY(-50%);
+      }
+      #mark {
+        position: absolute;
+        z-index: 4;
+        top: 64px;
+        left: 76px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+      #brick {
+        position: relative;
+        width: 44px;
+        height: 27px;
+        border-radius: 5px;
+        background: #fff;
+        box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.14);
+      }
+      #brick::before,
+      #brick::after {
+        content: '';
+        position: absolute;
+        top: -8px;
+        width: 13px;
+        height: 8px;
+        border-radius: 3px 3px 0 0;
+        background: #fff;
+      }
+      #brick::before {
+        left: 6px;
+      }
+      #brick::after {
+        right: 6px;
+      }
+      #mark span {
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-weight: 800;
+        font-size: 42px;
+        letter-spacing: -0.02em;
+      }
+      h1 {
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-weight: 800;
+        font-size: 82px;
+        line-height: 0.94;
+        letter-spacing: -0.035em;
+      }
+      h1 em {
+        font-style: normal;
+        color: rgba(255, 255, 255, 0.52);
+      }
+      p {
+        margin-top: 34px;
+        font-family: 'DM Mono', monospace;
+        font-size: 15px;
+        white-space: nowrap;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.72);
+      }
+      p b {
+        font-weight: 500;
+        color: #fff;
+      }
+      .figure {
+        position: absolute;
+        filter: drop-shadow(0 30px 42px rgba(0, 0, 0, 0.3));
+      }
+      #f1 {
+        z-index: 2;
+        left: 540px;
+        bottom: 56px;
+        height: 340px;
+      }
+      #f2 {
+        z-index: 3;
+        left: 690px;
+        bottom: 48px;
+        height: 460px;
+      }
+      #f3 {
+        z-index: 1;
+        left: 915px;
+        bottom: 60px;
+        height: 360px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="card">
+      <div id="glow"></div>
+      <div id="mark"><i id="brick"></i><span>Minifigs</span></div>
+      <div id="copy">
+        <h1>Design your <em>figurine.</em></h1>
+        <p><b>Endless combinations.</b> Pick any. All yours.</p>
+      </div>
+      <img class="figure" id="f1" alt="" />
+      <img class="figure" id="f2" alt="" />
+      <img class="figure" id="f3" alt="" />
+    </div>
+    <script type="module">
+      import { composePng } from '/src/export/composePng.ts'
+      import { indexManifest } from '/src/parts/useManifest.ts'
+      import { DEFAULT_SELECTION, randomSelection } from '/src/state/selection.ts'
+
+      // Seeded so re-rendering the card gives the same third figure. Bump to reroll it.
+      const SEED = 7
+
+      const BATMAN = {
+        hair: 'batman-mask-black',
+        head: 'angry-eyebrows-and-scowl',
+        body: 'black-suit',
+        pants: 'black-pants',
+      }
+
+      function mulberry32(seed) {
+        return () => {
+          seed = (seed + 0x6d2b79f5) | 0
+          let t = Math.imul(seed ^ (seed >>> 15), 1 | seed)
+          t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t
+          return ((t ^ (t >>> 14)) >>> 0) / 4294967296
+        }
+      }
+
+      const manifest = await fetch('/parts/parts.json').then((response) => response.json())
+      const catalog = indexManifest(manifest)
+      const picks = [randomSelection(catalog.bySlot, mulberry32(SEED)), DEFAULT_SELECTION, BATMAN]
+
+      await Promise.all(
+        picks.map(async (selection, index) => {
+          const image = document.getElementById(`f${index + 1}`)
+          image.src = URL.createObjectURL(await composePng(selection, catalog))
+          await image.decode()
+        }),
+      )
+      await document.fonts.ready
+      document.body.dataset.ready = 'true'
+    </script>
+  </body>
+</html>
