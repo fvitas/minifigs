@@ -14,7 +14,8 @@ const BRICK =
 
 export function Header({ desktop, mode, onMode, onShuffle }: HeaderProps) {
   return (
-    <header className='z-[3] flex items-center justify-between gap-2 border-b border-line bg-white px-[14px] py-[10px] md:px-10 md:py-4'>
+    // Installed from the home screen there is no browser chrome, so the header clears the status bar itself.
+    <header className='z-[3] flex items-center justify-between gap-2 border-b border-line bg-white px-[14px] py-[10px] pt-[calc(10px+env(safe-area-inset-top))] md:px-10 md:py-4 md:pt-[calc(16px+env(safe-area-inset-top))]'>
       <div className='grid min-w-0 grid-cols-[auto_1fr] items-center gap-x-2 font-display text-[19px] font-extrabold tracking-[-.02em] text-navy md:gap-x-3 md:text-2xl'>
         <span className={BRICK} aria-hidden='true' />
         <span>Minifigs</span>

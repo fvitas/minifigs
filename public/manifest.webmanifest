@@ -1,0 +1,22 @@
+{
+  "id": "/",
+  "name": "Minifigs — design your own minifigure",
+  "short_name": "Minifigs",
+  "description": "Swap hair, head, body and legs from 389 photographed bricks. Over 50 million minifigures, one link to share.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    {
+      "src": "/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
