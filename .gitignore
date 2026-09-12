@@ -26,3 +26,6 @@ mockups/
 # Generated picker data
 scripts/parts/picker/candidates.js
 .vercel
+
+# scratch space for running the raw PNGs through TinyPNG
+tinypng/

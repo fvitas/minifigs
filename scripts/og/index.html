@@ -168,15 +168,19 @@
         }
       }
 
-      const manifest = await fetch('/parts/parts.json').then((response) => response.json())
+      const response = await fetch('/parts/parts.json')
+      if (!response.ok) throw new Error(`parts.json: ${response.status} ${response.statusText}`)
+      const manifest = await response.json()
       const catalog = indexManifest(manifest)
       const picks = [randomSelection(catalog.bySlot, mulberry32(SEED)), DEFAULT_SELECTION, BATMAN]
 
       await Promise.all(
         picks.map(async (selection, index) => {
           const image = document.getElementById(`f${index + 1}`)
-          image.src = URL.createObjectURL(await composePng(selection, catalog))
+          const url = URL.createObjectURL(await composePng(selection, catalog))
+          image.src = url
           await image.decode()
+          URL.revokeObjectURL(url)
         }),
       )
       await document.fonts.ready

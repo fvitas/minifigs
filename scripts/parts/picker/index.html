@@ -315,16 +315,19 @@
       let crop = true
       const $ = (id) => document.getElementById(id)
       const picks = () =>
-        all
-          .filter((c) => decisions[c.id]?.keep)
-          .map((c) => ({
-            id: c.id,
-            slot: c.slot,
-            title: c.title,
-            handle: c.handle,
-            image: `${CDN}${c.images[decisions[c.id].image]}`,
-            crop: decisions[c.id].crop ? 'left' : undefined,
-          }))
+        all.reduce((kept, c) => {
+          const decision = decisions[c.id]
+          if (decision?.keep)
+            kept.push({
+              id: c.id,
+              slot: c.slot,
+              title: c.title,
+              handle: c.handle,
+              image: `${CDN}${c.images[decision.image]}`,
+              crop: decision.crop ? 'left' : undefined,
+            })
+          return kept
+        }, [])
       // Every decision is mirrored to docs/picks.json through the Vite dev server.
       const save = () => {
         localStorage.setItem(KEY, JSON.stringify(decisions))
@@ -414,12 +417,14 @@
       }
 
       function exportPicks() {
-        const a = document.createElement('a')
-        a.href = URL.createObjectURL(
+        const url = URL.createObjectURL(
           new Blob([JSON.stringify(picks(), null, 2) + '\n'], { type: 'application/json' }),
         )
+        const a = document.createElement('a')
+        a.href = url
         a.download = 'picks.json'
         a.click()
+        setTimeout(() => URL.revokeObjectURL(url), 1000)
       }
 
       $('tabs').addEventListener('click', (event) => {

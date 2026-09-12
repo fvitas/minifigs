@@ -1,0 +1,4 @@
+# Supply-chain hardening. A compromised release is usually caught and unpublished within hours, so
+# new versions have to age before they can be installed, and a package may never lose trust signals.
+minimumReleaseAge: 1440
+trustPolicy: no-downgrade

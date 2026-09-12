@@ -27,17 +27,21 @@ export async function composePng(selection: Selection, catalog: Catalog): Promis
   const context = canvas.getContext('2d')
   if (!context) throw new Error('Canvas 2D is not available')
 
+  // WebP, not the PNG master: every browser that can run this decodes it, the canvas re-encodes
+  // to PNG anyway, and the masters never leave the repo.
+  const layers: { slot: Slot; src: string }[] = []
   for (const slot of DRAW_ORDER) {
     const id = selection[slot]
     const part = id ? catalog.byId.get(id) : undefined
-    if (!part) continue
-    // WebP, not the PNG master: every browser that can run this decodes it, the canvas re-encodes
-    // to PNG anyway, and the masters never leave the repo.
-    const image = await loadImage(part.src)
+    if (part) layers.push({ slot, src: part.src })
+  }
+  const images = await Promise.all(layers.map((layer) => loadImage(layer.src)))
+
+  layers.forEach(({ slot }, index) => {
     const height = GEOMETRY[slot].canvasHeight * scale
     const y = EXPORT_HEIGHT - (bottoms[slot] + GEOMETRY[slot].canvasHeight) * scale
-    context.drawImage(image, 0, y, canvas.width, height)
-  }
+    context.drawImage(images[index]!, 0, y, canvas.width, height)
+  })
 
   return new Promise((resolve, reject) => {
     canvas.toBlob(

@@ -37,7 +37,11 @@ function rebase(manifest: Manifest): Manifest {
 }
 
 const catalogPromise: Promise<Catalog> = fetch(`${PARTS_BASE}/parts/parts.json`)
-  .then((response) => response.json() as Promise<Manifest>)
+  .then((response) => {
+    // fetch resolves on 4xx/5xx, so an error page would otherwise reach the JSON parser.
+    if (!response.ok) throw new Error(`parts.json: ${response.status} ${response.statusText}`)
+    return response.json() as Promise<Manifest>
+  })
   .then(rebase)
   .then(indexManifest)
 

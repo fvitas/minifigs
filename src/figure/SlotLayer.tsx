@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from 'motion/react'
+import type { MouseEvent } from 'react'
 import { CANVAS_WIDTH, GEOMETRY } from '../parts/geometry'
 import { SLOTS, type Part, type Slot } from '../parts/manifest'
 import type { Direction } from '../state/selection'
@@ -51,60 +52,74 @@ export function SlotLayer({
     (exploded ? (geometry.explodedArrowCenter ?? geometry.arrowCenter) : geometry.arrowCenter) *
     scale
   return (
+    // Two elements so the stack position and the drop-in both animate as transforms: the outer one
+    // carries `bottom` as a translate, the inner keeps its own y for the entrance.
     <motion.div
-      className={cx(
-        'group pointer-events-none absolute left-0',
-        active && 'drop-shadow-[0_12px_20px_rgba(23,28,58,0.3)]',
-      )}
+      className='pointer-events-none absolute bottom-0 left-0'
       style={{
         width: CANVAS_WIDTH * scale,
         height: geometry.canvasHeight * scale,
         zIndex: SLOTS.length - index,
       }}
-      initial={{ bottom, y: -140, opacity: 0 }}
-      animate={{ bottom, y: 0, opacity: 1 }}
-      transition={{
-        bottom: stackSpring(exploded),
-        y: { type: 'spring', stiffness: 150, damping: 16, delay: dropDelay },
-        opacity: { duration: 0.3, delay: dropDelay },
-      }}
-      onClick={() => onActivate(slot)}
+      initial={false}
+      animate={{ y: -bottom }}
+      transition={stackSpring(exploded)}
       data-testid={`layer-${slot}`}
     >
-      <AnimatePresence custom={direction} initial={false}>
-        {part && (
-          <motion.img
-            key={part.id}
-            src={part.src}
-            // CORS mode so the preload hits and the export reuses this bitmap instead of refetching.
-            crossOrigin='anonymous'
-            alt={part.name}
-            draggable={false}
-            className='absolute inset-0 block size-full select-none'
-            custom={direction}
-            variants={swapOut}
-            initial={{ x: 70 * direction, rotate: 4 * direction, opacity: 0, y: drop }}
-            animate={{ x: 0, rotate: 0, opacity: 1, y: drop }}
-            exit='exit'
-            transition={{ type: 'spring', stiffness: 320, damping: 26, y: stackSpring(exploded) }}
-          />
+      <motion.div
+        className={cx(
+          'group relative size-full',
+          active && 'drop-shadow-[0_12px_20px_rgba(23,28,58,0.3)]',
         )}
-      </AnimatePresence>
-      <span
-        className='pointer-events-auto absolute inset-x-0 cursor-pointer'
-        style={{
-          top: exploded ? 0 : geometry.hitTop * scale,
-          height: (exploded ? geometry.canvasHeight : geometry.hitHeight) * scale,
+        initial={{ y: -140, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          y: { type: 'spring', stiffness: 150, damping: 16, delay: dropDelay },
+          opacity: { duration: 0.3, delay: dropDelay },
         }}
-        data-testid={`hit-${slot}`}
-      />
-      <ArrowControls
-        slot={slot}
-        visible={active}
-        hoverReveal={hoverArrows}
-        center={center}
-        onCycle={onCycle}
-      />
+      >
+        <AnimatePresence custom={direction} initial={false}>
+          {part && (
+            <motion.img
+              key={part.id}
+              src={part.src}
+              // CORS mode so the preload hits and the export reuses this bitmap instead of refetching.
+              crossOrigin='anonymous'
+              alt={part.name}
+              draggable={false}
+              className='absolute inset-0 block size-full select-none'
+              custom={direction}
+              variants={swapOut}
+              initial={{ x: 70 * direction, rotate: 4 * direction, opacity: 0, y: drop }}
+              animate={{ x: 0, rotate: 0, opacity: 1, y: drop }}
+              exit='exit'
+              transition={{ type: 'spring', stiffness: 320, damping: 26, y: stackSpring(exploded) }}
+            />
+          )}
+        </AnimatePresence>
+        {/* A button, not a div with onClick, so the slot is reachable by Tab and named for screen
+            readers. Mousedown keeps its default focus move suppressed: a click that parked focus
+            here would swallow the stage's Enter/Space shortcut. */}
+        <button
+          type='button'
+          aria-label={part ? `${slot}: ${part.name}` : slot}
+          className='pointer-events-auto absolute inset-x-0 cursor-pointer'
+          style={{
+            top: exploded ? 0 : geometry.hitTop * scale,
+            height: (exploded ? geometry.canvasHeight : geometry.hitHeight) * scale,
+          }}
+          onMouseDown={(event: MouseEvent<HTMLButtonElement>) => event.preventDefault()}
+          onClick={() => onActivate(slot)}
+          data-testid={`hit-${slot}`}
+        />
+        <ArrowControls
+          slot={slot}
+          visible={active}
+          hoverReveal={hoverArrows}
+          center={center}
+          onCycle={onCycle}
+        />
+      </motion.div>
     </motion.div>
   )
 }
