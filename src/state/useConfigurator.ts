@@ -10,7 +10,8 @@ export function useConfigurator(bySlot: PartsBySlot) {
   const pushNext = useRef(false)
 
   useEffect(() => {
-    const url = encode({ selection: state.selection, mode: state.mode })
+    // An all-default state encodes to nothing, and an empty url would keep the current query.
+    const url = encode({ selection: state.selection, mode: state.mode }) || window.location.pathname
     // Shuffle marks the next write as a push, so Back returns the figure it replaced. Its four
     // slots land one at a time and each following write replaces that same entry.
     if (pushNext.current) {

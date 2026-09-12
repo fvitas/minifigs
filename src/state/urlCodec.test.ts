@@ -38,6 +38,11 @@ describe('urlCodec', () => {
     expect(decode(encode(shared), bySlot)).toEqual(shared)
   })
 
+  it('leaves the defaults out of the query', () => {
+    expect(encode({ selection: DEFAULT_SELECTION, mode: DEFAULT_MODE })).toBe('')
+    expect(encode({ selection: DEFAULT_SELECTION, mode: 'white' })).toBe('?mode=white')
+  })
+
   it('falls back to the default mode for a missing or unknown one', () => {
     expect(decode('', bySlot).mode).toBe(DEFAULT_MODE)
     expect(decode('?mode=neon', bySlot).mode).toBe(DEFAULT_MODE)

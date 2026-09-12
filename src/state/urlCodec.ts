@@ -6,11 +6,16 @@ const NONE = 'none'
 
 const MODES: Mode[] = ['white', 'color']
 
+// Defaults are left out, so a fresh visit keeps a bare URL and a share link names only what changed.
 export function encode({ selection, mode }: Shared): string {
   const params = new URLSearchParams()
-  for (const slot of SLOTS) params.set(slot, selection[slot] ?? NONE)
-  params.set('mode', mode)
-  return `?${params.toString()}`
+  for (const slot of SLOTS) {
+    const id = selection[slot] ?? NONE
+    if (id !== DEFAULT_SELECTION[slot]) params.set(slot, id)
+  }
+  if (mode !== DEFAULT_MODE) params.set('mode', mode)
+  const query = params.toString()
+  return query ? `?${query}` : ''
 }
 
 // Unknown or missing ids fall back to the default so old links keep working when parts change.
