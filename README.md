@@ -51,7 +51,7 @@ pnpm dev
 
 <div align="center">
 
-Built by [Filip Vitas](https://x.com/vitasdev) · Inspired by [Léo Sestier's design](https://dribbble.com/shots/3722311)
+Built by [Filip Vitas](https://x.com/vitasdev) · Inspired by [Léo Sestier's design](https://dribbble.com/shots/3722311) · [MIT licensed](LICENSE)
 
 <sub>Not affiliated with, endorsed by, or sponsored by the LEGO Group.</sub>
 
