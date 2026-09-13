@@ -50,7 +50,7 @@ export function AssembledActions({ compact, selection, catalog }: AssembledActio
         {copied && (
           <motion.span
             role='status'
-            className='pointer-events-none absolute right-0 bottom-full mb-2 rounded-full bg-navy px-3 py-1.5 text-xs font-semibold whitespace-nowrap text-white shadow-[0_10px_24px_-12px_rgba(23,28,58,.6)]'
+            className='pointer-events-none absolute bottom-full left-1/2 mb-2 -translate-x-1/2 rounded-full bg-navy px-3 py-1.5 text-xs font-semibold whitespace-nowrap text-white shadow-[0_10px_24px_-12px_rgba(23,28,58,.6)]'
             initial={{ opacity: 0, y: 6 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 6 }}
