@@ -1,6 +1,6 @@
-// The preview card is the same static image for every share, so the text is the only thing that
-// can ask the reader for anything.
-const TWEET = 'Build your own minifigure:'
+// The preview card is the same static image for every share, so "this one" has nothing to point at
+// until the colon hands it to the link.
+const TWEET = "Build your own. This one's mine:"
 
 export async function copyLink(): Promise<boolean> {
   try {
