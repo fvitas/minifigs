@@ -39,11 +39,8 @@ export function AssembledActions({ compact, selection, catalog }: AssembledActio
     setTimeout(() => setCopied(false), COPIED_MS)
   }
 
-  const button = cx(
-    GHOST,
-    'shrink-0 hover:border-lego hover:text-lego',
-    compact ? 'size-[50px]' : 'size-10',
-  )
+  // Red is reserved for the copied confirmation below — hovering is not an event worth a colour.
+  const button = cx(GHOST, 'shrink-0', compact ? 'size-[50px]' : 'size-10')
   const CopyIcon = copied ? Check : Link
   const copyLabel = copied ? 'URL copied' : 'Copy link'
 
