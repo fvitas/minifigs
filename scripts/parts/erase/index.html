@@ -47,7 +47,8 @@
         margin: 0 4px 0 0;
       }
       .btn,
-      select {
+      select,
+      .search {
         font:
           500 12px/1 'DM Mono',
           monospace;
@@ -60,13 +61,29 @@
         padding: 9px 14px;
         cursor: pointer;
       }
+      .search {
+        width: 150px;
+        cursor: text;
+        text-transform: none;
+        letter-spacing: 0.04em;
+      }
+      .search:focus {
+        outline: none;
+        border-color: var(--navy);
+        color: var(--navy);
+      }
+      .search::placeholder {
+        color: var(--muted);
+        opacity: 0.7;
+      }
       .btn kbd {
         font: inherit;
         opacity: 0.6;
         margin-left: 6px;
       }
       .btn:hover,
-      select:hover {
+      select:hover,
+      .search:hover {
         border-color: var(--navy);
         color: var(--navy);
       }
@@ -119,6 +136,22 @@
       .stage.bg-magenta {
         background: #ff00ff;
       }
+      /* The stage colours the app itself puts behind a part, where ghosting actually shows. */
+      .stage.bg-red {
+        background: #e3000b;
+      }
+      .stage.bg-blue {
+        background: #0f6fd6;
+      }
+      .stage.bg-yellow {
+        background: #ffcf00;
+      }
+      .stage.bg-orange {
+        background: #f26b1d;
+      }
+      .stage.bg-black {
+        background: #171c3a;
+      }
       .stage.bg-checker {
         background-color: #fff;
         background-image:
@@ -150,6 +183,28 @@
         cursor: none;
         touch-action: none;
       }
+      .swatches {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 4px 6px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: #fff;
+      }
+      .swatch {
+        width: 22px;
+        height: 22px;
+        padding: 0;
+        border: 1px solid var(--line);
+        border-radius: 50%;
+        cursor: pointer;
+        background-size: cover;
+      }
+      .swatch.is-on {
+        outline: 2px solid var(--navy);
+        outline-offset: 1px;
+      }
       .brush {
         position: fixed;
         border: 1px solid #fff;
@@ -159,6 +214,10 @@
         transform: translate(-50%, -50%);
         display: none;
         z-index: 10;
+      }
+      .brush.is-restore {
+        border-color: #2fd07a;
+        outline-color: #0b6b3a;
       }
       .title {
         text-align: center;
@@ -208,6 +267,8 @@
     <header>
       <h1>Retouch</h1>
       <select id="slot"></select>
+      <input class="search" id="search" type="search" placeholder="Search /" />
+      <button class="btn" id="kept">Kept only</button>
       <button class="btn" id="prev">Prev <kbd>←</kbd></button>
       <button class="btn" id="next">Next <kbd>→</kbd></button>
       <div class="group">
@@ -220,7 +281,8 @@
         <input type="range" id="zoom" min="0.4" max="8" step="0.1" />
         <output id="zoomValue"></output>
       </div>
-      <button class="btn" id="background">On figure</button>
+      <div class="swatches" id="swatches"></div>
+      <button class="btn" id="tool">Erase <kbd>X</kbd></button>
       <button class="btn" id="undo">Undo <kbd>⌘Z</kbd></button>
       <button class="btn" id="clear">Clear piece</button>
       <div class="saved" id="saved"></div>

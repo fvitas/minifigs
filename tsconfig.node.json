@@ -22,5 +22,10 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["vite.config.ts", "scripts", "mockups/vite.config.ts"],
-  "exclude": ["scripts/parts/review", "scripts/parts/fit", "scripts/parts/erase"]
+  "exclude": [
+    "scripts/parts/review",
+    "scripts/parts/fit",
+    "scripts/parts/erase",
+    "scripts/parts/accept"
+  ]
 }

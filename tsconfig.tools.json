@@ -22,5 +22,10 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["scripts/parts/review", "scripts/parts/fit", "scripts/parts/erase"]
+  "include": [
+    "scripts/parts/review",
+    "scripts/parts/fit",
+    "scripts/parts/erase",
+    "scripts/parts/accept"
+  ]
 }
