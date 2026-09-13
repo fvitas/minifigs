@@ -1,7 +1,9 @@
 // Hand retouch recorded by the erase page (scripts/parts/erase): each stroke is a brush radius and
 // the points it was dragged through, in the pixels of the finished part canvas. Kept as source, in
 // assets/parts.erase.json, so `pnpm parts` can re-apply it to a rebuilt PNG.
-export type Stroke = { r: number; points: [number, number][] }
+// `mode` is absent on an erase stroke, which is all of them up to the torso work, so the file that
+// the hair retouch lives in reads back unchanged.
+export type Stroke = { r: number; points: [number, number][]; mode?: 'restore' }
 
 export type EraseFile = Record<string, Stroke[]>
 
@@ -16,13 +18,14 @@ export function readStrokes(value: unknown): EraseFile {
     if (!Array.isArray(list)) continue
     const strokes: Stroke[] = []
     for (const entry of list as unknown[]) {
-      const { r, points } = (entry ?? {}) as Partial<Stroke>
+      const { r, points, mode } = (entry ?? {}) as Partial<Stroke>
       if (typeof r !== 'number' || !Array.isArray(points)) continue
       const kept = points.filter(
         (point): point is [number, number] =>
           Array.isArray(point) && typeof point[0] === 'number' && typeof point[1] === 'number',
       )
-      if (kept.length) strokes.push({ r, points: kept })
+      if (kept.length)
+        strokes.push(mode === 'restore' ? { r, points: kept, mode } : { r, points: kept })
     }
     if (strokes.length) out[key] = strokes
   }

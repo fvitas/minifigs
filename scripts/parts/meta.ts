@@ -13,6 +13,13 @@ export type PartMeta = {
   // Brique's plain red figure, keyed out by colour; 'white' is extraextrabricks' plain white one,
   // segmented away from the piece it wears.
   keyOut?: 'red' | 'white'
+  // The garment carries white as pale as the studio paper, where there is no edge for the key to
+  // find. Cut out by `pnpm masks` instead, and built from the mask it leaves in assets/masks.
+  subject?: boolean
+  // Where the subject mask lost a piece the plain key does find, as [x, y, width, height] rectangles
+  // in fractions of the photo: Vision drops the security torso's neck stud, and without it the part
+  // measures shorter than it is and comes out oversized.
+  keep?: [number, number, number, number][]
   // Openings no threshold can find, as rounded [x, y, width, height] rectangles in fractions of the
   // photo (after `crop`): the face inside the Batman cowl's mouth is in shadow, so it reads as dark
   // as the plastic framing it.

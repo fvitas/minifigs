@@ -12,28 +12,133 @@ const ROOT = path.resolve(import.meta.dirname, '../..')
 const RAW_DIR = path.join(ROOT, 'assets/raw')
 const META_PATH = path.join(ROOT, 'assets/parts.meta.json')
 const ERASE_PATH = path.join(ROOT, 'assets/parts.erase.json')
+const MASK_DIR = path.join(ROOT, 'assets/masks')
 const OUT_DIR = path.join(ROOT, 'public/parts')
 const THUMB_SIZE = 160
 const ALPHA_THRESHOLD = 200
 
 type Box = { left: number; top: number; width: number; height: number }
 
-// Turn a near-white studio background into transparency (for jpg sources).
-async function knockoutWhite(image: Sharp): Promise<Sharp> {
+// The studio background is pure white: every jpg source has its border sitting at 250+. So the
+// background is not "everything pale" but the pale region you reach walking in from the border. A
+// white sleeve is just as pale as the paper but is never reachable from outside, so it stays opaque
+// instead of ghosting the way a plain brightness key leaves it.
+const BG_KEY = 246
+// Jpeg ringing darkens the paper for a few pixels around a hard edge, too dark for the key to walk
+// through. Let the background creep that far on a looser one, short of any garment but past the ring.
+const BG_FRINGE = 3
+// How far the key is eroded before the walk, and dilated back after it.
+const BG_ERODE = 3
+const FRINGE_OPAQUE = 205
+const FRINGE_CLEAR = 250
+
+// Torsos only for now: the other slots are retouched against the old key and must not shift.
+const RECLAIM_SLOTS = new Set<Slot>(['body'])
+
+const ramp = (value: number, opaque: number, clear: number) =>
+  Math.round(255 * (1 - Math.min(1, Math.max(0, (value - opaque) / (clear - opaque)))))
+
+// The narrow key is what the part is made of; `guide` carries the old wide key, which is only ever
+// read for geometry. The wide key eats the jpeg ringing around an edge, so the gap between the two
+// photos of a front+back composite stays empty and the split and the bounding box still find it.
+type Keyed = { image: Sharp; guide?: Sharp }
+
+async function knockoutWhite(image: Sharp, reclaim: boolean): Promise<Keyed> {
   const { data, info } = await image.removeAlpha().raw().toBuffer({ resolveWithObject: true })
-  const out = Buffer.alloc(info.width * info.height * 4)
-  for (let i = 0, o = 0; i < data.length; i += 3, o += 4) {
-    const r = data[i]!
-    const g = data[i + 1]!
-    const b = data[i + 2]!
-    const min = Math.min(r, g, b)
-    const bgness = Math.min(1, Math.max(0, (min - 205) / 45))
-    out[o] = r
-    out[o + 1] = g
-    out[o + 2] = b
-    out[o + 3] = Math.round(255 * (1 - bgness))
+  const { width, height } = info
+  const pixels = width * height
+  const min = new Uint8Array(pixels)
+  for (let i = 0, o = 0; i < data.length; i += 3, o += 1) {
+    min[o] = Math.min(data[i]!, data[i + 1]!, data[i + 2]!)
   }
-  return sharp(out, { raw: { width: info.width, height: info.height, channels: 4 } }).png()
+
+  const wideKey = () => {
+    const flat = Buffer.alloc(pixels * 4)
+    for (let i = 0, o = 0; i < pixels; i += 1, o += 4) {
+      flat[o] = data[i * 3]!
+      flat[o + 1] = data[i * 3 + 1]!
+      flat[o + 2] = data[i * 3 + 2]!
+      flat[o + 3] = ramp(min[i]!, FRINGE_OPAQUE, FRINGE_CLEAR)
+    }
+    return sharp(flat, { raw: { width, height, channels: 4 } }).png()
+  }
+
+  if (!reclaim) return { image: wideKey() }
+
+  const keyed = new Uint8Array(pixels)
+  for (let i = 0; i < pixels; i += 1) keyed[i] = min[i]! > BG_KEY ? 1 : 0
+
+  // What holds a white sleeve apart from the paper is not its brightness, which is the same, but
+  // that the seam between them is a neck one or two anti-aliased pixels wide. Erode the keyed region
+  // before the walk and that neck pinches shut, so the flood can no longer squeeze through into a
+  // specular highlight; the paper is far too wide for the erosion to reach across.
+  let seed = keyed
+  for (let step = 0; step < BG_ERODE; step += 1) {
+    const next = new Uint8Array(pixels)
+    for (let i = 0; i < pixels; i += 1) {
+      if (!seed[i]) continue
+      const x = i % width
+      const y = (i - x) / width
+      // Off the frame counts as keyed, or the border the walk starts from would erode away.
+      if (x > 0 && !seed[i - 1]) continue
+      if (x < width - 1 && !seed[i + 1]) continue
+      if (y > 0 && !seed[i - width]) continue
+      if (y < height - 1 && !seed[i + width]) continue
+      next[i] = 1
+    }
+    seed = next
+  }
+
+  let front: number[] = []
+  // Grow `mark` out of `front` through everything `allow` admits, `steps` rings deep.
+  const grow = (mark: Uint8Array, allow: (i: number) => boolean, steps: number) => {
+    for (let step = 0; step < steps && front.length; step += 1) {
+      const batch = front
+      front = []
+      for (const i of batch) {
+        const x = i % width
+        const y = (i - x) / width
+        const take = (j: number) => {
+          if (mark[j] || !allow(j)) return
+          mark[j] = 1
+          front.push(j)
+        }
+        if (x > 0) take(i - 1)
+        if (x < width - 1) take(i + 1)
+        if (y > 0) take(i - width)
+        if (y < height - 1) take(i + width)
+      }
+    }
+  }
+  const queue = (test: (i: number) => boolean) => {
+    front = []
+    for (let i = 0; i < pixels; i += 1) if (test(i)) front.push(i)
+  }
+  const onBorder = (i: number) =>
+    i < width || i >= pixels - width || i % width === 0 || i % width === width - 1
+
+  const outside = new Uint8Array(pixels)
+  queue((i) => seed[i] === 1 && onBorder(i))
+  for (const i of front) outside[i] = 1
+  grow(outside, (i) => seed[i] === 1, Infinity)
+  // Give back the rim the erosion took. It stops short of the neck, which is narrower than the bite.
+  queue((i) => outside[i] === 1)
+  grow(outside, (i) => keyed[i] === 1, BG_ERODE)
+
+  const fringe = new Uint8Array(pixels)
+  queue((i) => outside[i] === 1)
+  grow(fringe, (i) => !outside[i] && min[i]! > FRINGE_OPAQUE, BG_FRINGE)
+
+  const out = Buffer.alloc(pixels * 4)
+  for (let i = 0, o = 0; i < pixels; i += 1, o += 4) {
+    out[o] = data[i * 3]!
+    out[o + 1] = data[i * 3 + 1]!
+    out[o + 2] = data[i * 3 + 2]!
+    // The narrow key only decides what counts as background; what it is worth is the old wide ramp,
+    // or the paper itself comes back as a pale halo everywhere it sits a shade under 254.
+    out[o + 3] = outside[i] || fringe[i] ? ramp(min[i]!, FRINGE_OPAQUE, FRINGE_CLEAR) : 255
+  }
+  return { image: sharp(out, { raw: { width, height, channels: 4 } }).png(), guide: wideKey() }
 }
 
 // Contiguous occupied range containing `center`, tolerating tiny gaps (anti-aliasing, seams).
@@ -160,7 +265,7 @@ async function splitColumn(image: Sharp): Promise<number | null> {
   return ySum / count > rows / 2 ? Math.round((start + end) / 2) : null
 }
 
-type Source = { image: Sharp; stand?: StandAnchor }
+type Source = Keyed & { stand?: StandAnchor }
 
 // Corners are rounded by this much of the rectangle's shorter side: the openings worth cutting by
 // hand are moulded recesses, and a square corner would read as a slot punched through the piece.
@@ -168,10 +273,15 @@ const CUT_RADIUS = 0.2
 
 async function cutOpenings(source: Source, cuts: PartMeta['cut']): Promise<Source> {
   if (!cuts?.length) return source
-  const { data, info } = await source.image
-    .ensureAlpha()
-    .raw()
-    .toBuffer({ resolveWithObject: true })
+  return {
+    ...source,
+    image: await cutImage(source.image, cuts),
+    guide: source.guide && (await cutImage(source.guide, cuts)),
+  }
+}
+
+async function cutImage(image: Sharp, cuts: NonNullable<PartMeta['cut']>): Promise<Sharp> {
+  const { data, info } = await image.ensureAlpha().raw().toBuffer({ resolveWithObject: true })
   const { width, height, channels } = info
   const out = Buffer.from(data)
   for (const [x, y, w, h] of cuts) {
@@ -189,31 +299,85 @@ async function cutOpenings(source: Source, cuts: PartMeta['cut']): Promise<Sourc
       }
     }
   }
-  return { ...source, image: sharp(out, { raw: { width, height, channels } }).png() }
+  return sharp(out, { raw: { width, height, channels } }).png()
 }
 
-async function loadSource(file: string, meta: PartMeta): Promise<Source> {
-  return cutOpenings(await readSource(file, meta), meta.cut)
+async function loadSource(slot: Slot, file: string, meta: PartMeta): Promise<Source> {
+  return cutOpenings(await readSource(slot, file, meta), meta.cut)
 }
 
-async function readSource(file: string, meta: PartMeta): Promise<Source> {
+// Photos whose subject was cut by `pnpm masks` wear that mask as their alpha. The mask is a source
+// asset like the photo itself, so the build stays plain sharp and needs nothing from macOS.
+async function wearMask(
+  image: Sharp,
+  slot: Slot,
+  file: string,
+  keep: PartMeta['keep'],
+): Promise<Sharp> {
+  const name = `${path.basename(file).replace(/\.[^.]+$/, '')}.png`
+  const cut = await sharp(path.join(MASK_DIR, slot, name))
+    .toColourspace('b-w')
+    .raw()
+    .toBuffer({ resolveWithObject: true })
+    .catch(() => {
+      throw new Error(`no mask for ${slot}/${name}, run \`pnpm masks\``)
+    })
+  const { data, info } = await image.removeAlpha().raw().toBuffer({ resolveWithObject: true })
+  const { width, height } = info
+  if (cut.info.width !== width || cut.info.height !== height) {
+    throw new Error(
+      `mask for ${slot}/${name} is ${cut.info.width}x${cut.info.height}, photo is ${width}x${height}`,
+    )
+  }
+  // The key is no use over a white sleeve, but inside a `keep` rectangle it is the only thing that
+  // still sees the piece the mask dropped, and it never calls plastic paper.
+  const boxes = keep ?? []
+  const kept = boxes.length
+    ? (await (await knockoutWhite(image, true)).image.raw().toBuffer()).filter(
+        (_, i) => i % 4 === 3,
+      )
+    : null
+  const out = Buffer.alloc(width * height * 4)
+  for (let i = 0, o = 0; i < width * height; i += 1, o += 4) {
+    out[o] = data[i * 3]!
+    out[o + 1] = data[i * 3 + 1]!
+    out[o + 2] = data[i * 3 + 2]!
+    const x = i % width
+    const y = (i - x) / width
+    const restore = kept !== null && boxes.some(inside(x / width, y / height))
+    out[o + 3] = restore ? Math.max(cut.data[i]!, kept[i]!) : cut.data[i]!
+  }
+  return sharp(out, { raw: { width, height, channels: 4 } }).png()
+}
+
+const inside =
+  (x: number, y: number) =>
+  ([left, top, width, height]: [number, number, number, number]) =>
+    x >= left && x < left + width && y >= top && y < top + height
+
+async function readSource(slot: Slot, file: string, meta: PartMeta): Promise<Source> {
   const raw = sharp(file)
   const { width = 0, height = 0, hasAlpha } = await raw.metadata()
-  const image = hasAlpha ? raw.ensureAlpha() : await knockoutWhite(raw)
+  const { image, guide } = meta.subject
+    ? { image: await wearMask(raw, slot, file, meta.keep), guide: undefined }
+    : hasAlpha
+      ? { image: raw.ensureAlpha(), guide: undefined }
+      : await knockoutWhite(raw, RECLAIM_SLOTS.has(slot))
   if (meta.keyOut === 'red') return keyOutRedStand(image)
   const segment = meta.keyOut === 'white'
-  if (!meta.crop) return segment ? segmentPiece(image) : { image }
-  const split = await splitColumn(image)
+  if (!meta.crop) return segment ? segmentPiece(image) : { image, guide }
+  const split = await splitColumn(guide ?? image)
   if (split === null) {
     console.log('  · single photo, crop ignored')
-    return { image }
+    return { image, guide }
   }
   const box =
     meta.crop === 'left'
       ? { left: 0, top: 0, width: split, height }
       : { left: split, top: 0, width: width - split, height }
   const cropped = sharp(await image.extract(box).png().toBuffer()).ensureAlpha()
-  return segment ? segmentPiece(cropped) : { image: cropped }
+  if (segment) return segmentPiece(cropped)
+  return { image: cropped, guide: guide && sharp(await guide.extract(box).png().toBuffer()) }
 }
 
 // Where the display figure's head is in the photo: `chinRow` is the head's lowest row, `centerX`
@@ -761,14 +925,16 @@ async function placeOnCanvas(
   }
 }
 
-// Hand retouch from the erase page: the brush clears alpha the way the browser canvas does, so what
-// the user wiped there is what a rebuild produces. Coordinates are pixels of this finished canvas.
+// Hand retouch from the erase page: the erase brush clears alpha the way the browser canvas does,
+// the restore brush pushes it back up, so what the user painted there is what a rebuild produces.
+// Restoring only reaches pixels that kept some alpha — a fully cleared pixel has no colour left.
+// Coordinates are pixels of this finished canvas.
 async function eraseStrokes(canvas: Sharp, strokes: Stroke[]): Promise<Buffer> {
   if (!strokes.length) return canvas.png().toBuffer()
   const { data, info } = await canvas.ensureAlpha().raw().toBuffer({ resolveWithObject: true })
   const { width, height, channels } = info
   const out = Buffer.from(data)
-  for (const { r, points } of strokes) {
+  for (const { r, points, mode } of strokes) {
     for (const [x, y] of points) {
       const left = Math.max(0, Math.floor(x - r - 1))
       const right = Math.min(width - 1, Math.ceil(x + r + 1))
@@ -780,7 +946,9 @@ async function eraseStrokes(canvas: Sharp, strokes: Stroke[]): Promise<Buffer> {
           const covered = Math.min(1, Math.max(0, r + 0.5 - distance))
           if (!covered) continue
           const index = (row * width + col) * channels + 3
-          out[index] = Math.round(out[index]! * (1 - covered))
+          const was = out[index]!
+          if (mode !== 'restore') out[index] = Math.round(was * (1 - covered))
+          else if (was > 0) out[index] = Math.round(was + (255 - was) * covered)
         }
       }
     }
@@ -808,8 +976,8 @@ async function processFile(
 ): Promise<Part> {
   const name = meta.name ?? nameFromFilename(filename)
   const id = slugify(name)
-  const source = await loadSource(path.join(RAW_DIR, slot, filename), meta)
-  const box = await centralBlobBox(source.image)
+  const source = await loadSource(slot, path.join(RAW_DIR, slot, filename), meta)
+  const box = await centralBlobBox(source.guide ?? source.image)
   const trimmed = sharp(await source.image.extract(box).png().toBuffer())
   const geometry = GEOMETRY[slot]
   const stand = source.stand && {
@@ -868,10 +1036,34 @@ async function loadErase(file: string): Promise<EraseFile> {
   return readStrokes(JSON.parse(raw) as unknown)
 }
 
+// `pnpm parts --only <id,id>` rebuilds just those parts: after a retouch session the pieces that
+// were not touched must keep the files they already have, whether they came from this build or from
+// a revert. Every other part, and its manifest entry, is left alone.
+function onlyIds(argv: string[]): Set<string> {
+  const at = argv.indexOf('--only')
+  const list = at < 0 ? '' : (argv[at + 1] ?? '')
+  return new Set(
+    list
+      .split(',')
+      .map((id) => id.trim())
+      .filter(Boolean),
+  )
+}
+
+// The parts that were not rebuilt keep the entry they had: a stale size or hem would describe a
+// build that is no longer on disk.
+async function mergeManifest(built: Part[]): Promise<Part[]> {
+  const file = path.join(OUT_DIR, 'parts.json')
+  const before = JSON.parse(await readFile(file, 'utf8')) as Manifest
+  const fresh = new Map(built.map((part) => [`${part.slot}/${part.id}`, part]))
+  return before.parts.map((part) => fresh.get(`${part.slot}/${part.id}`) ?? part)
+}
+
 async function main(): Promise<void> {
   const meta = await loadMeta(META_PATH)
   const erase = await loadErase(ERASE_PATH)
-  await rm(OUT_DIR, { recursive: true, force: true })
+  const only = onlyIds(process.argv.slice(2))
+  if (!only.size) await rm(OUT_DIR, { recursive: true, force: true })
   const parts: Part[] = []
   let failed = 0
 
@@ -888,6 +1080,7 @@ async function main(): Promise<void> {
       .sort((a, b) => (a.partMeta.order ?? UNORDERED) - (b.partMeta.order ?? UNORDERED))
     const seen = new Set<string>()
     for (const { key, filename, partMeta } of files) {
+      if (only.size && !only.has(slugify(partMeta.name ?? nameFromFilename(filename)))) continue
       if (partMeta.exclude) {
         console.log(`- skip ${key}`)
         continue
@@ -906,10 +1099,16 @@ async function main(): Promise<void> {
     }
   }
 
-  const manifest: Manifest = { generatedAt: new Date().toISOString(), slots: SLOTS, parts }
+  const manifest: Manifest = {
+    generatedAt: new Date().toISOString(),
+    slots: SLOTS,
+    parts: only.size ? await mergeManifest(parts) : parts,
+  }
   await writeFile(path.join(OUT_DIR, 'parts.json'), JSON.stringify(manifest, null, 2) + '\n')
   await writePreview(path.join(ROOT, 'mockups/parts-preview.html'), manifest)
   await writeGeometryJs(path.join(ROOT, 'mockups/_geometry.js'))
+  const missed = [...only].filter((id) => !parts.some((part) => part.id === id))
+  if (missed.length) console.log(`\n! no source for ${missed.join(', ')}`)
   console.log(
     `\n${parts.length} parts -> public/parts/parts.json${failed ? `, ${failed} failed` : ''}`,
   )

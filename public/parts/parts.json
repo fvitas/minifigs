@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T12:38:30.234Z",
+  "generatedAt": "2026-09-13T07:57:59.867Z",
   "slots": [
     "hair",
     "head",
@@ -2054,7 +2054,7 @@
       "src": "/parts/body/brown-vest-with-pockets.webp",
       "png": "/parts/body/brown-vest-with-pockets.png",
       "thumb": "/parts/body/brown-vest-with-pockets.thumb.webp",
-      "color": "#271815",
+      "color": "#271915",
       "width": 600,
       "height": 460,
       "bottomGap": 62
@@ -2186,7 +2186,7 @@
       "src": "/parts/body/mechanic-coveralls.webp",
       "png": "/parts/body/mechanic-coveralls.png",
       "thumb": "/parts/body/mechanic-coveralls.thumb.webp",
-      "color": "#5a7596",
+      "color": "#0b1729",
       "width": 600,
       "height": 460,
       "bottomGap": 60
@@ -2222,7 +2222,7 @@
       "src": "/parts/body/tailcoat.webp",
       "png": "/parts/body/tailcoat.png",
       "thumb": "/parts/body/tailcoat.thumb.webp",
-      "color": "#070708",
+      "color": "#070707",
       "width": 600,
       "height": 460,
       "bottomGap": 56
@@ -2270,10 +2270,10 @@
       "src": "/parts/body/tactical-vest.webp",
       "png": "/parts/body/tactical-vest.png",
       "thumb": "/parts/body/tactical-vest.thumb.webp",
-      "color": "#393735",
+      "color": "#393835",
       "width": 600,
       "height": 460,
-      "bottomGap": 67
+      "bottomGap": 64
     },
     {
       "id": "blue-sweatshirt",
@@ -2306,7 +2306,7 @@
       "src": "/parts/body/doctor-coat.webp",
       "png": "/parts/body/doctor-coat.png",
       "thumb": "/parts/body/doctor-coat.thumb.webp",
-      "color": "#e3b607",
+      "color": "#e3b707",
       "width": 600,
       "height": 460,
       "bottomGap": 70
@@ -2342,7 +2342,7 @@
       "src": "/parts/body/female-blue-open-sweater.webp",
       "png": "/parts/body/female-blue-open-sweater.png",
       "thumb": "/parts/body/female-blue-open-sweater.thumb.webp",
-      "color": "#b3ae03",
+      "color": "#0d6bb9",
       "width": 600,
       "height": 460,
       "bottomGap": 70
@@ -2378,7 +2378,7 @@
       "src": "/parts/body/short-jacket.webp",
       "png": "/parts/body/short-jacket.png",
       "thumb": "/parts/body/short-jacket.thumb.webp",
-      "color": "#994375",
+      "color": "#181816",
       "width": 600,
       "height": 460,
       "bottomGap": 62
@@ -2441,7 +2441,7 @@
       "color": "#564b4b",
       "width": 600,
       "height": 460,
-      "bottomGap": 66
+      "bottomGap": 68
     },
     {
       "id": "turquoise-polo",
@@ -2450,7 +2450,7 @@
       "src": "/parts/body/turquoise-polo.webp",
       "png": "/parts/body/turquoise-polo.png",
       "thumb": "/parts/body/turquoise-polo.thumb.webp",
-      "color": "#167775",
+      "color": "#167875",
       "width": 600,
       "height": 460,
       "bottomGap": 63
@@ -2570,7 +2570,7 @@
       "src": "/parts/body/pink-zip-jacket.webp",
       "png": "/parts/body/pink-zip-jacket.png",
       "thumb": "/parts/body/pink-zip-jacket.thumb.webp",
-      "color": "#693427",
+      "color": "#683427",
       "width": 600,
       "height": 460,
       "bottomGap": 56
@@ -2765,7 +2765,7 @@
       "color": "#0b52ba",
       "width": 600,
       "height": 460,
-      "bottomGap": 56
+      "bottomGap": 58
     },
     {
       "id": "printed-sweatshirt",
@@ -2774,7 +2774,7 @@
       "src": "/parts/body/printed-sweatshirt.webp",
       "png": "/parts/body/printed-sweatshirt.png",
       "thumb": "/parts/body/printed-sweatshirt.thumb.webp",
-      "color": "#969a96",
+      "color": "#969b96",
       "width": 600,
       "height": 460,
       "bottomGap": 44
@@ -2810,10 +2810,10 @@
       "src": "/parts/body/santa-jacket.webp",
       "png": "/parts/body/santa-jacket.png",
       "thumb": "/parts/body/santa-jacket.thumb.webp",
-      "color": "#77181b",
+      "color": "#76191b",
       "width": 600,
       "height": 460,
-      "bottomGap": 60
+      "bottomGap": 56
     },
     {
       "id": "witch-shawl",
@@ -2894,10 +2894,10 @@
       "src": "/parts/body/orange-print-shirt.webp",
       "png": "/parts/body/orange-print-shirt.png",
       "thumb": "/parts/body/orange-print-shirt.thumb.webp",
-      "color": "#f3b502",
+      "color": "#eba603",
       "width": 600,
       "height": 460,
-      "bottomGap": 60
+      "bottomGap": 59
     },
     {
       "id": "dragon-tee",
@@ -2942,10 +2942,10 @@
       "src": "/parts/body/christmas-blouse.webp",
       "png": "/parts/body/christmas-blouse.png",
       "thumb": "/parts/body/christmas-blouse.thumb.webp",
-      "color": "#0744ac",
+      "color": "#0548b6",
       "width": 600,
       "height": 460,
-      "bottomGap": 63
+      "bottomGap": 61
     },
     {
       "id": "worn-beige-vest",
@@ -3017,7 +3017,7 @@
       "color": "#16243a",
       "width": 600,
       "height": 460,
-      "bottomGap": 56
+      "bottomGap": 55
     },
     {
       "id": "flannel-vest",
@@ -3026,10 +3026,10 @@
       "src": "/parts/body/flannel-vest.webp",
       "png": "/parts/body/flannel-vest.png",
       "thumb": "/parts/body/flannel-vest.thumb.webp",
-      "color": "#679419",
+      "color": "#679519",
       "width": 600,
       "height": 460,
-      "bottomGap": 61
+      "bottomGap": 62
     },
     {
       "id": "green-necklace-jacket",
@@ -3122,7 +3122,7 @@
       "src": "/parts/body/classic-space-tee.webp",
       "png": "/parts/body/classic-space-tee.png",
       "thumb": "/parts/body/classic-space-tee.thumb.webp",
-      "color": "#8dbad9",
+      "color": "#8dbada",
       "width": 600,
       "height": 460,
       "bottomGap": 62
@@ -3170,7 +3170,7 @@
       "src": "/parts/body/patterned-knit.webp",
       "png": "/parts/body/patterned-knit.png",
       "thumb": "/parts/body/patterned-knit.thumb.webp",
-      "color": "#93bcda",
+      "color": "#93bdda",
       "width": 600,
       "height": 460,
       "bottomGap": 58
@@ -3182,7 +3182,7 @@
       "src": "/parts/body/custom-blue-knit.webp",
       "png": "/parts/body/custom-blue-knit.png",
       "thumb": "/parts/body/custom-blue-knit.thumb.webp",
-      "color": "#88b3d5",
+      "color": "#88b4d5",
       "width": 600,
       "height": 460,
       "bottomGap": 56
@@ -3242,7 +3242,7 @@
       "src": "/parts/body/custom-hawaiian.webp",
       "png": "/parts/body/custom-hawaiian.png",
       "thumb": "/parts/body/custom-hawaiian.thumb.webp",
-      "color": "#192637",
+      "color": "#192737",
       "width": 600,
       "height": 460,
       "bottomGap": 56
@@ -3293,7 +3293,7 @@
       "color": "#c9131a",
       "width": 600,
       "height": 460,
-      "bottomGap": 58
+      "bottomGap": 60
     },
     {
       "id": "fur-laces",
@@ -3314,7 +3314,7 @@
       "src": "/parts/body/olive-jacket.webp",
       "png": "/parts/body/olive-jacket.png",
       "thumb": "/parts/body/olive-jacket.thumb.webp",
-      "color": "#96b54c",
+      "color": "#96b54b",
       "width": 600,
       "height": 460,
       "bottomGap": 66
@@ -3410,7 +3410,7 @@
       "src": "/parts/body/custom-military.webp",
       "png": "/parts/body/custom-military.png",
       "thumb": "/parts/body/custom-military.thumb.webp",
-      "color": "#577858",
+      "color": "#587858",
       "width": 600,
       "height": 460,
       "bottomGap": 57
@@ -3458,7 +3458,7 @@
       "src": "/parts/body/lab-coat.webp",
       "png": "/parts/body/lab-coat.png",
       "thumb": "/parts/body/lab-coat.thumb.webp",
-      "color": "#271a15",
+      "color": "#271a14",
       "width": 600,
       "height": 460,
       "bottomGap": 88
@@ -3494,7 +3494,7 @@
       "src": "/parts/body/white-kimono.webp",
       "png": "/parts/body/white-kimono.png",
       "thumb": "/parts/body/white-kimono.thumb.webp",
-      "color": "#292415",
+      "color": "#2a2415",
       "width": 600,
       "height": 460,
       "bottomGap": 61

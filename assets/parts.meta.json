@@ -1277,14 +1277,7 @@
     "keyOut": "white",
     "scale": 1.12,
     "offsetY": -0.025,
-    "cut": [
-      [
-        0.3497,
-        0.69,
-        0.3123,
-        0.165
-      ]
-    ]
+    "cut": [[0.3497, 0.69, 0.3123, 0.165]]
   },
   "hair/eeb-4000-lego-castle-knights-helmet-flat-silver.jpg": {
     "name": "Castle / Knight'S Helmet Flat Silver",
@@ -3123,13 +3116,15 @@
     "name": "Blue Armor Nexo Knights"
   },
   "body/eeb-3837-lego-minifigure-torso-blue-blouse-in-christmas-style.jpg": {
-    "name": "Christmas Blouse"
+    "name": "Christmas Blouse",
+    "subject": true
   },
   "body/eeb-3706-lego-minifigure-torso-blue-female-knotted-shirt.jpg": {
     "name": "Knotted Blue Shirt"
   },
   "body/eeb-4033-lego-minifigure-torso-blue-flannel-vest-white-t-shirt-with-print.jpg": {
-    "name": "Flannel Vest"
+    "name": "Flannel Vest",
+    "subject": true
   },
   "body/eeb-586-lego-minifigure-torso-blue-hooded-sweatshirt.jpg": {
     "name": "Blue Hooded Sweatshirt",
@@ -3151,7 +3146,8 @@
     "exclude": true
   },
   "body/eeb-4032-lego-minifigure-torso-blue-shirt-with-skull-and-bones.jpg": {
-    "name": "Skull & Bones Tee"
+    "name": "Skull & Bones Tee",
+    "subject": true
   },
   "body/eeb-678-lego-minifigure-torso-blue-striped-shirt-red-bow-tie.jpg": {
     "name": "Striped Bow Tie"
@@ -3172,7 +3168,8 @@
     "name": "Classic Space Tee"
   },
   "body/eeb-3832-lego-minifigure-torso-bright-orange-shirt-with-print.jpg": {
-    "name": "Orange Print Shirt"
+    "name": "Orange Print Shirt",
+    "subject": true
   },
   "body/eeb-552-lego-minifigure-torso-brown-armor.jpg": {
     "name": "Brown Armor",
@@ -3280,7 +3277,8 @@
     "exclude": true
   },
   "body/eeb-3399-lego-minifigure-torso-female-short-jacket-shirt.jpg": {
-    "name": "Short Jacket"
+    "name": "Short Jacket",
+    "subject": true
   },
   "body/eeb-3009-lego-minifigure-torso-firefighter-fireman-orange-jacket.jpg": {
     "name": "Firefighter / Fireman Orange Jacket",
@@ -3478,7 +3476,8 @@
     "exclude": true
   },
   "body/eeb-3819-lego-minifigure-torso-santa-dark-red-jacket-with-fur.jpg": {
-    "name": "Santa Jacket"
+    "name": "Santa Jacket",
+    "subject": true
   },
   "body/eeb-571-lego-minifigure-torso-scientist-white-lab-coat-apron.jpg": {
     "name": "Lab Coat"
@@ -3491,7 +3490,11 @@
     "exclude": true
   },
   "body/eeb-3271-lego-minifigure-torso-security-agent-tactical-vest.jpg": {
-    "name": "Tactical Vest"
+    "name": "Tactical Vest",
+    "crop": "left",
+    "offsetX": -0.017,
+    "subject": true,
+    "keep": [[0.24, 0.24, 0.13, 0.19]]
   },
   "body/eeb-3753-lego-minifigure-torso-shirt-longsleeve-with-ice-cream.jpg": {
     "name": "Shirt / Longsleeve With Ice Cream",
@@ -3676,7 +3679,8 @@
     "name": "Floral Brown Jacket"
   },
   "body/eeb-4256-lego-minifigure-torso-dark-green-female-tunic-white-blouse.jpg": {
-    "name": "Green Tunic"
+    "name": "Green Tunic",
+    "subject": true
   },
   "body/eeb-4257-lego-minifigure-torso-silver-gray-armor-brown-belt.jpg": {
     "name": "Silver Armor"
