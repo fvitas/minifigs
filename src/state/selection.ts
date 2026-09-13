@@ -52,7 +52,14 @@ export function initialState({ selection, mode }: Shared): ConfiguratorState {
 
 // Options for a slot in picker order. Hair gets a trailing "none".
 export function optionsFor(bySlot: PartsBySlot, slot: Slot): (string | null)[] {
-  const ids: (string | null)[] = bySlot[slot].map((part) => part.id)
+  // The default leads its picker: the part the stage opens on is the first tile in every slot,
+  // instead of sitting at #176 of 179 and making the strip scroll to find itself.
+  const fallback = DEFAULT_SELECTION[slot]
+  const rest: (string | null)[] = bySlot[slot]
+    .map((part) => part.id)
+    .filter((id) => id !== fallback)
+  const ids =
+    rest.length === bySlot[slot].length ? rest : ([fallback, ...rest] as (string | null)[])
   return slot === 'hair' ? [...ids, null] : ids
 }
 
