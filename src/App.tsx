@@ -104,17 +104,10 @@ function Configurator() {
   )
 }
 
-function Loading() {
-  return (
-    <div className='grid h-dvh place-items-center bg-fog'>
-      <span className='h-4 w-[26px] animate-pulse rounded-[3px] bg-lego shadow-[inset_0_-3px_0_rgba(0,0,0,.18)]' />
-    </div>
-  )
-}
-
 export function App() {
   return (
-    <Suspense fallback={<Loading />}>
+    // No fallback: parts.json lands fast enough that any loader reads as a delay of its own.
+    <Suspense fallback={null}>
       <Configurator />
     </Suspense>
   )

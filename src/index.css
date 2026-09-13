@@ -24,5 +24,8 @@
   body {
     overflow: hidden;
     -webkit-tap-highlight-color: transparent;
+    /* The stylesheet blocks the first paint, the bundle does not: without this the page is white
+       until React mounts. */
+    background: var(--color-fog);
   }
 }
