@@ -1,4 +1,6 @@
-const TWEET = 'Built a minifig.'
+// The preview card is the same static image for every share, so the text is the only thing that
+// can ask the reader for anything.
+const TWEET = 'Build your own minifigure:'
 
 export async function copyLink(): Promise<boolean> {
   try {
