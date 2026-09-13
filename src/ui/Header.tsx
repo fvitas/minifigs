@@ -9,8 +9,10 @@ type HeaderProps = {
   onShuffle: () => void
 }
 
+// The mark is the cap band of the name: studs level with the top of the M, hem on the baseline.
+// The studs sit outside the box, so the nudge puts the whole mark on that band, not its body.
 const BRICK =
-  "relative row-span-2 h-4 w-[26px] rounded-[3px] bg-lego shadow-[inset_0_-3px_0_rgba(0,0,0,.18)] before:absolute before:-top-[5px] before:left-[3px] before:h-[5px] before:w-2 before:rounded-t-[2px] before:bg-lego before:content-[''] after:absolute after:-top-[5px] after:right-[3px] after:h-[5px] after:w-2 after:rounded-t-[2px] after:bg-lego after:content-[''] md:h-5 md:w-8 md:before:-top-1.5 md:before:left-1 md:before:h-1.5 md:before:w-[10px] md:after:-top-1.5 md:after:right-1 md:after:h-1.5 md:after:w-[10px]"
+  "relative h-[11px] w-[18px] translate-y-[1px] rounded-[2px] bg-lego shadow-[inset_0_-2px_0_rgba(0,0,0,.18)] before:absolute before:-top-[3px] before:left-[2px] before:h-[3px] before:w-[6px] before:rounded-t-[1px] before:bg-lego before:content-[''] after:absolute after:-top-[3px] after:right-[2px] after:h-[3px] after:w-[6px] after:rounded-t-[1px] after:bg-lego after:content-[''] md:h-3.5 md:w-[22px] md:before:-top-1 md:before:left-[3px] md:before:h-1 md:before:w-[7px] md:after:-top-1 md:after:right-[3px] md:after:h-1 md:after:w-[7px]"
 
 export function Header({ desktop, mode, onMode, onShuffle }: HeaderProps) {
   return (
@@ -20,7 +22,7 @@ export function Header({ desktop, mode, onMode, onShuffle }: HeaderProps) {
         <span className={BRICK} aria-hidden='true' />
         <span>Minifigs</span>
         {/* Wraps below ~375px so the switch keeps its size instead of sliding off. */}
-        <small className='col-start-2 -mt-0.5 font-sans text-[10px] leading-[1.3] font-medium text-muted md:whitespace-nowrap md:text-xs'>
+        <small className='col-span-2 font-sans text-[10px] leading-[1.3] font-medium text-muted md:whitespace-nowrap md:text-xs'>
           Not affiliated with the LEGO Group
         </small>
       </div>
