@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T07:57:59.867Z",
+  "generatedAt": "2026-09-14T08:52:19.025Z",
   "slots": [
     "hair",
     "head",
@@ -498,6 +498,42 @@
       "width": 600,
       "height": 600,
       "bottomGap": 152
+    },
+    {
+      "id": "black-fedora",
+      "slot": "hair",
+      "name": "Black Fedora",
+      "src": "/parts/hair/black-fedora.webp",
+      "png": "/parts/hair/black-fedora.png",
+      "thumb": "/parts/hair/black-fedora.thumb.webp",
+      "color": "#292929",
+      "width": 600,
+      "height": 600,
+      "bottomGap": 270
+    },
+    {
+      "id": "dark-brown-fedora",
+      "slot": "hair",
+      "name": "Dark Brown Fedora",
+      "src": "/parts/hair/dark-brown-fedora.webp",
+      "png": "/parts/hair/dark-brown-fedora.png",
+      "thumb": "/parts/hair/dark-brown-fedora.thumb.webp",
+      "color": "#251814",
+      "width": 600,
+      "height": 600,
+      "bottomGap": 275
+    },
+    {
+      "id": "viking-helmet",
+      "slot": "hair",
+      "name": "Viking Helmet",
+      "src": "/parts/hair/viking-helmet.webp",
+      "png": "/parts/hair/viking-helmet.png",
+      "thumb": "/parts/hair/viking-helmet.thumb.webp",
+      "color": "#a6a6a7",
+      "width": 600,
+      "height": 600,
+      "bottomGap": 147
     },
     {
       "id": "headband",

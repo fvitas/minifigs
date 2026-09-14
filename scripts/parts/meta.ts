@@ -20,6 +20,11 @@ export type PartMeta = {
   // in fractions of the photo: Vision drops the security torso's neck stud, and without it the part
   // measures shorter than it is and comes out oversized.
   keep?: [number, number, number, number][]
+  // A piece no darker than the figure wearing it — pale grey plastic on the white display figure —
+  // is one every test in the segmentation reads as figure. `keyFloor` is the value the flood will
+  // not spread below, and the tests that go by paleness are left off with it: what survives keeps
+  // the figure it sits on, and that figure comes off by hand on the erase page.
+  keyFloor?: number
   // Openings no threshold can find, as rounded [x, y, width, height] rectangles in fractions of the
   // photo (after `crop`): the face inside the Batman cowl's mouth is in shadow, so it reads as dark
   // as the plastic framing it.

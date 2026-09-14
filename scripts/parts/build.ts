@@ -365,7 +365,7 @@ async function readSource(slot: Slot, file: string, meta: PartMeta): Promise<Sou
       : await knockoutWhite(raw, RECLAIM_SLOTS.has(slot))
   if (meta.keyOut === 'red') return keyOutRedStand(image)
   const segment = meta.keyOut === 'white'
-  if (!meta.crop) return segment ? segmentPiece(image) : { image, guide }
+  if (!meta.crop) return segment ? segmentPiece(image, meta.keyFloor) : { image, guide }
   const split = await splitColumn(guide ?? image)
   if (split === null) {
     console.log('  · single photo, crop ignored')
@@ -376,7 +376,7 @@ async function readSource(slot: Slot, file: string, meta: PartMeta): Promise<Sou
       ? { left: 0, top: 0, width: split, height }
       : { left: split, top: 0, width: width - split, height }
   const cropped = sharp(await image.extract(box).png().toBuffer()).ensureAlpha()
-  if (segment) return segmentPiece(cropped)
+  if (segment) return segmentPiece(cropped, meta.keyFloor)
   return { image: cropped, guide: guide && sharp(await guide.extract(box).png().toBuffer()) }
 }
 
@@ -562,6 +562,9 @@ const PEEL_DEPTH = 3
 // black plastic that frames it, so the rim of an eye slit or a mouth peels on a much lower bar.
 const FACE_VALUE = 70
 const FACE_DEPTH = 3
+// How far in from the silhouette the white key's ramp is still the piece's soft edge rather than a
+// hole in it, and so how far in a segmented piece is made solid again.
+const EDGE_RAMP = 2
 
 // The figure stands in the same spot in every one of these photos, but any single landmark can be
 // hidden by the piece being worn, so the anchor is fixed rather than measured: these fractions of
@@ -645,10 +648,11 @@ function floodProp(
   saturation: Uint8Array,
   width: number,
   height: number,
+  floor: number,
 ): Uint8Array {
   const prop = new Uint8Array(width * height)
   const stack: number[] = []
-  const open = (i: number) => value[i]! >= FLOOD_MIN && saturation[i]! <= FLOOD_SAT
+  const open = (i: number) => value[i]! >= floor && saturation[i]! <= FLOOD_SAT
   const seed = (i: number) => {
     if (prop[i] || !open(i)) return
     prop[i] = 1
@@ -751,7 +755,30 @@ function peelProp(
   }
 }
 
-async function segmentPiece(image: Sharp): Promise<Source> {
+// A face the flood never reached, because the piece frames it on every side: a patch of anything
+// bright and achromatic, big enough not to be a highlight. Widened, because an opening keeps a lit
+// rim of the face it frames.
+function findHoles(
+  prop: Uint8Array,
+  value: Uint8Array,
+  saturation: Uint8Array,
+  width: number,
+  height: number,
+): Uint8Array {
+  const pixels = width * height
+  const patch = new Uint8Array(pixels)
+  for (let i = 0; i < pixels; i += 1) {
+    if (!prop[i] && value[i]! >= 150 && saturation[i]! <= 30) patch[i] = 1
+  }
+  const { label, areas } = blobs(patch, width)
+  const hole = new Uint8Array(pixels)
+  for (let i = 0; i < pixels; i += 1) {
+    if (patch[i] && areas[label[i]!]! > pixels * PROP_PATCH) hole[i] = 1
+  }
+  return morph(hole, width, height, PATCH_GROW, false)
+}
+
+async function segmentPiece(image: Sharp, keyFloor?: number): Promise<Source> {
   const { data, info } = await image.ensureAlpha().raw().toBuffer({ resolveWithObject: true })
   const { width, height, channels } = info
   const pixels = width * height
@@ -765,18 +792,14 @@ async function segmentPiece(image: Sharp): Promise<Source> {
     value[i] = min
     saturation[i] = Math.max(r, g, b) - min
   }
-  const prop = floodProp(value, saturation, width, height)
-  const patch = new Uint8Array(pixels)
-  for (let i = 0; i < pixels; i += 1) {
-    if (!prop[i] && value[i]! >= 150 && saturation[i]! <= 30) patch[i] = 1
-  }
-  const { label, areas } = blobs(patch, width)
-  const hole = new Uint8Array(pixels)
-  for (let i = 0; i < pixels; i += 1) {
-    if (patch[i] && areas[label[i]!]! > pixels * PROP_PATCH) hole[i] = 1
-  }
-  // An opening keeps a lit rim of the face it frames, so it is widened before it is cut out.
-  const holes = morph(hole, width, height, PATCH_GROW, false)
+  const prop = floodProp(value, saturation, width, height, keyFloor ?? FLOOD_MIN)
+  // The patch hunt looks for a face the flood could not reach, by brightness. Inside a piece pale
+  // enough to need a floor the only thing that bright is the piece's own highlight — the helmet's
+  // lit dome — so it is left alone and whatever face it frames comes off by hand.
+  const holes =
+    keyFloor === undefined
+      ? findHoles(prop, value, saturation, width, height)
+      : new Uint8Array(pixels)
   for (let i = 0; i < pixels; i += 1) if (holes[i]) prop[i] = 1
   const piece = new Uint8Array(pixels)
   for (let i = 0; i < pixels; i += 1) piece[i] = prop[i] ? 0 : 1
@@ -786,10 +809,21 @@ async function segmentPiece(image: Sharp): Promise<Source> {
   const kept = new Uint8Array(pixels)
   for (let i = 0; i < pixels; i += 1) kept[i] = grown[i] && !prop[i] ? 1 : 0
   peelHole(kept, holes, value, saturation, width)
-  peelProp(kept, value, saturation, width)
+  // The peel reads a pale piece as a rim of display figure and eats it to nothing, so a photo that
+  // needed a floor keeps its edges and is cleaned up by hand instead.
+  if (keyFloor === undefined) peelProp(kept, value, saturation, width)
   const out = Buffer.from(data)
   for (let i = 0; i < pixels; i += 1) if (!kept[i]) out[i * channels + 3] = 0
-  trimStandTail(out, width, height, channels)
+  // The white key ran first and cleared everything as pale as the paper, which on a pale piece is
+  // its own lit dome: holes punched before the segmentation had a say. Away from the silhouette,
+  // where the ramp is the antialiasing, what the segmentation kept is solid.
+  if (keyFloor !== undefined) {
+    const inside = morph(kept, width, height, EDGE_RAMP, true)
+    for (let i = 0; i < pixels; i += 1) if (inside[i]) out[i * channels + 3] = 255
+  }
+  // Both tests read a pale piece as the figure: the helmet under its horns is narrow and grey, so
+  // the trim eats it to the horns. A photo that needed a floor keeps its tail and is cleaned by hand.
+  if (keyFloor === undefined) trimStandTail(out, width, height, channels)
   return {
     image: sharp(out, { raw: { width, height, channels } }).png(),
     stand: {
@@ -1056,7 +1090,15 @@ async function mergeManifest(built: Part[]): Promise<Part[]> {
   const file = path.join(OUT_DIR, 'parts.json')
   const before = JSON.parse(await readFile(file, 'utf8')) as Manifest
   const fresh = new Map(built.map((part) => [`${part.slot}/${part.id}`, part]))
-  return before.parts.map((part) => fresh.get(`${part.slot}/${part.id}`) ?? part)
+  const known = new Set(before.parts.map((part) => `${part.slot}/${part.id}`))
+  const merged = before.parts.map((part) => fresh.get(`${part.slot}/${part.id}`) ?? part)
+  // A part built for the first time has no entry to replace, so it joins the end of its own slot —
+  // where a full rebuild would have put it, and where the picker shows it last.
+  for (const part of built) {
+    if (known.has(`${part.slot}/${part.id}`)) continue
+    merged.splice(merged.findLastIndex((entry) => entry.slot === part.slot) + 1, 0, part)
+  }
+  return merged
 }
 
 async function main(): Promise<void> {

@@ -2648,9 +2648,10 @@
     "exclude": true
   },
   "hair/eeb-1774-lego-fedora-hat-very-wide-brim-black.jpg": {
-    "name": "Fedora Hat Very Wide Brim Black",
+    "name": "Black Fedora",
     "keyOut": "white",
-    "exclude": true
+    "scale": 1.46,
+    "offsetY": 0.045
   },
   "hair/eeb-1793-lego-fedora-hat-wide-brim-beige.jpg": {
     "name": "Beige Fedora",
@@ -2668,7 +2669,7 @@
     "exclude": true
   },
   "hair/eeb-3783-lego-fedora-hat-wide-brim-gray.jpg": {
-    "name": "Fedora Hat Wide Brim Gray",
+    "name": "Gray Fedora",
     "keyOut": "white",
     "exclude": true
   },
@@ -2993,9 +2994,11 @@
     "exclude": true
   },
   "hair/eeb-3671-lego-viking-helmet-pearl-dark-gray-with-horns.jpg": {
-    "name": "Viking Helmet Pearl Dark Gray With Horns",
+    "name": "Viking Helmet",
     "keyOut": "white",
-    "exclude": true
+    "keyFloor": 225,
+    "scale": 1.87,
+    "offsetY": 0.202
   },
   "hair/eeb-858-lego-white-construction-helmet-with-brown-female-hair.jpg": {
     "name": "White Construction Helmet With Brown Female Hair",
@@ -3058,9 +3061,10 @@
     "exclude": true
   },
   "hair/eeb-4274-lego-fedora-hat-with-wide-brim-dark-brown.jpg": {
-    "name": "Fedora Hat With Wide Brim Dark Brown",
+    "name": "Dark Brown Fedora",
     "keyOut": "white",
-    "exclude": true
+    "scale": 1.46,
+    "offsetY": 0.045
   },
   "body/eeb-3026-lego-minifigure-torso-artist-painter-smock-with-paint-spots.jpg": {
     "name": "Artist / Painter Smock With Paint Spots",
