@@ -36,7 +36,9 @@ export function DesktopLayout({
   return (
     <>
       <main className='relative z-[1] mx-auto grid w-full max-w-[1240px] min-h-0 grid-cols-[minmax(420px,560px)_1fr] items-center gap-10 px-10 py-6'>
-        <section className='relative z-[1]'>
+        {/* Above the stage column, not level with it: the picker's own z-20 is trapped in here, so a
+            tie would hand the overlap to the action row simply for coming later in the DOM. */}
+        <section className='relative z-[2]'>
           <h1
             className={cx(
               'mb-4 font-display text-[clamp(36px,3.9vw,54px)] leading-[.98] font-extrabold tracking-[-.035em] whitespace-nowrap transition-colors duration-500',
