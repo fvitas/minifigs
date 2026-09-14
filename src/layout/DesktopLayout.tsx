@@ -10,6 +10,7 @@ import { snapButtonClass } from '../ui/buttons'
 import { cx } from '../ui/cx'
 import { Footer } from '../ui/Footer'
 import { SLOT_WORD } from '../ui/palette'
+import { ShuffleButton } from '../ui/ShuffleButton'
 import { Stepper } from '../ui/Stepper'
 import type { LayoutProps } from './ConfiguratorProps'
 import { useStageScale } from './useStageScale'
@@ -21,6 +22,7 @@ export function DesktopLayout({
   color,
   onCycle,
   onSelect,
+  onShuffle,
   onToggleExploded,
 }: LayoutProps) {
   const { stageRef, scale } = useStageScale(false)
@@ -109,15 +111,23 @@ export function DesktopLayout({
               </div>
             )}
           </section>
-          <div className='relative z-[1] flex items-center justify-center gap-[10px]'>
-            <button
-              type='button'
-              className={cx(snapButtonClass(color), 'h-11 w-[150px] whitespace-nowrap')}
-              onClick={onToggleExploded}
-              data-testid='snap'
-            >
-              {state.exploded ? 'Put together' : 'Take apart'}
-            </button>
+          {/* One even row, grouped only so a narrow desktop wraps it by verb — the two that change the
+              figure above the three that take it away — instead of widening its column. */}
+          <div className='relative z-[1] flex flex-wrap items-center justify-center gap-x-[10px] gap-y-3 lg:flex-nowrap'>
+            <div className='flex items-center gap-[10px]'>
+              <ShuffleButton className='h-11 w-[130px]' onShuffle={onShuffle} />
+              <button
+                type='button'
+                className={cx(
+                  snapButtonClass(color, state.focusSlot),
+                  'h-11 w-[150px] whitespace-nowrap',
+                )}
+                onClick={onToggleExploded}
+                data-testid='snap'
+              >
+                {state.exploded ? 'Put together' : 'Take apart'}
+              </button>
+            </div>
             <AssembledActions compact={false} selection={state.selection} catalog={catalog} />
           </div>
         </div>

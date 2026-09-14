@@ -8,6 +8,11 @@ export const SLOT_PALETTE: Record<Slot, { slot: string; onSlot: string }> = {
   pants: { slot: '#0f6fd6', onSlot: '#ffffff' },
 }
 
+// Yellow is the one slot colour that needs navy on top; everywhere else the on-colour is white.
+export function onSlotIsWhite(slot: Slot): boolean {
+  return SLOT_PALETTE[slot].onSlot === '#ffffff'
+}
+
 export const SLOT_LABEL: Record<Slot, string> = {
   hair: 'Hair & hats',
   head: 'Head',

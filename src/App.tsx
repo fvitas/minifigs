@@ -98,7 +98,7 @@ function Configurator() {
       data-mode={state.mode}
       data-slot={state.focusSlot}
     >
-      <Header desktop={desktop} mode={state.mode} onMode={onMode} onShuffle={onShuffle} />
+      <Header mode={state.mode} onMode={onMode} />
       {desktop ? <DesktopLayout {...layoutProps} /> : <MobileLayout {...layoutProps} />}
     </div>
   )

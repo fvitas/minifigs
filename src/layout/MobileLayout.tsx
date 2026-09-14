@@ -115,7 +115,10 @@ export function MobileLayout({
         <div className='mx-[14px] mt-0.5 flex items-center gap-2'>
           <button
             type='button'
-            className={cx(snapButtonClass(color), 'h-[50px] flex-1 text-[15px] whitespace-nowrap')}
+            className={cx(
+              snapButtonClass(color, state.focusSlot),
+              'h-[50px] flex-1 text-[15px] whitespace-nowrap',
+            )}
             onClick={onToggleExploded}
             data-testid='snap'
           >
