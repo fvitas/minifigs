@@ -16,7 +16,7 @@
     "parts": "tsx scripts/parts/build.ts",
     "masks": "tsx scripts/parts/masks.ts",
     "assets": "tsx scripts/parts/publish.ts",
-    "deploy": "pnpm dlx vercel@latest build --prod --yes && pnpm dlx vercel@latest deploy --prebuilt --prod --yes",
+    "deploy": "pnpm dlx vercel@latest build --prod --yes && pnpm dlx vercel@latest deploy --prebuilt --prod --yes --scope filip-vitas-projects",
     "mockups": "vite --config mockups/vite.config.ts"
   },
   "dependencies": {
